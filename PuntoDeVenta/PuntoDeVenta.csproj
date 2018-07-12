@@ -58,6 +58,10 @@
     <Compile Include="frmEntradas.Designer.cs">
       <DependentUpon>frmEntradas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs" />
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProductos.cs" />
     <Compile Include="frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
