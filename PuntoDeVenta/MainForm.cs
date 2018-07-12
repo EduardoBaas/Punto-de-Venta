@@ -29,6 +29,7 @@ namespace PuntoDeVenta
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
 		void TsbVentasClick(object sender, EventArgs e)
 		{
 			
