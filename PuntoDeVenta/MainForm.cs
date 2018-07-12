@@ -29,9 +29,10 @@ namespace PuntoDeVenta
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		void ToolStripButton1Click(object sender, EventArgs e)
+		void TsbVentasClick(object sender, EventArgs e)
 		{
-	
+			
 		}
+	
 	}
 }
