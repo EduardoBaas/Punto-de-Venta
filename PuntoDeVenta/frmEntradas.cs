@@ -28,5 +28,9 @@ namespace PuntoDeVenta
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void FrmEntradasLoad(object sender, EventArgs e)
+		{
+	
+		}
 	}
 }

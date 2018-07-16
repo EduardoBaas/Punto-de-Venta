@@ -14,27 +14,27 @@ namespace PuntoDeVenta
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.MenuStrip menuStrip1;
-		private System.Windows.Forms.StatusStrip statusStrip1;
-		private System.Windows.Forms.ToolStrip toolStrip1;
+		private System.Windows.Forms.MenuStrip mspPuntoDeVenta;
+		private System.Windows.Forms.StatusStrip stpPuntoDeVenta;
+		private System.Windows.Forms.ToolStrip tspPuntoDeVenta;
 		private System.Windows.Forms.ToolStripButton tsbVentas;
-		private System.Windows.Forms.ToolStripButton toolStripButton2;
+		private System.Windows.Forms.ToolStripButton tsbEntradas;
 		private System.Windows.Forms.ToolStripMenuItem transaccionesToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem compraDeProductosToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem tsmVentas;
+		private System.Windows.Forms.ToolStripMenuItem tsmEntradas;
 		private System.Windows.Forms.ToolStripMenuItem catálogosToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem tsmUsuarios;
+		private System.Windows.Forms.ToolStripMenuItem tsmClientes;
+		private System.Windows.Forms.ToolStripMenuItem tsmProductos;
+		private System.Windows.Forms.ToolStripMenuItem tsmProveedores;
 		private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem sobreNosotrosToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem tsmAboutUs;
+		private System.Windows.Forms.ToolStripMenuItem tsmHelp;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-		private System.Windows.Forms.ToolStripButton toolStripButton3;
+		private System.Windows.Forms.ToolStripButton tsbUsuarios;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -58,143 +58,151 @@ namespace PuntoDeVenta
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.mspPuntoDeVenta = new System.Windows.Forms.MenuStrip();
 			this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.compraDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmVentas = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmEntradas = new System.Windows.Forms.ToolStripMenuItem();
 			this.catálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.proveedoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmClientes = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmProductos = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmProveedores = new System.Windows.Forms.ToolStripMenuItem();
 			this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.sobreNosotrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.ayudaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.tsmAboutUs = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmHelp = new System.Windows.Forms.ToolStripMenuItem();
+			this.stpPuntoDeVenta = new System.Windows.Forms.StatusStrip();
+			this.tspPuntoDeVenta = new System.Windows.Forms.ToolStrip();
 			this.tsbVentas = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.tsbEntradas = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-			this.menuStrip1.SuspendLayout();
-			this.toolStrip1.SuspendLayout();
+			this.tsbUsuarios = new System.Windows.Forms.ToolStripButton();
+			this.mspPuntoDeVenta.SuspendLayout();
+			this.tspPuntoDeVenta.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// menuStrip1
+			// mspPuntoDeVenta
 			// 
-			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.mspPuntoDeVenta.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 			this.transaccionesToolStripMenuItem,
 			this.catálogosToolStripMenuItem,
 			this.ayudaToolStripMenuItem});
-			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(891, 24);
-			this.menuStrip1.TabIndex = 0;
-			this.menuStrip1.Text = "menuStrip1";
+			this.mspPuntoDeVenta.Location = new System.Drawing.Point(0, 0);
+			this.mspPuntoDeVenta.Name = "mspPuntoDeVenta";
+			this.mspPuntoDeVenta.Size = new System.Drawing.Size(891, 24);
+			this.mspPuntoDeVenta.TabIndex = 0;
+			this.mspPuntoDeVenta.Text = "menuStrip1";
 			// 
 			// transaccionesToolStripMenuItem
 			// 
 			this.transaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.ventasToolStripMenuItem,
-			this.compraDeProductosToolStripMenuItem});
+			this.tsmVentas,
+			this.tsmEntradas});
 			this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
 			this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
 			this.transaccionesToolStripMenuItem.Text = "Transacciones";
 			// 
-			// ventasToolStripMenuItem
+			// tsmVentas
 			// 
-			this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-			this.ventasToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.ventasToolStripMenuItem.Text = "Ventas";
+			this.tsmVentas.Name = "tsmVentas";
+			this.tsmVentas.Size = new System.Drawing.Size(187, 22);
+			this.tsmVentas.Text = "Ventas";
+			this.tsmVentas.Click += new System.EventHandler(this.TsmVentasClick);
 			// 
-			// compraDeProductosToolStripMenuItem
+			// tsmEntradas
 			// 
-			this.compraDeProductosToolStripMenuItem.Name = "compraDeProductosToolStripMenuItem";
-			this.compraDeProductosToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-			this.compraDeProductosToolStripMenuItem.Text = "Compra de productos";
+			this.tsmEntradas.Name = "tsmEntradas";
+			this.tsmEntradas.Size = new System.Drawing.Size(187, 22);
+			this.tsmEntradas.Text = "Entrada de productos";
+			this.tsmEntradas.Click += new System.EventHandler(this.TsmEntradasClick);
 			// 
 			// catálogosToolStripMenuItem
 			// 
 			this.catálogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.proveedoresToolStripMenuItem,
-			this.clientesToolStripMenuItem,
-			this.productosToolStripMenuItem,
-			this.proveedoresToolStripMenuItem1});
+			this.tsmUsuarios,
+			this.tsmClientes,
+			this.tsmProductos,
+			this.tsmProveedores});
 			this.catálogosToolStripMenuItem.Name = "catálogosToolStripMenuItem";
 			this.catálogosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
 			this.catálogosToolStripMenuItem.Text = "Catálogos";
 			// 
-			// proveedoresToolStripMenuItem
+			// tsmUsuarios
 			// 
-			this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-			this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-			this.proveedoresToolStripMenuItem.Text = "Usuarios";
+			this.tsmUsuarios.Name = "tsmUsuarios";
+			this.tsmUsuarios.Size = new System.Drawing.Size(152, 22);
+			this.tsmUsuarios.Text = "Usuarios";
+			this.tsmUsuarios.Click += new System.EventHandler(this.TsmUsuariosClick);
 			// 
-			// clientesToolStripMenuItem
+			// tsmClientes
 			// 
-			this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-			this.clientesToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-			this.clientesToolStripMenuItem.Text = "Clientes";
+			this.tsmClientes.Name = "tsmClientes";
+			this.tsmClientes.Size = new System.Drawing.Size(152, 22);
+			this.tsmClientes.Text = "Clientes";
+			this.tsmClientes.Click += new System.EventHandler(this.TsmClientesClick);
 			// 
-			// productosToolStripMenuItem
+			// tsmProductos
 			// 
-			this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-			this.productosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-			this.productosToolStripMenuItem.Text = "Productos";
+			this.tsmProductos.Name = "tsmProductos";
+			this.tsmProductos.Size = new System.Drawing.Size(152, 22);
+			this.tsmProductos.Text = "Productos";
+			this.tsmProductos.Click += new System.EventHandler(this.TsmProductosClick);
 			// 
-			// proveedoresToolStripMenuItem1
+			// tsmProveedores
 			// 
-			this.proveedoresToolStripMenuItem1.Name = "proveedoresToolStripMenuItem1";
-			this.proveedoresToolStripMenuItem1.Size = new System.Drawing.Size(139, 22);
-			this.proveedoresToolStripMenuItem1.Text = "Proveedores";
+			this.tsmProveedores.Name = "tsmProveedores";
+			this.tsmProveedores.Size = new System.Drawing.Size(152, 22);
+			this.tsmProveedores.Text = "Proveedores";
+			this.tsmProveedores.Click += new System.EventHandler(this.TsmProveedoresClick);
 			// 
 			// ayudaToolStripMenuItem
 			// 
 			this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-			this.sobreNosotrosToolStripMenuItem,
-			this.ayudaToolStripMenuItem1});
+			this.tsmAboutUs,
+			this.tsmHelp});
 			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
 			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
 			this.ayudaToolStripMenuItem.Text = "Ayuda";
 			// 
-			// sobreNosotrosToolStripMenuItem
+			// tsmAboutUs
 			// 
-			this.sobreNosotrosToolStripMenuItem.Name = "sobreNosotrosToolStripMenuItem";
-			this.sobreNosotrosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-			this.sobreNosotrosToolStripMenuItem.Text = "Sobre Nosotros";
+			this.tsmAboutUs.Name = "tsmAboutUs";
+			this.tsmAboutUs.Size = new System.Drawing.Size(155, 22);
+			this.tsmAboutUs.Text = "Sobre Nosotros";
 			// 
-			// ayudaToolStripMenuItem1
+			// tsmHelp
 			// 
-			this.ayudaToolStripMenuItem1.Name = "ayudaToolStripMenuItem1";
-			this.ayudaToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
-			this.ayudaToolStripMenuItem1.Text = "Ayuda";
+			this.tsmHelp.Name = "tsmHelp";
+			this.tsmHelp.Size = new System.Drawing.Size(155, 22);
+			this.tsmHelp.Text = "Ayuda";
 			// 
-			// statusStrip1
+			// stpPuntoDeVenta
 			// 
-			this.statusStrip1.Location = new System.Drawing.Point(0, 344);
-			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(891, 22);
-			this.statusStrip1.TabIndex = 1;
-			this.statusStrip1.Text = "statusStrip1";
+			this.stpPuntoDeVenta.GripMargin = new System.Windows.Forms.Padding(4);
+			this.stpPuntoDeVenta.ImageScalingSize = new System.Drawing.Size(32, 32);
+			this.stpPuntoDeVenta.Location = new System.Drawing.Point(0, 344);
+			this.stpPuntoDeVenta.Name = "stpPuntoDeVenta";
+			this.stpPuntoDeVenta.Size = new System.Drawing.Size(891, 22);
+			this.stpPuntoDeVenta.TabIndex = 1;
+			this.stpPuntoDeVenta.Text = "statusStrip1";
 			// 
-			// toolStrip1
+			// tspPuntoDeVenta
 			// 
-			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.tspPuntoDeVenta.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 			this.tsbVentas,
 			this.toolStripSeparator1,
 			this.toolStripSeparator2,
-			this.toolStripButton2,
+			this.tsbEntradas,
 			this.toolStripSeparator3,
 			this.toolStripSeparator4,
-			this.toolStripButton3});
-			this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Size = new System.Drawing.Size(891, 25);
-			this.toolStrip1.TabIndex = 2;
-			this.toolStrip1.Text = "toolStrip1";
+			this.tsbUsuarios});
+			this.tspPuntoDeVenta.Location = new System.Drawing.Point(0, 24);
+			this.tspPuntoDeVenta.Name = "tspPuntoDeVenta";
+			this.tspPuntoDeVenta.Size = new System.Drawing.Size(891, 25);
+			this.tspPuntoDeVenta.TabIndex = 2;
+			this.tspPuntoDeVenta.Text = "toolStrip1";
 			// 
 			// tsbVentas
 			// 
@@ -216,14 +224,15 @@ namespace PuntoDeVenta
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
 			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
 			// 
-			// toolStripButton2
+			// tsbEntradas
 			// 
-			this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButton2.Name = "toolStripButton2";
-			this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-			this.toolStripButton2.Text = "Compras";
+			this.tsbEntradas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.tsbEntradas.Image = ((System.Drawing.Image)(resources.GetObject("tsbEntradas.Image")));
+			this.tsbEntradas.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.tsbEntradas.Name = "tsbEntradas";
+			this.tsbEntradas.Size = new System.Drawing.Size(23, 22);
+			this.tsbEntradas.Text = "Entradas";
+			this.tsbEntradas.Click += new System.EventHandler(this.TsbEntradasClick);
 			// 
 			// toolStripSeparator3
 			// 
@@ -235,32 +244,34 @@ namespace PuntoDeVenta
 			this.toolStripSeparator4.Name = "toolStripSeparator4";
 			this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
 			// 
-			// toolStripButton3
+			// tsbUsuarios
 			// 
-			this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-			this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButton3.Name = "toolStripButton3";
-			this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-			this.toolStripButton3.Text = "Usuarios";
+			this.tsbUsuarios.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.tsbUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("tsbUsuarios.Image")));
+			this.tsbUsuarios.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.tsbUsuarios.Name = "tsbUsuarios";
+			this.tsbUsuarios.Size = new System.Drawing.Size(23, 22);
+			this.tsbUsuarios.Text = "Usuarios";
+			this.tsbUsuarios.Click += new System.EventHandler(this.TsbUsuariosClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(891, 366);
-			this.Controls.Add(this.toolStrip1);
-			this.Controls.Add(this.statusStrip1);
-			this.Controls.Add(this.menuStrip1);
+			this.Controls.Add(this.tspPuntoDeVenta);
+			this.Controls.Add(this.stpPuntoDeVenta);
+			this.Controls.Add(this.mspPuntoDeVenta);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MainMenuStrip = this.menuStrip1;
+			this.IsMdiContainer = true;
+			this.MainMenuStrip = this.mspPuntoDeVenta;
 			this.Name = "MainForm";
 			this.Text = "PuntoDeVenta";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-			this.menuStrip1.ResumeLayout(false);
-			this.menuStrip1.PerformLayout();
-			this.toolStrip1.ResumeLayout(false);
-			this.toolStrip1.PerformLayout();
+			this.mspPuntoDeVenta.ResumeLayout(false);
+			this.mspPuntoDeVenta.PerformLayout();
+			this.tspPuntoDeVenta.ResumeLayout(false);
+			this.tspPuntoDeVenta.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

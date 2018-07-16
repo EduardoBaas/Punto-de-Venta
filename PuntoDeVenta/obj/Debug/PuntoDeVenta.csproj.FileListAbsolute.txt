@@ -6,3 +6,16 @@ C:\Users\pumas\Documents\SharpDevelop Projects\PuntoDeVenta\PuntoDeVenta\obj\Deb
 C:\Users\pumas\Documents\SharpDevelop Projects\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.csproj.GenerateResource.Cache
 C:\Users\pumas\Documents\SharpDevelop Projects\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.exe
 C:\Users\pumas\Documents\SharpDevelop Projects\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.pdb
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\bin\Debug\PuntoDeVenta.exe.config
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\bin\Debug\PuntoDeVenta.exe
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\bin\Debug\PuntoDeVenta.pdb
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.csprojResolveAssemblyReference.cache
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmClientes.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmEntradas.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.MainForm.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.csproj.GenerateResource.Cache
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.exe
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.pdb
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmLogin.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmUsuarios.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmVentas.resources

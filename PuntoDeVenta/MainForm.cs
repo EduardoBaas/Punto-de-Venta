@@ -32,7 +32,57 @@ namespace PuntoDeVenta
 		
 		void TsbVentasClick(object sender, EventArgs e)
 		{
-			
+			frmVentas formVentas = new frmVentas();
+			formVentas.MdiParent = this;
+			formVentas.Show();
+		}
+		void TsbEntradasClick(object sender, EventArgs e)
+		{
+			frmEntradas formEntradas = new frmEntradas();
+			formEntradas.MdiParent = this;
+			formEntradas.Show();
+		}
+		void TsbUsuariosClick(object sender, EventArgs e)
+		{
+			frmUsuarios formUsuarios = new frmUsuarios();
+			formUsuarios.MdiParent = this;
+			formUsuarios.Show();
+		}
+		void TsmVentasClick(object sender, EventArgs e)
+		{
+			frmVentas formVentas = new frmVentas();
+			formVentas.MdiParent = this;
+			formVentas.Show();
+		}
+		void TsmEntradasClick(object sender, EventArgs e)
+		{
+			frmEntradas formEntradas = new frmEntradas();
+			formEntradas.MdiParent = this;
+			formEntradas.Show();
+		}
+		void TsmUsuariosClick(object sender, EventArgs e)
+		{
+			frmUsuarios formUsuarios = new frmUsuarios();
+			formUsuarios.MdiParent = this;
+			formUsuarios.Show();
+		}
+		void TsmClientesClick(object sender, EventArgs e)
+		{
+			frmClientes formClientes = new frmClientes();
+			formClientes.MdiParent = this;
+			formClientes.Show();
+		}
+		void TsmProductosClick(object sender, EventArgs e)
+		{
+			frmProductos formProductos = new frmProductos();
+			formProductos.MdiParent = this;
+			formProductos.Show();
+		}
+		void TsmProveedoresClick(object sender, EventArgs e)
+		{
+			frmProveedores formProveedores = new frmProveedores();
+			formProveedores.MdiParent = this;
+			formProveedores.Show();
 		}
 	
 	}

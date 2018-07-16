@@ -36,12 +36,19 @@ namespace PuntoDeVenta
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios));
+			this.SuspendLayout();
 			// 
 			// frmUsuarios
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "frmUsuarios";
+			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmUsuarios";
+			this.Text = "frmUsuarios";
+			this.ResumeLayout(false);
+
 		}
 	}
 }
