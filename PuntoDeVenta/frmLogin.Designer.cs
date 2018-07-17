@@ -72,7 +72,7 @@ namespace PuntoDeVenta
 			this.panel1.Controls.Add(this.txtContra);
 			this.panel1.Controls.Add(this.txtUsuario);
 			this.panel1.Controls.Add(this.ptxIngresar);
-			this.panel1.Location = new System.Drawing.Point(91, 126);
+			this.panel1.Location = new System.Drawing.Point(1, 1);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(500, 224);
 			this.panel1.TabIndex = 0;
@@ -108,11 +108,11 @@ namespace PuntoDeVenta
 			// lblFecha
 			// 
 			this.lblFecha.BackColor = System.Drawing.Color.Transparent;
-			this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblFecha.ForeColor = System.Drawing.Color.LightSkyBlue;
-			this.lblFecha.Location = new System.Drawing.Point(296, 184);
+			this.lblFecha.Location = new System.Drawing.Point(270, 184);
 			this.lblFecha.Name = "lblFecha";
-			this.lblFecha.Size = new System.Drawing.Size(188, 27);
+			this.lblFecha.Size = new System.Drawing.Size(214, 27);
 			this.lblFecha.TabIndex = 6;
 			this.lblFecha.Text = "Fecha";
 			// 
@@ -174,15 +174,14 @@ namespace PuntoDeVenta
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(663, 382);
+			this.ClientSize = new System.Drawing.Size(501, 227);
 			this.Controls.Add(this.panel1);
 			this.DoubleBuffered = true;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.MaximizeBox = false;
 			this.Name = "frmLogin";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmLogin";
-			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.FrmLoginLoad);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();

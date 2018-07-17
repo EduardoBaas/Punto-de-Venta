@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using AccesoADatos;
 
 namespace PuntoDeVenta
 {
@@ -30,10 +31,10 @@ namespace PuntoDeVenta
 		}
 		void FrmLoginLoad(object sender, EventArgs e)
 		{
-			Size desktopsize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize;
-			Int32 alto = (desktopsize.Height-200)/2;
-			Int32 ancho = (desktopsize.Width - 500)/2;
-			panel1.Location = new Point (ancho,alto);
+//			Size desktopsize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize;
+//			Int32 alto = (desktopsize.Height-200)/2;
+//			Int32 ancho = (desktopsize.Width - 500)/2;
+//			panel1.Location = new Point (ancho,alto);
 			
 			
 			//fecha y hora
@@ -64,9 +65,28 @@ namespace PuntoDeVenta
 		}
 		void PtxIngresarClick(object sender, EventArgs e)
 		{
-			this.Hide();
-			MainForm frmMain =new MainForm();
-			frmMain.Show();
+			string tabla = "Usuarios";
+			string condicion = "usuario = '"+txtUsuario.Text+"'";
+			string campos = "usuario,contrasenia,nombre,apellidoP,id_tipo";
+			
+			string [] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
+			if (datos.Length > 1)
+			{
+				if (datos[1] == txtContra.Text)
+				{
+					this.Hide();
+					MainForm frmMain =new MainForm();
+					frmMain.ShowDialog();
+					this.Close();
+				}else
+				{
+					MessageBox.Show("La contraseña es incorrecta","Acceson denegado",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+				}
+			}else
+			{
+				MessageBox.Show("El usuario no existe","Información",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+			}
+			
 		}
 	}
 }

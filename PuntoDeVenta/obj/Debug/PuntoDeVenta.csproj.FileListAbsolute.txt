@@ -19,3 +19,4 @@ C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVen
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmLogin.resources
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmUsuarios.resources
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmVentas.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmProductos.resources
