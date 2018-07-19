@@ -25,6 +25,10 @@ namespace AccesoADatos
         public static string usuario;
         public static string password;
         public static string bd;
+        //una propiedad que accede al rol del usuario que ingresa
+        public static string rol;
+        //una propiedad que almacene el nombre del usuario que ha accedido
+        public static string quienAccede;
 
 
       //public FrameBD(string servidor, uint puerto, string usuario, string password, string bd)
@@ -36,6 +40,7 @@ namespace AccesoADatos
             usuario = "root";
             password = "bassbazuca12";
             bd = "punto_venta";
+            
 
 
             conex.Close();

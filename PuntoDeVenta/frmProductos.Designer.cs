@@ -27,9 +27,12 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox txtMinimo;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgvProductos;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.TextBox txtBuscar;
+		private System.Windows.Forms.Button btnEliminar;
+		private System.Windows.Forms.Button btnActualizar;
+		private System.Windows.Forms.Button btnGuardar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -52,6 +55,7 @@ namespace PuntoDeVenta
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductos));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -65,10 +69,13 @@ namespace PuntoDeVenta
 			this.label6 = new System.Windows.Forms.Label();
 			this.txtMinimo = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgvProductos = new System.Windows.Forms.DataGridView();
 			this.label8 = new System.Windows.Forms.Label();
 			this.txtBuscar = new System.Windows.Forms.TextBox();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.btnEliminar = new System.Windows.Forms.Button();
+			this.btnActualizar = new System.Windows.Forms.Button();
+			this.btnGuardar = new System.Windows.Forms.Button();
+			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -116,9 +123,9 @@ namespace PuntoDeVenta
 			this.label3.Location = new System.Drawing.Point(33, 125);
 			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(133, 25);
+			this.label3.Size = new System.Drawing.Size(154, 25);
 			this.label3.TabIndex = 3;
-			this.label3.Text = "Producto";
+			this.label3.Text = "Nombre del producto";
 			// 
 			// txtCosto
 			// 
@@ -154,9 +161,9 @@ namespace PuntoDeVenta
 			this.label5.Location = new System.Drawing.Point(33, 401);
 			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(133, 25);
+			this.label5.Size = new System.Drawing.Size(154, 25);
 			this.label5.TabIndex = 7;
-			this.label5.Text = "Existencia";
+			this.label5.Text = "Cantidad a ingresar";
 			// 
 			// txtMaximo
 			// 
@@ -196,13 +203,21 @@ namespace PuntoDeVenta
 			this.label7.TabIndex = 11;
 			this.label7.Text = "Stock mínimo";
 			// 
-			// dataGridView1
+			// dgvProductos
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(332, 86);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(790, 365);
-			this.dataGridView1.TabIndex = 13;
+			this.dgvProductos.AllowUserToAddRows = false;
+			this.dgvProductos.AllowUserToDeleteRows = false;
+			this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+			this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvProductos.GridColor = System.Drawing.SystemColors.ActiveBorder;
+			this.dgvProductos.Location = new System.Drawing.Point(332, 86);
+			this.dgvProductos.Name = "dgvProductos";
+			this.dgvProductos.ReadOnly = true;
+			this.dgvProductos.RowHeadersVisible = false;
+			this.dgvProductos.RowHeadersWidth = 120;
+			this.dgvProductos.Size = new System.Drawing.Size(790, 365);
+			this.dgvProductos.TabIndex = 13;
 			// 
 			// label8
 			// 
@@ -223,14 +238,58 @@ namespace PuntoDeVenta
 			this.txtBuscar.Size = new System.Drawing.Size(718, 22);
 			this.txtBuscar.TabIndex = 15;
 			// 
+			// btnEliminar
+			// 
+			this.btnEliminar.ForeColor = System.Drawing.Color.Crimson;
+			this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+			this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnEliminar.Location = new System.Drawing.Point(257, 469);
+			this.btnEliminar.Name = "btnEliminar";
+			this.btnEliminar.Size = new System.Drawing.Size(107, 37);
+			this.btnEliminar.TabIndex = 18;
+			this.btnEliminar.Text = "Eliminar";
+			this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.BtnEliminarClick);
+			// 
+			// btnActualizar
+			// 
+			this.btnActualizar.ForeColor = System.Drawing.Color.MediumBlue;
+			this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+			this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnActualizar.Location = new System.Drawing.Point(144, 469);
+			this.btnActualizar.Name = "btnActualizar";
+			this.btnActualizar.Size = new System.Drawing.Size(107, 37);
+			this.btnActualizar.TabIndex = 19;
+			this.btnActualizar.Text = "Editar P.";
+			this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnActualizar.UseVisualStyleBackColor = true;
+			// 
+			// btnGuardar
+			// 
+			this.btnGuardar.ForeColor = System.Drawing.Color.MediumBlue;
+			this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnGuardar.Location = new System.Drawing.Point(31, 469);
+			this.btnGuardar.Name = "btnGuardar";
+			this.btnGuardar.Size = new System.Drawing.Size(107, 37);
+			this.btnGuardar.TabIndex = 20;
+			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnGuardar.UseVisualStyleBackColor = true;
+			this.btnGuardar.Click += new System.EventHandler(this.BtnGuardarClick);
+			// 
 			// frmProductos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1168, 538);
+			this.Controls.Add(this.btnGuardar);
+			this.Controls.Add(this.btnActualizar);
+			this.Controls.Add(this.btnEliminar);
 			this.Controls.Add(this.txtBuscar);
 			this.Controls.Add(this.label8);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.dgvProductos);
 			this.Controls.Add(this.txtMinimo);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.txtMaximo);
@@ -250,7 +309,8 @@ namespace PuntoDeVenta
 			this.MaximizeBox = false;
 			this.Name = "frmProductos";
 			this.Text = "Catálogo de productos";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.Load += new System.EventHandler(this.FrmProductosLoad);
+			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

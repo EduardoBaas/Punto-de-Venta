@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using AccesoADatos;
 
 namespace PuntoDeVenta
 {
@@ -17,6 +18,7 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmProductos : Form
 	{
+		Productos ClassProduct = new Productos();
 		public frmProductos()
 		{
 			//
@@ -27,6 +29,50 @@ namespace PuntoDeVenta
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+		}
+		void FrmProductosLoad(object sender, EventArgs e)
+		{
+			ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
+		}
+		
+		void BtnEliminarClick(object sender, EventArgs e)
+		{
+			if(MessageBox.Show("¿Está seguro de eliminar este producto?","Peligro",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation) == DialogResult.Yes)
+			{
+				ClassProduct.eliminado = "1";
+				ClassProduct.codigo =dgvProductos["Codigo de barras",dgvProductos.CurrentCellAddress.Y].Value.ToString() ;
+				ClassProduct.Update();
+				ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
+			}
+		}
+		void BtnGuardarClick(object sender, EventArgs e)
+		{
+			Valores();
+			Limpiar();
+		}
+		
+		public void Valores()
+		{
+			ClassProduct.codigo = txtCodigo.Text;
+			ClassProduct.nombre = txtProducto.Text;
+			ClassProduct.costo = Double.Parse(txtCosto.Text);
+			ClassProduct.minimo = int.Parse(txtMinimo.Text);
+			ClassProduct.maximo = int.Parse(txtMaximo.Text);
+			ClassProduct.existencia = int.Parse(txtExistencia.Text);
+			ClassProduct.Agregar();
+			ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
+		}
+		
+		public void Limpiar()
+		{
+			txtCodigo.Clear();
+			txtBuscar.Clear();
+			txtProducto.Clear();
+			txtCosto.Clear();
+			txtMinimo.Clear();
+			txtMaximo.Clear();
+			txtExistencia.Clear();
+			
 		}
 	}
 }
