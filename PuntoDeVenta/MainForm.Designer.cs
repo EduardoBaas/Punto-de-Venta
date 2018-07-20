@@ -132,28 +132,28 @@ namespace PuntoDeVenta
 			// tsmUsuarios
 			// 
 			this.tsmUsuarios.Name = "tsmUsuarios";
-			this.tsmUsuarios.Size = new System.Drawing.Size(152, 22);
+			this.tsmUsuarios.Size = new System.Drawing.Size(139, 22);
 			this.tsmUsuarios.Text = "Usuarios";
 			this.tsmUsuarios.Click += new System.EventHandler(this.TsmUsuariosClick);
 			// 
 			// tsmClientes
 			// 
 			this.tsmClientes.Name = "tsmClientes";
-			this.tsmClientes.Size = new System.Drawing.Size(152, 22);
+			this.tsmClientes.Size = new System.Drawing.Size(139, 22);
 			this.tsmClientes.Text = "Clientes";
 			this.tsmClientes.Click += new System.EventHandler(this.TsmClientesClick);
 			// 
 			// tsmProductos
 			// 
 			this.tsmProductos.Name = "tsmProductos";
-			this.tsmProductos.Size = new System.Drawing.Size(152, 22);
+			this.tsmProductos.Size = new System.Drawing.Size(139, 22);
 			this.tsmProductos.Text = "Productos";
 			this.tsmProductos.Click += new System.EventHandler(this.TsmProductosClick);
 			// 
 			// tsmProveedores
 			// 
 			this.tsmProveedores.Name = "tsmProveedores";
-			this.tsmProveedores.Size = new System.Drawing.Size(152, 22);
+			this.tsmProveedores.Size = new System.Drawing.Size(139, 22);
 			this.tsmProveedores.Text = "Proveedores";
 			this.tsmProveedores.Click += new System.EventHandler(this.TsmProveedoresClick);
 			// 
@@ -258,6 +258,7 @@ namespace PuntoDeVenta
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(891, 366);
 			this.Controls.Add(this.tspPuntoDeVenta);
 			this.Controls.Add(this.stpPuntoDeVenta);
@@ -268,6 +269,7 @@ namespace PuntoDeVenta
 			this.Name = "MainForm";
 			this.Text = "PuntoDeVenta";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.mspPuntoDeVenta.ResumeLayout(false);
 			this.mspPuntoDeVenta.PerformLayout();
 			this.tspPuntoDeVenta.ResumeLayout(false);

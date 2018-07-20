@@ -67,7 +67,7 @@ namespace PuntoDeVenta
 		{
 			string tabla = "Usuarios";
 			string condicion = "usuario = '"+txtUsuario.Text+"'";
-			string campos = "usuario,contrasenia,nombre,apellidoP,id_tipo";
+			string campos = "usuario,contrasenia,nombre,apellidoP";
 			
 			string [] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
 			if (datos.Length > 1)
