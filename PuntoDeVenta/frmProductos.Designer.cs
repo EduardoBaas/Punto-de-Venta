@@ -34,7 +34,7 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Button btnActualizar;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox ptxClose;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.PictureBox pictureBox5;
@@ -45,6 +45,7 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.PictureBox ptxMinimizar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -97,11 +98,12 @@ namespace PuntoDeVenta
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.ptxClose = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.ptxMinimizar = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -110,9 +112,10 @@ namespace PuntoDeVenta
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptxClose)).BeginInit();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptxMinimizar)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -455,39 +458,41 @@ namespace PuntoDeVenta
 			this.pictureBox2.TabIndex = 21;
 			this.pictureBox2.TabStop = false;
 			// 
-			// pictureBox1
+			// ptxClose
 			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(954, 3);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox1.TabIndex = 22;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.PictureBox1Click);
+			this.ptxClose.Image = ((System.Drawing.Image)(resources.GetObject("ptxClose.Image")));
+			this.ptxClose.Location = new System.Drawing.Point(954, 3);
+			this.ptxClose.Name = "ptxClose";
+			this.ptxClose.Size = new System.Drawing.Size(32, 32);
+			this.ptxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.ptxClose.TabIndex = 22;
+			this.ptxClose.TabStop = false;
+			this.ptxClose.Click += new System.EventHandler(this.PtxCloseClick);
 			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+			this.panel2.Controls.Add(this.ptxMinimizar);
 			this.panel2.Controls.Add(this.label10);
 			this.panel2.Controls.Add(this.label9);
 			this.panel2.Controls.Add(this.pictureBox8);
-			this.panel2.Controls.Add(this.pictureBox1);
+			this.panel2.Controls.Add(this.ptxClose);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel2.Location = new System.Drawing.Point(371, 0);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(989, 49);
 			this.panel2.TabIndex = 23;
 			// 
-			// pictureBox8
+			// label10
 			// 
-			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(6, 0);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(100, 49);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox8.TabIndex = 23;
-			this.pictureBox8.TabStop = false;
+			this.label10.Font = new System.Drawing.Font("Candara", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
+			this.label10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.label10.Location = new System.Drawing.Point(216, 6);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(124, 40);
+			this.label10.TabIndex = 25;
+			this.label10.Text = "Systems";
 			// 
 			// label9
 			// 
@@ -500,16 +505,26 @@ namespace PuntoDeVenta
 			this.label9.TabIndex = 24;
 			this.label9.Text = "Absolute";
 			// 
-			// label10
+			// pictureBox8
 			// 
-			this.label10.Font = new System.Drawing.Font("Candara", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.label10.Location = new System.Drawing.Point(216, 6);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(124, 40);
-			this.label10.TabIndex = 25;
-			this.label10.Text = "Systems";
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(6, 0);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(100, 49);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox8.TabIndex = 23;
+			this.pictureBox8.TabStop = false;
+			// 
+			// ptxMinimizar
+			// 
+			this.ptxMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("ptxMinimizar.Image")));
+			this.ptxMinimizar.Location = new System.Drawing.Point(916, 3);
+			this.ptxMinimizar.Name = "ptxMinimizar";
+			this.ptxMinimizar.Size = new System.Drawing.Size(32, 32);
+			this.ptxMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.ptxMinimizar.TabIndex = 26;
+			this.ptxMinimizar.TabStop = false;
+			this.ptxMinimizar.Click += new System.EventHandler(this.PtxMinimizarClick);
 			// 
 			// frmProductos
 			// 
@@ -545,10 +560,11 @@ namespace PuntoDeVenta
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptxClose)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptxMinimizar)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

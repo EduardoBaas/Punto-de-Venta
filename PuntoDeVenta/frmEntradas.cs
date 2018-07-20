@@ -32,5 +32,12 @@ namespace PuntoDeVenta
 		{
 	
 		}
+		void PtxCloseClick(object sender, EventArgs e)
+		{
+			if(MessageBox.Show("¿Está seguro de que quiere cerrar de este módulo?","Advertencia",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)==DialogResult.Yes)
+			{
+				this.Close();
+			}
+		}
 	}
 }
