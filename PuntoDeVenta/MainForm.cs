@@ -91,20 +91,20 @@ namespace PuntoDeVenta
 		{
 			foreach (Control ctl in this.Controls)
 {
-   try
-   {
-   		MdiClient ctlMDI;
-      // Attempt to cast the control to type MdiClient.
-      ctlMDI = (MdiClient) ctl;
-
-      // Set the BackColor of the MdiClient control.
-      ctlMDI.BackColor = this.BackColor;
-   }
-   catch (InvalidCastException exc)
-   {
-      // Catch and ignore the error if casting failed.
-   }         
-}
+			   try
+			   {
+			   		MdiClient ctlMDI;
+			      // Attempt to cast the control to type MdiClient.
+			      ctlMDI = (MdiClient) ctl;
+			
+			      // Set the BackColor of the MdiClient control.
+			      ctlMDI.BackColor = this.BackColor;
+			   }
+			   catch (InvalidCastException exc)
+			   {
+			      // Catch and ignore the error if casting failed.
+			   }         
+			}
 		}
 	
 	}
