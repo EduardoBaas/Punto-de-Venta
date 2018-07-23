@@ -21,8 +21,6 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox txtCosto;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox txtExistencia;
-		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox txtMaximo;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox txtMinimo;
@@ -34,7 +32,6 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Button btnEditar;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.PictureBox pictureBox5;
 		private System.Windows.Forms.PictureBox pictureBox4;
@@ -44,6 +41,9 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.TextBox txtExistencia;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.Label label5;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -82,8 +82,6 @@ namespace PuntoDeVenta
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txtExistencia = new System.Windows.Forms.TextBox();
 			this.txtCosto = new System.Windows.Forms.TextBox();
 			this.txtProducto = new System.Windows.Forms.TextBox();
 			this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -96,10 +94,12 @@ namespace PuntoDeVenta
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
-			this.pictureBox6 = new System.Windows.Forms.PictureBox();
-			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.txtExistencia = new System.Windows.Forms.TextBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -107,9 +107,9 @@ namespace PuntoDeVenta
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel2
@@ -277,29 +277,6 @@ namespace PuntoDeVenta
 			this.label6.TabIndex = 9;
 			this.label6.Text = "Stock máximo";
 			// 
-			// label5
-			// 
-			this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(33, 401);
-			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(230, 25);
-			this.label5.TabIndex = 7;
-			this.label5.Text = "Cantidad a ingresar";
-			// 
-			// txtExistencia
-			// 
-			this.txtExistencia.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.txtExistencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtExistencia.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtExistencia.Location = new System.Drawing.Point(66, 429);
-			this.txtExistencia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.txtExistencia.Name = "txtExistencia";
-			this.txtExistencia.Size = new System.Drawing.Size(265, 26);
-			this.txtExistencia.TabIndex = 8;
-			// 
 			// txtCosto
 			// 
 			this.txtCosto.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -439,26 +416,6 @@ namespace PuntoDeVenta
 			this.pictureBox5.TabIndex = 24;
 			this.pictureBox5.TabStop = false;
 			// 
-			// pictureBox6
-			// 
-			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-			this.pictureBox6.Location = new System.Drawing.Point(32, 355);
-			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox6.TabIndex = 25;
-			this.pictureBox6.TabStop = false;
-			// 
-			// pictureBox7
-			// 
-			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-			this.pictureBox7.Location = new System.Drawing.Point(32, 429);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox7.TabIndex = 26;
-			this.pictureBox7.TabStop = false;
-			// 
 			// label1
 			// 
 			this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -474,8 +431,10 @@ namespace PuntoDeVenta
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.panel1.Controls.Add(this.txtExistencia);
+			this.panel1.Controls.Add(this.pictureBox1);
+			this.panel1.Controls.Add(this.label5);
 			this.panel1.Controls.Add(this.label1);
-			this.panel1.Controls.Add(this.pictureBox7);
 			this.panel1.Controls.Add(this.pictureBox6);
 			this.panel1.Controls.Add(this.pictureBox5);
 			this.panel1.Controls.Add(this.pictureBox4);
@@ -489,12 +448,54 @@ namespace PuntoDeVenta
 			this.panel1.Controls.Add(this.txtCodigo);
 			this.panel1.Controls.Add(this.txtProducto);
 			this.panel1.Controls.Add(this.txtCosto);
-			this.panel1.Controls.Add(this.txtExistencia);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(371, 541);
 			this.panel1.TabIndex = 21;
+			// 
+			// txtExistencia
+			// 
+			this.txtExistencia.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtExistencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtExistencia.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtExistencia.Location = new System.Drawing.Point(66, 427);
+			this.txtExistencia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtExistencia.Name = "txtExistencia";
+			this.txtExistencia.Size = new System.Drawing.Size(265, 26);
+			this.txtExistencia.TabIndex = 27;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(36, 427);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox1.TabIndex = 26;
+			this.pictureBox1.TabStop = false;
+			// 
+			// label5
+			// 
+			this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.White;
+			this.label5.Location = new System.Drawing.Point(36, 399);
+			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(209, 25);
+			this.label5.TabIndex = 24;
+			this.label5.Text = "Existencia";
+			// 
+			// pictureBox6
+			// 
+			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+			this.pictureBox6.Location = new System.Drawing.Point(32, 355);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox6.TabIndex = 25;
+			this.pictureBox6.TabStop = false;
 			// 
 			// frmProductos
 			// 
@@ -508,7 +509,6 @@ namespace PuntoDeVenta
 			this.Controls.Add(this.dgvProductos);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
-			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
@@ -520,7 +520,6 @@ namespace PuntoDeVenta
 			this.MaximizeBox = false;
 			this.Name = "frmProductos";
 			this.Text = "Catálogo de productos";
-			
 			this.Load += new System.EventHandler(this.FrmProductosLoad);
 			this.panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -529,10 +528,10 @@ namespace PuntoDeVenta
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

@@ -22,7 +22,6 @@ namespace PuntoDeVenta
 		public int minimo {get;set;}
 		public int maximo {get;set;}
 		public int existencia {get;set;}
-		public string eliminado {get;set;}
 		public string condicion {get;set;}
 		
 		public Productos()
@@ -43,9 +42,9 @@ namespace PuntoDeVenta
 			FrameBD.SQLIDU(sql);
 		}
 		
-		public void Update()
+		public void EliminarProducto()
 		{
-			string sql = string.Format("UPDATE productos SET eliminado = '1' WHERE codigo_barras = '{0}'",codigo);
+			string sql = string.Format("CALL EliminarProducto('{0}')",codigo);
 			FrameBD.SQLIDU(sql);
 		}
 	}

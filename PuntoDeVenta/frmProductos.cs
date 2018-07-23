@@ -39,9 +39,8 @@ namespace PuntoDeVenta
 		{
 			if(MessageBox.Show("¿Está seguro de eliminar este producto?","Peligro",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation) == DialogResult.Yes)
 			{
-				ClassProduct.eliminado = "1";
 				ClassProduct.codigo =dgvProductos["Codigo de barras",dgvProductos.CurrentCellAddress.Y].Value.ToString() ;
-				ClassProduct.Update();
+				ClassProduct.EliminarProducto();
 				ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
 			}
 		}
