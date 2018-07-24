@@ -118,6 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFoSURBVFhHYxgFhMC6nUfFNuw7en3D3qPXVh06JAoVxglIVU8QbNx3JAho4H8QBrGhwjgBqeox
+        wBdn88ovzmb3gPg/CN/LSQMbBsIgNkwcF8aj/t4XJ7NyqDXYwWdn8wgkDWB8LDYWbuDx2BgUOWyYkPrP
+        TmahUOswAdD389E1bA8MhhsIYqPLo2Mi1M+FWocJvrqYrULXcNjI4P/GFev+b1y25v8RI30UOWyYkHqQ
+        HVDrMAE2B7yzN/5/UVfj/yUgfmdvgiKHDRNSj9cBbxPCr6BroDYG2QG1DhM8bm+88KI09z8tMcgOqHWY
+        4PyNu6vO37jzn7b4Lu4oGJQOOHT20v+lW/eCMYhNKh/dPJIdsOv42f8TlqwDYxCbVD66eUPPAdTHo2lg
+        NA2MpoHRNIDPATfvzMeuiXr43I3buJtk527eicCmibr4Nu5GKQicv3678sKNO8+xa6YIP7tw4y7+Zvko
+        GIGAgQEA3KO06/V9P+kAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAXZJREFUWEdj
+        GAWDBjgEbFewD9q6yT5g626qYqCZTkFb5aHW4Ab2gVtC7QO3/qcN3hIKtQY3GHAHJJUdz8hoOPufFhhk
+        NtQa3KBj6f2+3fd+/6cFBpkNtQY36F7xsAubZmpgkNlQa3CDjVe/R2PTTA0MMhtqDW6w696fUHSN/jMe
+        gDGILVl2iSgMU4+MQWZDrcENsDlg+vFPYAxit+5+SxSGqUfGQ9cBAx4F1MJkO6Bow0swBrFhoYELw9Rl
+        HTiIgSN3bbnks3XNbhj227rWDmotAlDLAb7b1hDEfttXY4YItaIAm4XomGgHwHwHYmNLcMgYpg6bheiY
+        aAeQkg1h6rBZiI6HjgMGPArIwdgsRMejDqCJA4zmzwVj0akdGNhq9QLCDqAYdFb/A+L/2LDx8tkoDvDd
+        uiYYqouKoLP6IrrFMKw6fzKyA355b1mrBNVFRdBXLQ20bLLw5PbH6FhkaucjsxXz9/htW7vEd9tqT6iO
+        UTAYAAMDALKoRfLlJu4OAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtAAAALQCAYAAAC5V0ecAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s

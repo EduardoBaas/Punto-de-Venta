@@ -46,6 +46,9 @@ namespace PuntoDeVenta
 		}
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
+			if (txtCodigo.Text != "" && txtCosto.Text != "" && txtExistencia.Text != "") {
+				
+			}
 			Valores();
 			Limpiar();
 		}

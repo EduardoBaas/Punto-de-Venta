@@ -38,7 +38,7 @@ namespace PuntoDeVenta
 		
 		public void Agregar()
 		{
-			string sql =string.Format("INSERT INTO productos VALUES('{0}','{1}',{2},{3},{4},{5},'0')",codigo,nombre,costo,minimo,maximo,existencia);
+			string sql =string.Format("INSERT INTO productos(codigo_barras,nombre_producto,costo_producto,stock_minimo,stock_maximo,existencia,eliminado) VALUES('{0}','{1}',{2},{3},{4},{5},'0')",codigo,nombre,costo,minimo,maximo,existencia);
 			FrameBD.SQLIDU(sql);
 		}
 		
