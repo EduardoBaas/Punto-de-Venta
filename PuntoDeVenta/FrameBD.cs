@@ -35,10 +35,10 @@ namespace AccesoADatos
         static FrameBD()
         {
             // TODO: Complete member initialization
-           servidor = "127.0.0.1";
+           servidor = "localhost";
             puerto = 3309;
             usuario = "root";
-            password = "bassbazuca12";
+            password = "12345";
             bd = "punto_venta";
             
 
