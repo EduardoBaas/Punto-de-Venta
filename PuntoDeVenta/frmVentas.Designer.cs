@@ -44,7 +44,7 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.TextBox txtCantidad;
 		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.Button btnEliminar;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgvVentas;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.DataGridViewTextBoxColumn productoDataGrid;
 		private System.Windows.Forms.DataGridViewTextBoxColumn precioDataGrid;
@@ -129,7 +129,11 @@ namespace PuntoDeVenta
 			this.label24 = new System.Windows.Forms.Label();
 			this.lblProductoImg = new System.Windows.Forms.Label();
 			this.label22 = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgvVentas = new System.Windows.Forms.DataGridView();
+			this.productoDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.precioDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.cantidadDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.totalDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnEliminar = new System.Windows.Forms.Button();
 			this.btnAgregar = new System.Windows.Forms.Button();
 			this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -140,6 +144,7 @@ namespace PuntoDeVenta
 			this.label13 = new System.Windows.Forms.Label();
 			this.txtProducto = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.btnCobrar = new System.Windows.Forms.Button();
 			this.gpbPago = new System.Windows.Forms.GroupBox();
@@ -154,17 +159,12 @@ namespace PuntoDeVenta
 			this.lblSubtotalT = new System.Windows.Forms.Label();
 			this.label27 = new System.Windows.Forms.Label();
 			this.label26 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.productoDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.precioDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.cantidadDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.totalDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.gpbDatosCliente.SuspendLayout();
 			this.gpbDatosGenerales.SuspendLayout();
 			this.gpbDetalleVenta.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
 			this.panel3.SuspendLayout();
 			this.gpbPago.SuspendLayout();
 			this.gpbTotales.SuspendLayout();
@@ -446,7 +446,7 @@ namespace PuntoDeVenta
 			this.gpbDetalleVenta.Controls.Add(this.label24);
 			this.gpbDetalleVenta.Controls.Add(this.lblProductoImg);
 			this.gpbDetalleVenta.Controls.Add(this.label22);
-			this.gpbDetalleVenta.Controls.Add(this.dataGridView1);
+			this.gpbDetalleVenta.Controls.Add(this.dgvVentas);
 			this.gpbDetalleVenta.Controls.Add(this.btnEliminar);
 			this.gpbDetalleVenta.Controls.Add(this.btnAgregar);
 			this.gpbDetalleVenta.Controls.Add(this.txtCantidad);
@@ -501,19 +501,43 @@ namespace PuntoDeVenta
 			this.label22.TabIndex = 36;
 			this.label22.Text = "Producto";
 			// 
-			// dataGridView1
+			// dgvVentas
 			// 
-			this.dataGridView1.AllowUserToAddRows = false;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.dgvVentas.AllowUserToAddRows = false;
+			this.dgvVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 			this.productoDataGrid,
 			this.precioDataGrid,
 			this.cantidadDataGrid,
 			this.totalDataGrid});
-			this.dataGridView1.Location = new System.Drawing.Point(9, 76);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(762, 150);
-			this.dataGridView1.TabIndex = 35;
+			this.dgvVentas.Location = new System.Drawing.Point(9, 76);
+			this.dgvVentas.Name = "dgvVentas";
+			this.dgvVentas.Size = new System.Drawing.Size(762, 150);
+			this.dgvVentas.TabIndex = 35;
+			// 
+			// productoDataGrid
+			// 
+			this.productoDataGrid.HeaderText = "Producto";
+			this.productoDataGrid.Name = "productoDataGrid";
+			this.productoDataGrid.ReadOnly = true;
+			// 
+			// precioDataGrid
+			// 
+			this.precioDataGrid.HeaderText = "Precio";
+			this.precioDataGrid.Name = "precioDataGrid";
+			this.precioDataGrid.ReadOnly = true;
+			// 
+			// cantidadDataGrid
+			// 
+			this.cantidadDataGrid.HeaderText = "Cantidad";
+			this.cantidadDataGrid.Name = "cantidadDataGrid";
+			this.cantidadDataGrid.ReadOnly = true;
+			// 
+			// totalDataGrid
+			// 
+			this.totalDataGrid.HeaderText = "Total";
+			this.totalDataGrid.Name = "totalDataGrid";
+			this.totalDataGrid.ReadOnly = true;
 			// 
 			// btnEliminar
 			// 
@@ -594,14 +618,6 @@ namespace PuntoDeVenta
 			this.label13.TabIndex = 23;
 			this.label13.Text = "Precio";
 			// 
-			// txtProducto
-			// 
-			this.txtProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtProducto.Location = new System.Drawing.Point(9, 49);
-			this.txtProducto.Name = "txtProducto";
-			this.txtProducto.Size = new System.Drawing.Size(224, 20);
-			this.txtProducto.TabIndex = 13;
-			// 
 			// label11
 			// 
 			this.label11.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -610,6 +626,15 @@ namespace PuntoDeVenta
 			this.label11.Size = new System.Drawing.Size(95, 23);
 			this.label11.TabIndex = 13;
 			this.label11.Text = "Producto";
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+			this.label5.Location = new System.Drawing.Point(223, 43);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(55, 35);
+			this.label5.TabIndex = 40;
 			// 
 			// panel3
 			// 
@@ -756,39 +781,6 @@ namespace PuntoDeVenta
 			this.label26.TabIndex = 40;
 			this.label26.Text = "Subtotal";
 			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-			this.label5.Location = new System.Drawing.Point(223, 43);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(55, 35);
-			this.label5.TabIndex = 40;
-			// 
-			// productoDataGrid
-			// 
-			this.productoDataGrid.HeaderText = "Producto";
-			this.productoDataGrid.Name = "productoDataGrid";
-			this.productoDataGrid.ReadOnly = true;
-			// 
-			// precioDataGrid
-			// 
-			this.precioDataGrid.HeaderText = "Precio";
-			this.precioDataGrid.Name = "precioDataGrid";
-			this.precioDataGrid.ReadOnly = true;
-			// 
-			// cantidadDataGrid
-			// 
-			this.cantidadDataGrid.HeaderText = "Cantidad";
-			this.cantidadDataGrid.Name = "cantidadDataGrid";
-			this.cantidadDataGrid.ReadOnly = true;
-			// 
-			// totalDataGrid
-			// 
-			this.totalDataGrid.HeaderText = "Total";
-			this.totalDataGrid.Name = "totalDataGrid";
-			this.totalDataGrid.ReadOnly = true;
-			// 
 			// frmVentas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -803,6 +795,7 @@ namespace PuntoDeVenta
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmVentas";
 			this.Text = "Catálogo de Ventas";
+			this.Load += new System.EventHandler(this.FrmVentasLoad);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.gpbDatosCliente.ResumeLayout(false);
@@ -810,7 +803,7 @@ namespace PuntoDeVenta
 			this.gpbDatosGenerales.ResumeLayout(false);
 			this.gpbDetalleVenta.ResumeLayout(false);
 			this.gpbDetalleVenta.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.gpbPago.ResumeLayout(false);

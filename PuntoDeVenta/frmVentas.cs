@@ -18,6 +18,8 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmVentas : Form
 	{
+		Ventas obj = new Ventas();
+		
 		public frmVentas()
 		{
 			//
@@ -28,6 +30,22 @@ namespace PuntoDeVenta
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+		}
+		void FrmVentasLoad(object sender, EventArgs e)
+		{
+			autocompletar();
+		}
+		
+		void autocompletar()
+		{
+			txtProducto.AutoCompleteCustomSource = cargarDatos();
+		}
+		
+		private AutoCompleteStringCollection cargarDatos()
+		{
+			AutoCompleteStringCollection datos = new AutoCompleteStringCollection();
+			datos.Add(obj.buscar_producto(txtProducto.Text));
+			return datos;
 		}
 	}
 }
