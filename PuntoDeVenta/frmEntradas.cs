@@ -17,13 +17,10 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmEntradas : Form
 	{
-<<<<<<< HEAD
-		Entradas ClassEntradas = new Entradas();
+		//Entradas ClassEntradas = new Entradas();
 		Productos ClassProduct = new Productos();
 		public string id = "";
 		public int cont = 0;
-=======
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
 		public frmEntradas()
 		{
 			//
@@ -37,7 +34,6 @@ namespace PuntoDeVenta
 		}
 		void FrmEntradasLoad(object sender, EventArgs e)
 		{
-<<<<<<< HEAD
 			ClassEntradas.GetProveedor(cmbProveedor);
 			id = cmbProveedor.SelectedValue.ToString();
 			cont++;
@@ -74,9 +70,6 @@ namespace PuntoDeVenta
 			ClassProduct.minimo = 10;
 			ClassProduct.maximo = 80;
 			ClassProduct.existencia = int.Parse(txtCantidad.Text);
-=======
-	
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
 		}
 		void CmbProveedorSelectedIndexChanged(object sender, EventArgs e)
 		{

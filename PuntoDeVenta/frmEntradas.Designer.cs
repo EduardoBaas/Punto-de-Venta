@@ -58,15 +58,14 @@ namespace PuntoDeVenta
 		/// </summary>
 		private void InitializeComponent()
 		{
-<<<<<<< HEAD
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-=======
+
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			this.tbgentradas = new System.Windows.Forms.TabControl();
 			this.tpgIngresar = new System.Windows.Forms.TabPage();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -109,11 +108,11 @@ namespace PuntoDeVenta
 			this.tbgentradas.Location = new System.Drawing.Point(0, 0);
 			this.tbgentradas.Name = "tbgentradas";
 			this.tbgentradas.SelectedIndex = 0;
-<<<<<<< HEAD
+
 			this.tbgentradas.Size = new System.Drawing.Size(1348, 592);
-=======
+
 			this.tbgentradas.Size = new System.Drawing.Size(1361, 571);
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			this.tbgentradas.TabIndex = 0;
 			// 
 			// tpgIngresar
@@ -123,16 +122,16 @@ namespace PuntoDeVenta
 			this.tpgIngresar.Location = new System.Drawing.Point(4, 22);
 			this.tpgIngresar.Name = "tpgIngresar";
 			this.tpgIngresar.Padding = new System.Windows.Forms.Padding(3);
-<<<<<<< HEAD
+
 			this.tpgIngresar.Size = new System.Drawing.Size(1340, 566);
-=======
+
 			this.tpgIngresar.Size = new System.Drawing.Size(1353, 545);
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			this.tpgIngresar.TabIndex = 0;
 			this.tpgIngresar.Text = "Ingresar Produtos";
 			this.tpgIngresar.UseVisualStyleBackColor = true;
 			// 
-<<<<<<< HEAD
+
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
@@ -553,8 +552,7 @@ namespace PuntoDeVenta
 			this.lblCodigo.TabIndex = 6;
 			this.lblCodigo.Text = "Código del producto";
 			// 
-=======
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Lavender;
@@ -565,11 +563,11 @@ namespace PuntoDeVenta
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(3, 53);
 			this.panel1.Name = "panel1";
-<<<<<<< HEAD
+
 			this.panel1.Size = new System.Drawing.Size(1334, 120);
-=======
+
 			this.panel1.Size = new System.Drawing.Size(1347, 154);
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			this.panel1.TabIndex = 0;
 			// 
 			// groupBox1
@@ -582,7 +580,7 @@ namespace PuntoDeVenta
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Datos del proveedor";
 			// 
-<<<<<<< HEAD
+
 			// pictureBox6
 			// 
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
@@ -651,8 +649,7 @@ namespace PuntoDeVenta
 			this.label6.TabIndex = 4;
 			this.label6.Text = "Nombre del proveedor";
 			// 
-=======
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			// label4
 			// 
 			this.label4.BackColor = System.Drawing.Color.Lavender;
@@ -848,11 +845,11 @@ namespace PuntoDeVenta
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-<<<<<<< HEAD
+
 			this.ClientSize = new System.Drawing.Size(1346, 583);
-=======
+
 			this.ClientSize = new System.Drawing.Size(1360, 570);
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+
 			this.Controls.Add(this.tbgentradas);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
