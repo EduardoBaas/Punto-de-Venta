@@ -7,8 +7,11 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
-using AccesoADatos;// Permite el acceso a datos.
-using System.Windows.Forms; // Permite el acceso a los componentes de la vista.
+using System.Drawing;
+using System.Windows.Forms;
+using AccesoADatos;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace PuntoDeVenta
 {
@@ -17,23 +20,67 @@ namespace PuntoDeVenta
 	/// </summary>
 	public class Ventas
 	{
-		public string codigo{ get; set;}
-		public string nombre{ get; set;}
-		public double costo{ get; set;}
-		public int minimo{ get; set;}
-		public int maximo{ get; set;}
-		public double eliminado{ get; set;}
+		public static uint puerto = 3309;
+		public string acceso = "Server=localhost;Port="+puerto+";Password=12345;UserID=root;Database=punto_venta;";
 		
 		public Ventas()
 		{
 		}
 		
-		public string buscar_producto(string txtproducto, DataGridView dgv_ventas)
+		public void buscarProducto(TextBox prod)
 		{
-			string sql ="SELECT nombre_producto FROM productos"+
-						" WHERE nombre_producto LIKE'"+ txtproducto +"%'";
-			dgv_ventas.DataSource=FrameBD.SQLSEL(sql)=Convert.ChangeType(txtproducto, DataGridView txtproducto);
-			dgv_ventas.DataMember="datos";
+			prod.AutoCompleteSource = AutoCompleteSource.CustomSource;
+			prod.AutoCompleteMode = AutoCompleteMode.Suggest;
+			AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
+			additems(coleccion);
+			prod.AutoCompleteCustomSource = coleccion;
+		}
+		
+		public void additems(AutoCompleteStringCollection completar)
+		{
+			string producto="";
+			
+			using (MySqlConnection conexion = new MySqlConnection(acceso))
+			{
+				conexion.Open();
+				DataTable tabla = new DataTable();
+				MySqlDataAdapter comandos = new MySqlDataAdapter("SELECT nombre_producto FROM productos WHERE nombre_producto LIKE '"+producto+"%';",conexion);
+				comandos.Fill(tabla);
+				foreach (DataRow X in tabla.Rows)
+				{
+					completar.Add(X[0].ToString());
+				}
+				
+				conexion.Close();
+			}
+		}
+		
+		public void buscarCliente(TextBox clien)
+		{
+			clien.AutoCompleteSource = AutoCompleteSource.CustomSource;
+			clien.AutoCompleteMode = AutoCompleteMode.Suggest;
+			AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
+			addDatos(coleccion);
+			clien.AutoCompleteCustomSource = coleccion;
+		}
+		
+		public void addDatos(AutoCompleteStringCollection completar) 
+		{	
+			string cliente="";
+			
+			using (MySqlConnection conexion = new MySqlConnection(acceso))
+			{
+				conexion.Open();
+				DataTable tabla = new DataTable();
+				MySqlDataAdapter comandos = new MySqlDataAdapter("SELECT CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente) FROM clientes WHERE nombre_cliente LIKE '"+cliente+"%';",conexion);
+				comandos.Fill(tabla);
+				foreach (DataRow X in tabla.Rows)
+				{
+					completar.Add(X[0].ToString());
+				}
+				conexion.Close();
+			}
+			
 		}
 	}
 }

@@ -37,7 +37,6 @@ namespace AccesoADatos
             password = "12345";
             bd = "punto_venta";
 
-
             conex.Close();
             MySqlConnectionStringBuilder conexs = new MySqlConnectionStringBuilder();
             conexs.Server = servidor;
@@ -45,23 +44,19 @@ namespace AccesoADatos
             conexs.Password = password; //pas;
             conexs.UserID = usuario; //use;
             conexs.Database = bd;
-
+            
             //MySqlConnection conex = new MySqlConnection(conexs.ToString() );
             conex.ConnectionString = conexs.ConnectionString;
             //MySqlConnection conn = new MySqlConnection(builder.ToString());
 
-
-            conex.Open(); 
-            
+            conex.Open();
         }
          
       public static void conectar() 
         {
             conex.Close(); 
             conex.Open(); 
-              
         }
-
 
       public static  DataSet SQLSEL(string sql)
       {
@@ -84,35 +79,24 @@ namespace AccesoADatos
           DataTable DT = new DataTable();
           Adap.Fill(DT);
           return DT;
- 
       }
-
       //Permite ejecutar comandos INSERT, DELETE Y UPDATE
       // De ahi deriva el IDU
       public static void SQLIDU(string sql) 
       {
-           
           try
           {
-              
               conectar();
               MySqlCommand comando = new MySqlCommand(sql, conex);
               comando.ExecuteNonQuery();
               //conex.Close();
-              
-
 
           }
           catch (MySqlException ex) 
           {
-           
-              
               MessageBox.Show(ex.Message + " " + ex.Number); 
-              
-              
               //throw;
           }
-          
       }
 
       public static MySqlDataReader SQLReader(string sql) 
@@ -122,13 +106,10 @@ namespace AccesoADatos
           
          MySqlDataReader Dr = comando.ExecuteReader();
           return Dr;
-
-
       }
 
       public static string[] ObtieneCampo(string tabla,string condicion,string campo) 
       {
-          
           string sqlaux = "SELECT " + campo +
                          " FROM " + tabla +
                          " WHERE " + condicion;
@@ -141,7 +122,6 @@ namespace AccesoADatos
           
           if (dt.HasRows)
           {
-             
               while (dt.Read())
               {
                   Array.Resize(ref respaux, respaux.Length + 1);
@@ -151,18 +131,12 @@ namespace AccesoADatos
                       respaux[cont] = dt.GetString(0);
                       cont++;
                   }
-                  
               }
           }
           Array.Resize(ref respaux, respaux.Length-1);
           return respaux;
-
       }
 
-      
-
-
-      
       /*
        *Public Function SQLREADER(ByVal sql) As MySqlDataReader
         Try
@@ -182,7 +156,6 @@ namespace AccesoADatos
       
 		public static string[] ObtieneCampos(string tabla, string condicion, string campo)
       	{
-
           string sqlaux = "SELECT " + campo +
                          " FROM " + tabla +
                          " WHERE " + condicion;
@@ -195,10 +168,8 @@ namespace AccesoADatos
           
           if (dt.HasRows)
           {
-
               while (dt.Read())
               {
-
                   for (int i = 0; i < dt.FieldCount; i++)
                   {
                       Array.Resize(ref respaux, respaux.Length + 1);
@@ -209,21 +180,10 @@ namespace AccesoADatos
                         //  respaux[cont] = "";
                       cont++;
                   }
-                  
-
               }
           }
           Array.Resize(ref respaux, respaux.Length - 1);
           return respaux;
-
       }
-
     }
-  
-  
-
-
-
-
-    
 }

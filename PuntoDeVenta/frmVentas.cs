@@ -10,6 +10,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using AccesoADatos;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace PuntoDeVenta
 {
@@ -18,7 +20,7 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmVentas : Form
 	{
-		Ventas obj = new Ventas();
+		Ventas objVentas = new Ventas();
 		
 		public frmVentas()
 		{
@@ -33,19 +35,9 @@ namespace PuntoDeVenta
 		}
 		void FrmVentasLoad(object sender, EventArgs e)
 		{
-			autocompletar();
+			objVentas.buscarProducto(txtProducto);
+			objVentas.buscarCliente(txtCliente);
 		}
 		
-		void autocompletar()
-		{
-			txtProducto.AutoCompleteCustomSource = cargarDatos();
-		}
-		
-		private AutoCompleteStringCollection cargarDatos()
-		{
-			AutoCompleteStringCollection datos = new AutoCompleteStringCollection();
-			datos.Add(obj.buscar_producto(txtProducto.Text));
-			return datos;
-		}
 	}
 }

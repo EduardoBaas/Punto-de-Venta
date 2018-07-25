@@ -102,15 +102,6 @@ namespace PuntoDeVenta
 			this.label10 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.gpbDatosCliente = new System.Windows.Forms.GroupBox();
-			this.lblTelefono = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.lblDireccion = new System.Windows.Forms.Label();
-			this.lblNomCliente = new System.Windows.Forms.Label();
-			this.txtCliente = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.lblBuscar = new System.Windows.Forms.Label();
 			this.gpbDatosGenerales = new System.Windows.Forms.GroupBox();
 			this.cmbTipoVenta = new System.Windows.Forms.ComboBox();
 			this.label40 = new System.Windows.Forms.Label();
@@ -124,6 +115,15 @@ namespace PuntoDeVenta
 			this.dtpFecha = new System.Windows.Forms.DateTimePicker();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
+			this.gpbDatosCliente = new System.Windows.Forms.GroupBox();
+			this.lblTelefono = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.lblDireccion = new System.Windows.Forms.Label();
+			this.lblNomCliente = new System.Windows.Forms.Label();
+			this.txtCliente = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.lblBuscar = new System.Windows.Forms.Label();
 			this.gpbDetalleVenta = new System.Windows.Forms.GroupBox();
 			this.lblProductosTotales = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
@@ -161,8 +161,8 @@ namespace PuntoDeVenta
 			this.label26 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
-			this.gpbDatosCliente.SuspendLayout();
 			this.gpbDatosGenerales.SuspendLayout();
+			this.gpbDatosCliente.SuspendLayout();
 			this.gpbDetalleVenta.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).BeginInit();
 			this.panel3.SuspendLayout();
@@ -203,106 +203,14 @@ namespace PuntoDeVenta
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.GhostWhite;
-			this.panel2.Controls.Add(this.gpbDatosCliente);
 			this.panel2.Controls.Add(this.gpbDatosGenerales);
+			this.panel2.Controls.Add(this.gpbDatosCliente);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.panel2.Location = new System.Drawing.Point(0, 48);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(984, 198);
 			this.panel2.TabIndex = 1;
-			// 
-			// gpbDatosCliente
-			// 
-			this.gpbDatosCliente.Controls.Add(this.lblTelefono);
-			this.gpbDatosCliente.Controls.Add(this.label8);
-			this.gpbDatosCliente.Controls.Add(this.lblDireccion);
-			this.gpbDatosCliente.Controls.Add(this.lblNomCliente);
-			this.gpbDatosCliente.Controls.Add(this.txtCliente);
-			this.gpbDatosCliente.Controls.Add(this.label4);
-			this.gpbDatosCliente.Controls.Add(this.label6);
-			this.gpbDatosCliente.Controls.Add(this.lblBuscar);
-			this.gpbDatosCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gpbDatosCliente.Location = new System.Drawing.Point(575, 6);
-			this.gpbDatosCliente.Name = "gpbDatosCliente";
-			this.gpbDatosCliente.Size = new System.Drawing.Size(400, 171);
-			this.gpbDatosCliente.TabIndex = 7;
-			this.gpbDatosCliente.TabStop = false;
-			this.gpbDatosCliente.Text = "Datos del cliente";
-			// 
-			// lblTelefono
-			// 
-			this.lblTelefono.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lblTelefono.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTelefono.Location = new System.Drawing.Point(62, 136);
-			this.lblTelefono.Name = "lblTelefono";
-			this.lblTelefono.Size = new System.Drawing.Size(326, 23);
-			this.lblTelefono.TabIndex = 20;
-			this.lblTelefono.Text = "Teléfono";
-			// 
-			// label8
-			// 
-			this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
-			this.label8.Location = new System.Drawing.Point(6, 136);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(76, 23);
-			this.label8.TabIndex = 21;
-			// 
-			// lblDireccion
-			// 
-			this.lblDireccion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lblDireccion.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDireccion.Location = new System.Drawing.Point(62, 100);
-			this.lblDireccion.Name = "lblDireccion";
-			this.lblDireccion.Size = new System.Drawing.Size(326, 23);
-			this.lblDireccion.TabIndex = 18;
-			this.lblDireccion.Text = "Direccion";
-			// 
-			// lblNomCliente
-			// 
-			this.lblNomCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lblNomCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblNomCliente.Location = new System.Drawing.Point(62, 66);
-			this.lblNomCliente.Name = "lblNomCliente";
-			this.lblNomCliente.Size = new System.Drawing.Size(326, 23);
-			this.lblNomCliente.TabIndex = 17;
-			this.lblNomCliente.Text = "Cliente";
-			// 
-			// txtCliente
-			// 
-			this.txtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCliente.Location = new System.Drawing.Point(62, 32);
-			this.txtCliente.Name = "txtCliente";
-			this.txtCliente.Size = new System.Drawing.Size(265, 20);
-			this.txtCliente.TabIndex = 15;
-			// 
-			// label4
-			// 
-			this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-			this.label4.Location = new System.Drawing.Point(6, 67);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(76, 23);
-			this.label4.TabIndex = 9;
-			// 
-			// label6
-			// 
-			this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
-			this.label6.Location = new System.Drawing.Point(6, 100);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(76, 23);
-			this.label6.TabIndex = 19;
-			// 
-			// lblBuscar
-			// 
-			this.lblBuscar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblBuscar.Image = ((System.Drawing.Image)(resources.GetObject("lblBuscar.Image")));
-			this.lblBuscar.Location = new System.Drawing.Point(322, 28);
-			this.lblBuscar.Name = "lblBuscar";
-			this.lblBuscar.Size = new System.Drawing.Size(55, 35);
-			this.lblBuscar.TabIndex = 16;
 			// 
 			// gpbDatosGenerales
 			// 
@@ -438,6 +346,96 @@ namespace PuntoDeVenta
 			this.label1.Size = new System.Drawing.Size(57, 23);
 			this.label1.TabIndex = 6;
 			this.label1.Text = "Fecha";
+			// 
+			// gpbDatosCliente
+			// 
+			this.gpbDatosCliente.Controls.Add(this.lblTelefono);
+			this.gpbDatosCliente.Controls.Add(this.label8);
+			this.gpbDatosCliente.Controls.Add(this.lblDireccion);
+			this.gpbDatosCliente.Controls.Add(this.lblNomCliente);
+			this.gpbDatosCliente.Controls.Add(this.txtCliente);
+			this.gpbDatosCliente.Controls.Add(this.label4);
+			this.gpbDatosCliente.Controls.Add(this.label6);
+			this.gpbDatosCliente.Controls.Add(this.lblBuscar);
+			this.gpbDatosCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gpbDatosCliente.Location = new System.Drawing.Point(575, 6);
+			this.gpbDatosCliente.Name = "gpbDatosCliente";
+			this.gpbDatosCliente.Size = new System.Drawing.Size(400, 171);
+			this.gpbDatosCliente.TabIndex = 7;
+			this.gpbDatosCliente.TabStop = false;
+			this.gpbDatosCliente.Text = "Datos del cliente";
+			// 
+			// lblTelefono
+			// 
+			this.lblTelefono.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblTelefono.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTelefono.Location = new System.Drawing.Point(62, 136);
+			this.lblTelefono.Name = "lblTelefono";
+			this.lblTelefono.Size = new System.Drawing.Size(326, 23);
+			this.lblTelefono.TabIndex = 20;
+			this.lblTelefono.Text = "Teléfono";
+			// 
+			// label8
+			// 
+			this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
+			this.label8.Location = new System.Drawing.Point(6, 136);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(76, 23);
+			this.label8.TabIndex = 21;
+			// 
+			// lblDireccion
+			// 
+			this.lblDireccion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblDireccion.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDireccion.Location = new System.Drawing.Point(62, 100);
+			this.lblDireccion.Name = "lblDireccion";
+			this.lblDireccion.Size = new System.Drawing.Size(326, 23);
+			this.lblDireccion.TabIndex = 18;
+			// 
+			// lblNomCliente
+			// 
+			this.lblNomCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblNomCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblNomCliente.Location = new System.Drawing.Point(62, 66);
+			this.lblNomCliente.Name = "lblNomCliente";
+			this.lblNomCliente.Size = new System.Drawing.Size(326, 23);
+			this.lblNomCliente.TabIndex = 17;
+			// 
+			// txtCliente
+			// 
+			this.txtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCliente.Location = new System.Drawing.Point(62, 34);
+			this.txtCliente.Name = "txtCliente";
+			this.txtCliente.Size = new System.Drawing.Size(265, 20);
+			this.txtCliente.TabIndex = 22;
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+			this.label4.Location = new System.Drawing.Point(6, 67);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(76, 23);
+			this.label4.TabIndex = 9;
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+			this.label6.Location = new System.Drawing.Point(6, 100);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(76, 23);
+			this.label6.TabIndex = 19;
+			// 
+			// lblBuscar
+			// 
+			this.lblBuscar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblBuscar.Image = ((System.Drawing.Image)(resources.GetObject("lblBuscar.Image")));
+			this.lblBuscar.Location = new System.Drawing.Point(322, 28);
+			this.lblBuscar.Name = "lblBuscar";
+			this.lblBuscar.Size = new System.Drawing.Size(55, 35);
+			this.lblBuscar.TabIndex = 16;
 			// 
 			// gpbDetalleVenta
 			// 
@@ -617,6 +615,14 @@ namespace PuntoDeVenta
 			this.label13.Size = new System.Drawing.Size(60, 23);
 			this.label13.TabIndex = 23;
 			this.label13.Text = "Precio";
+			// 
+			// txtProducto
+			// 
+			this.txtProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtProducto.Location = new System.Drawing.Point(9, 49);
+			this.txtProducto.Name = "txtProducto";
+			this.txtProducto.Size = new System.Drawing.Size(221, 20);
+			this.txtProducto.TabIndex = 40;
 			// 
 			// label11
 			// 
@@ -798,9 +804,9 @@ namespace PuntoDeVenta
 			this.Load += new System.EventHandler(this.FrmVentasLoad);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
+			this.gpbDatosGenerales.ResumeLayout(false);
 			this.gpbDatosCliente.ResumeLayout(false);
 			this.gpbDatosCliente.PerformLayout();
-			this.gpbDatosGenerales.ResumeLayout(false);
 			this.gpbDetalleVenta.ResumeLayout(false);
 			this.gpbDetalleVenta.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
