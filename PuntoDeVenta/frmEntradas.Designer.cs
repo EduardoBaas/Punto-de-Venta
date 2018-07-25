@@ -102,11 +102,11 @@ namespace PuntoDeVenta
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tbgentradas = new System.Windows.Forms.TabControl();
 			this.tpgIngresar = new System.Windows.Forms.TabPage();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -203,7 +203,7 @@ namespace PuntoDeVenta
 			this.tbgentradas.Location = new System.Drawing.Point(0, 0);
 			this.tbgentradas.Name = "tbgentradas";
 			this.tbgentradas.SelectedIndex = 0;
-			this.tbgentradas.Size = new System.Drawing.Size(1361, 592);
+			this.tbgentradas.Size = new System.Drawing.Size(1348, 592);
 			this.tbgentradas.TabIndex = 0;
 			// 
 			// tpgIngresar
@@ -218,7 +218,7 @@ namespace PuntoDeVenta
 			this.tpgIngresar.Location = new System.Drawing.Point(4, 22);
 			this.tpgIngresar.Name = "tpgIngresar";
 			this.tpgIngresar.Padding = new System.Windows.Forms.Padding(3);
-			this.tpgIngresar.Size = new System.Drawing.Size(1353, 566);
+			this.tpgIngresar.Size = new System.Drawing.Size(1340, 566);
 			this.tpgIngresar.TabIndex = 0;
 			this.tpgIngresar.Text = "Ingresar Produtos";
 			this.tpgIngresar.UseVisualStyleBackColor = true;
@@ -230,14 +230,14 @@ namespace PuntoDeVenta
 			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 			this.dataGridViewTextBoxColumn1,
@@ -247,14 +247,14 @@ namespace PuntoDeVenta
 			this.dataGridViewTextBoxColumn5});
 			this.dataGridView1.Location = new System.Drawing.Point(150, 258);
 			this.dataGridView1.Name = "dataGridView1";
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridView1.RowHeadersVisible = false;
 			this.dataGridView1.Size = new System.Drawing.Size(1033, 74);
 			this.dataGridView1.TabIndex = 10;
@@ -404,14 +404,14 @@ namespace PuntoDeVenta
 			this.dgvEntradas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvEntradas.BackgroundColor = System.Drawing.Color.White;
 			this.dgvEntradas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvEntradas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvEntradas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
 			this.dgvEntradas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvEntradas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 			this.Codigo,
@@ -421,14 +421,14 @@ namespace PuntoDeVenta
 			this.TotalProducto});
 			this.dgvEntradas.Location = new System.Drawing.Point(150, 338);
 			this.dgvEntradas.Name = "dgvEntradas";
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvEntradas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvEntradas.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
 			this.dgvEntradas.RowHeadersVisible = false;
 			this.dgvEntradas.Size = new System.Drawing.Size(1033, 157);
 			this.dgvEntradas.TabIndex = 4;
@@ -477,7 +477,7 @@ namespace PuntoDeVenta
 			this.gpbDetalleCompra.Controls.Add(this.txtCodigo);
 			this.gpbDetalleCompra.Controls.Add(this.lblCodigo);
 			this.gpbDetalleCompra.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gpbDetalleCompra.Location = new System.Drawing.Point(27, 179);
+			this.gpbDetalleCompra.Location = new System.Drawing.Point(22, 179);
 			this.gpbDetalleCompra.Name = "gpbDetalleCompra";
 			this.gpbDetalleCompra.Size = new System.Drawing.Size(1293, 79);
 			this.gpbDetalleCompra.TabIndex = 3;
@@ -653,7 +653,7 @@ namespace PuntoDeVenta
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(3, 53);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1347, 120);
+			this.panel1.Size = new System.Drawing.Size(1334, 120);
 			this.panel1.TabIndex = 0;
 			// 
 			// groupBox1
@@ -676,7 +676,7 @@ namespace PuntoDeVenta
 			// pictureBox6
 			// 
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-			this.pictureBox6.Location = new System.Drawing.Point(167, 73);
+			this.pictureBox6.Location = new System.Drawing.Point(192, 73);
 			this.pictureBox6.Name = "pictureBox6";
 			this.pictureBox6.Size = new System.Drawing.Size(32, 32);
 			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -697,11 +697,10 @@ namespace PuntoDeVenta
 			// 
 			this.lblTelefono.BackColor = System.Drawing.Color.Lavender;
 			this.lblTelefono.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTelefono.Location = new System.Drawing.Point(200, 82);
+			this.lblTelefono.Location = new System.Drawing.Point(225, 82);
 			this.lblTelefono.Name = "lblTelefono";
 			this.lblTelefono.Size = new System.Drawing.Size(128, 23);
 			this.lblTelefono.TabIndex = 10;
-			this.lblTelefono.Text = "Telefono";
 			// 
 			// lblRfc
 			// 
@@ -730,6 +729,7 @@ namespace PuntoDeVenta
 			this.cmbProveedor.Name = "cmbProveedor";
 			this.cmbProveedor.Size = new System.Drawing.Size(285, 26);
 			this.cmbProveedor.TabIndex = 5;
+			this.cmbProveedor.SelectedIndexChanged += new System.EventHandler(this.CmbProveedorSelectedIndexChanged);
 			// 
 			// label6
 			// 
@@ -808,7 +808,7 @@ namespace PuntoDeVenta
 			// txtFolio
 			// 
 			this.txtFolio.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFolio.Location = new System.Drawing.Point(295, 48);
+			this.txtFolio.Location = new System.Drawing.Point(298, 48);
 			this.txtFolio.Name = "txtFolio";
 			this.txtFolio.Size = new System.Drawing.Size(165, 23);
 			this.txtFolio.TabIndex = 4;
@@ -822,7 +822,7 @@ namespace PuntoDeVenta
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel3.Location = new System.Drawing.Point(3, 3);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1347, 50);
+			this.panel3.Size = new System.Drawing.Size(1334, 50);
 			this.panel3.TabIndex = 2;
 			// 
 			// label10
@@ -916,7 +916,7 @@ namespace PuntoDeVenta
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.ClientSize = new System.Drawing.Size(1360, 591);
+			this.ClientSize = new System.Drawing.Size(1346, 583);
 			this.Controls.Add(this.tbgentradas);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
