@@ -28,17 +28,17 @@ namespace PuntoDeVenta
 		{
 		}
 		
-		public void FiltrarProductos(string nombre, DataGridView dgv)
+		public void FiltrarProductos(string barras, DataGridView dgv)
 		{
-			string sql = "SELECT codigo_barras AS 'Codigo de barras', nombre_producto AS 'Producto',costo_producto AS 'Costo',stock_minimo AS 'Stock Minimo',stock_maximo AS 'Stock Maximo',existencia AS 'Existencia' " + 
-				"FROM productos WHERE eliminado = 0;";
+			string sql = "SELECT codigo_barras AS 'Codigo de barras', nombre_producto AS 'Producto',costo_producto AS 'Costo',stock_minimo AS 'Stock Minimo',stock_maximo AS 'Stock Maximo',existencia AS 'Existencia' " +
+			                           "FROM productos WHERE eliminado = 0 and codigo_barras LIKE'"+barras+"%'";
 			dgv.DataSource = FrameBD.SQLSEL(sql);
 			dgv.DataMember="Datos";
 		}
 		
-		public void Agregar()
+		public void Update()
 		{
-			string sql =string.Format("INSERT INTO productos(codigo_barras,nombre_producto,costo_producto,stock_minimo,stock_maximo,existencia,eliminado) VALUES('{0}','{1}',{2},{3},{4},{5},'0')",codigo,nombre,costo,minimo,maximo,existencia);
+			string sql =string.Format("UPDATE productos SET codigo_barras = '{0}',nombre_producto = '{1}',costo_producto = {2},stock_minimo = {3},stock_maximo = {4},existencia = {5},eliminado = '0' WHERE codigo_barras ='{6}'",codigo,nombre,costo,minimo,maximo,existencia,codigo);
 			FrameBD.SQLIDU(sql);
 		}
 		
