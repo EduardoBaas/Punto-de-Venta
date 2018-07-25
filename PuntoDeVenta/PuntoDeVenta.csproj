@@ -56,7 +56,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Clientes.cs" />
+=======
+>>>>>>> parent of c033f2b... Formulario entradas
     <Compile Include="FrameBD.cs" />
     <Compile Include="frmClientes.cs" />
     <Compile Include="frmClientes.Designer.cs">

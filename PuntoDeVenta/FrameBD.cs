@@ -38,7 +38,11 @@ namespace AccesoADatos
            servidor = "localhost";
             puerto = 3309;
             usuario = "root";
+<<<<<<< HEAD
             password = "12345";
+=======
+            password = "bassbazuca12";
+>>>>>>> parent of c033f2b... Formulario entradas
             bd = "punto_venta";
             
 
