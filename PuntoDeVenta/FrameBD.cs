@@ -39,7 +39,7 @@ namespace AccesoADatos
             puerto = 3309;
             usuario = "root";
             password = "bassbazuca12";
-            bd = "punto_venta";
+            bd = "PuntoDeVenta";
             
 
 

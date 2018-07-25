@@ -47,5 +47,11 @@ namespace PuntoDeVenta
 			string sql = string.Format("CALL EliminarProducto('{0}')",codigo);
 			FrameBD.SQLIDU(sql);
 		}
+		
+		public void store()
+		{
+			string sql = string.Format("INSERT INTO productos VALUES ('{0}','{1}',{2},{3},{4},{5},'0')",codigo,nombre,costo,minimo,maximo,existencia);
+			FrameBD.SQLIDU(sql);
+		}
 	}
 }

@@ -18,6 +18,7 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmLogin : Form
 	{
+		public string User;
 		public frmLogin()
 		{
 			//
@@ -68,6 +69,7 @@ namespace PuntoDeVenta
 			string tabla = "Usuarios";
 			string condicion = "usuario = '"+txtUsuario.Text+"'";
 			string campos = "usuario,contrasenia,nombre,apellidoP";
+			User = txtUsuario.Text;
 			
 			string [] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
 			if (datos.Length > 1)
