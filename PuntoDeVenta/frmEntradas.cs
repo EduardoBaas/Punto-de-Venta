@@ -19,8 +19,6 @@ namespace PuntoDeVenta
 	{
 		//Entradas ClassEntradas = new Entradas();
 		Productos ClassProduct = new Productos();
-		public string id = "";
-		public int cont = 0;
 		public frmEntradas()
 		{
 			//
@@ -35,9 +33,6 @@ namespace PuntoDeVenta
 		void FrmEntradasLoad(object sender, EventArgs e)
 		{
 			ClassEntradas.GetProveedor(cmbProveedor);
-			id = cmbProveedor.SelectedValue.ToString();
-			cont++;
-			
 		}
 		void BtnAgregarClick(object sender, EventArgs e)
 		{
@@ -62,7 +57,7 @@ namespace PuntoDeVenta
 			ClassEntradas.totalEntrada = Double.Parse(txtTotal.Text);
 			ClassEntradas.Impuesto = Double.Parse(txtIva.Text);
 			ClassEntradas.fechaCompra = dtpEntrada.Value.ToString("yyyy-MM-dd");
-			id = cmbProveedor.SelectedValue.ToString();
+			string id = cmbProveedor.SelectedValue.ToString();
 			ClassEntradas.idProveedor = int.Parse(id);
 			ClassProduct.codigo = txtCodigo.Text;
 			ClassProduct.nombre = txtProducto.Text;
@@ -70,10 +65,6 @@ namespace PuntoDeVenta
 			ClassProduct.minimo = 10;
 			ClassProduct.maximo = 80;
 			ClassProduct.existencia = int.Parse(txtCantidad.Text);
-		}
-		void CmbProveedorSelectedIndexChanged(object sender, EventArgs e)
-		{
-			
 		}
 	}
 }
