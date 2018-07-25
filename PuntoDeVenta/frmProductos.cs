@@ -33,6 +33,13 @@ namespace PuntoDeVenta
 		void FrmProductosLoad(object sender, EventArgs e)
 		{
 			ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
+			btnGuardar.Enabled = false;
+			txtCodigo.Enabled = false;
+			txtCosto.Enabled = false;
+			txtExistencia.Enabled = false;
+			txtMaximo.Enabled = false;
+			txtMinimo.Enabled = false;
+			txtProducto.Enabled = false;
 		}
 		
 		void BtnEliminarClick(object sender, EventArgs e)
@@ -46,11 +53,23 @@ namespace PuntoDeVenta
 		}
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
-			if (txtCodigo.Text != "" && txtCosto.Text != "" && txtExistencia.Text != "") {
-				
+			if (txtCodigo.Text != "" && txtCosto.Text != "" && txtExistencia.Text != "" && txtMaximo.Text != "" && txtMinimo.Text != "" && txtProducto.Text != "") 
+			{
+				Valores();
+				Limpiar();
+				btnGuardar.Enabled = true;
+				btnEliminar.Enabled = true;
+				btnGuardar.Enabled = false;
+				txtCodigo.Enabled = false;
+				txtCosto.Enabled = false;
+				txtExistencia.Enabled = false;
+				txtMaximo.Enabled = false;
+				txtMinimo.Enabled = false;
+				txtProducto.Enabled = false;
+			}else
+			{
+				MessageBox.Show("Ingrese todos los campos para guardar","Error al guardar",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
-			Valores();
-			Limpiar();
 		}
 		
 		public void Valores()
@@ -61,7 +80,7 @@ namespace PuntoDeVenta
 			ClassProduct.minimo = int.Parse(txtMinimo.Text);
 			ClassProduct.maximo = int.Parse(txtMaximo.Text);
 			ClassProduct.existencia = int.Parse(txtExistencia.Text);
-			ClassProduct.Agregar();
+			ClassProduct.Update();
 			ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
 		}
 		
@@ -76,6 +95,34 @@ namespace PuntoDeVenta
 			txtExistencia.Clear();
 			
 		}
+		void BtnEditarClick(object sender, EventArgs e)
+		{
+			btnGuardar.Enabled = true;
+			txtCodigo.Enabled = true;
+			txtCosto.Enabled = true;
+			txtExistencia.Enabled = true;
+			txtMaximo.Enabled = true;
+			txtMinimo.Enabled = true;
+			txtProducto.Enabled = true;
+			SetValores();
+			btnGuardar.Enabled = true;
+			btnEliminar.Enabled = false;
+			
+		}
 		
+		public void SetValores()
+		{
+			txtCodigo.Text = dgvProductos["Codigo de barras",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+			txtProducto.Text = dgvProductos["Producto",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+			txtCosto.Text = dgvProductos["Costo",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+			txtMinimo.Text = dgvProductos["Stock Minimo",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+			txtMaximo.Text = dgvProductos["Stock Maximo",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+			txtExistencia.Text = dgvProductos["Existencia",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+			lblBarras.Text = dgvProductos["Codigo de barras",dgvProductos.CurrentCellAddress.Y].Value.ToString();
+		}
+		void TxtBuscarTextChanged(object sender, EventArgs e)
+		{
+			ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
+		}
 	}
 }
