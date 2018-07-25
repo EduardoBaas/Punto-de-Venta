@@ -1,8 +1,8 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: jakepp09
- * Date: 25/07/2018
- * Time: 09:01 a. m.
+ * User: pumas
+ * Date: 24/07/2018
+ * Time: 09:56 p. m.
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -11,11 +11,11 @@ using System;
 namespace PuntoDeVenta
 {
 	/// <summary>
-	/// Description of Clientes.
+	/// Description of proveedores.
 	/// </summary>
-	public class Clientes
+	public class proveedores
 	{
-		public Clientes()
+		public proveedores()
 		{
 		}
 	}

@@ -28,16 +28,17 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
+		private System.Windows.Forms.DateTimePicker dtpEntrada;
 		private System.Windows.Forms.TextBox txtFolio;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.GroupBox gpbDatosCompra;
+		private System.Windows.Forms.GroupBox gpbDatosGeneral;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.PictureBox pictureBox3;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 		private System.Windows.Forms.Label lblTelefono;
 		private System.Windows.Forms.Label lblRfc;
 		private System.Windows.Forms.PictureBox pictureBox4;
@@ -48,6 +49,7 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.GroupBox gpbDetalleCompra;
 		private System.Windows.Forms.TextBox txtCodigo;
 		private System.Windows.Forms.Label lblCodigo;
+<<<<<<< HEAD
 		private System.Windows.Forms.TextBox textBox5;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.TextBox textBox4;
@@ -55,17 +57,34 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.TextBox textBox2;
+=======
+		private System.Windows.Forms.TextBox txtTotProduct;
+		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.TextBox txtPrecioV;
+		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.TextBox txtCosto;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.TextBox txtCantidad;
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.Button btnEliminar;
 		private System.Windows.Forms.DataGridView dgvEntradas;
 		private System.Windows.Forms.GroupBox groupBox2;
+<<<<<<< HEAD
 		private System.Windows.Forms.TextBox textBox8;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.TextBox textBox7;
 		private System.Windows.Forms.TextBox textBox6;
+=======
+		private System.Windows.Forms.TextBox txtTotal;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.TextBox txtIva;
+		private System.Windows.Forms.TextBox txtSubtotal;
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label lblArticulos;
 		private System.Windows.Forms.Button btnSave;
@@ -74,7 +93,20 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Precio_Venta;
+<<<<<<< HEAD
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+		private System.Windows.Forms.DataGridViewTextBoxColumn TotalProducto;
+		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+		private System.Windows.Forms.PictureBox pictureBox9;
+		private System.Windows.Forms.TextBox txtProducto;
+		private System.Windows.Forms.Label label5;
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -97,13 +129,19 @@ namespace PuntoDeVenta
 		/// </summary>
 		private void InitializeComponent()
 		{
+<<<<<<< HEAD
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
 <<<<<<< HEAD
 <<<<<<< HEAD
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+<<<<<<< HEAD
 
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
 
@@ -113,12 +151,61 @@ namespace PuntoDeVenta
 >>>>>>> parent of b4abe3f... Funcionalidad entradas
 =======
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.tbgentradas = new System.Windows.Forms.TabControl();
 			this.tpgIngresar = new System.Windows.Forms.TabPage();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.btnCancelar = new System.Windows.Forms.Button();
+			this.btnSave = new System.Windows.Forms.Button();
+			this.txtTotal = new System.Windows.Forms.TextBox();
+			this.label15 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
+			this.txtIva = new System.Windows.Forms.TextBox();
+			this.txtSubtotal = new System.Windows.Forms.TextBox();
+			this.label13 = new System.Windows.Forms.Label();
+			this.lblArticulos = new System.Windows.Forms.Label();
+			this.dgvEntradas = new System.Windows.Forms.DataGridView();
+			this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.TotalProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.gpbDetalleCompra = new System.Windows.Forms.GroupBox();
+			this.pictureBox9 = new System.Windows.Forms.PictureBox();
+			this.txtProducto = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.btnEliminar = new System.Windows.Forms.Button();
+			this.btnAgregar = new System.Windows.Forms.Button();
+			this.txtTotProduct = new System.Windows.Forms.TextBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.txtPrecioV = new System.Windows.Forms.TextBox();
+			this.label11 = new System.Windows.Forms.Label();
+			this.txtCosto = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.txtCantidad = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.pictureBox7 = new System.Windows.Forms.PictureBox();
+			this.txtCodigo = new System.Windows.Forms.TextBox();
+			this.lblCodigo = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
+			this.lblTelefono = new System.Windows.Forms.Label();
+			this.lblRfc = new System.Windows.Forms.Label();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.cmbProveedor = new System.Windows.Forms.ComboBox();
+			this.label6 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
 <<<<<<< HEAD
 			this.gpbDatosCompra = new System.Windows.Forms.GroupBox();
 =======
@@ -126,10 +213,13 @@ namespace PuntoDeVenta
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+			this.gpbDatosGeneral = new System.Windows.Forms.GroupBox();
+			this.dtpEntrada = new System.Windows.Forms.DateTimePicker();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.label5 = new System.Windows.Forms.Label();
 			this.txtFolio = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
@@ -139,6 +229,7 @@ namespace PuntoDeVenta
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
 <<<<<<< HEAD
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -173,16 +264,30 @@ namespace PuntoDeVenta
 			this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.tbgentradas.SuspendLayout();
 			this.tpgIngresar.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvEntradas)).BeginInit();
+			this.gpbDetalleCompra.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			this.panel1.SuspendLayout();
-			this.gpbDatosCompra.SuspendLayout();
+			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			this.gpbDatosGeneral.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.tbpHistorial.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+<<<<<<< HEAD
 <<<<<<< HEAD
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 =======
@@ -191,6 +296,8 @@ namespace PuntoDeVenta
 			((System.ComponentModel.ISupportInitialize)(this.dgvEntradas)).BeginInit();
 			this.groupBox2.SuspendLayout();
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.SuspendLayout();
 			// 
 			// tbgentradas
@@ -201,6 +308,7 @@ namespace PuntoDeVenta
 			this.tbgentradas.Name = "tbgentradas";
 			this.tbgentradas.SelectedIndex = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 			this.tbgentradas.Size = new System.Drawing.Size(1348, 592);
 
@@ -209,22 +317,33 @@ namespace PuntoDeVenta
 =======
 			this.tbgentradas.Size = new System.Drawing.Size(1361, 592);
 >>>>>>> parent of b4abe3f... Funcionalidad entradas
+=======
+			this.tbgentradas.Size = new System.Drawing.Size(1348, 592);
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.tbgentradas.TabIndex = 0;
 			// 
 			// tpgIngresar
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+			this.tpgIngresar.Controls.Add(this.dataGridView1);
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.tpgIngresar.Controls.Add(this.groupBox2);
 			this.tpgIngresar.Controls.Add(this.lblArticulos);
 			this.tpgIngresar.Controls.Add(this.dgvEntradas);
 			this.tpgIngresar.Controls.Add(this.gpbDetalleCompra);
+<<<<<<< HEAD
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.tpgIngresar.Controls.Add(this.panel1);
 			this.tpgIngresar.Controls.Add(this.panel3);
 			this.tpgIngresar.Location = new System.Drawing.Point(4, 22);
 			this.tpgIngresar.Name = "tpgIngresar";
 			this.tpgIngresar.Padding = new System.Windows.Forms.Padding(3);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 			this.tpgIngresar.Size = new System.Drawing.Size(1340, 566);
@@ -234,12 +353,18 @@ namespace PuntoDeVenta
 =======
 			this.tpgIngresar.Size = new System.Drawing.Size(1353, 566);
 >>>>>>> parent of b4abe3f... Funcionalidad entradas
+=======
+			this.tpgIngresar.Size = new System.Drawing.Size(1340, 566);
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.tpgIngresar.TabIndex = 0;
 			this.tpgIngresar.Text = "Ingresar Produtos";
 			this.tpgIngresar.UseVisualStyleBackColor = true;
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// dataGridView1
 =======
 			// panel1
@@ -703,17 +828,21 @@ namespace PuntoDeVenta
 			this.lblCodigo.TabIndex = 6;
 			this.lblCodigo.Text = "Código del producto";
 			// 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Lavender;
 			this.panel1.Controls.Add(this.groupBox1);
 			this.panel1.Controls.Add(this.label4);
 			this.panel1.Controls.Add(this.label3);
-			this.panel1.Controls.Add(this.gpbDatosCompra);
+			this.panel1.Controls.Add(this.gpbDatosGeneral);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(3, 53);
 			this.panel1.Name = "panel1";
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 			this.panel1.Size = new System.Drawing.Size(1334, 120);
@@ -723,19 +852,32 @@ namespace PuntoDeVenta
 =======
 			this.panel1.Size = new System.Drawing.Size(1347, 120);
 >>>>>>> parent of b4abe3f... Funcionalidad entradas
+=======
+			this.panel1.Size = new System.Drawing.Size(1334, 120);
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.panel1.TabIndex = 0;
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.pictureBox6);
+			this.groupBox1.Controls.Add(this.pictureBox5);
+			this.groupBox1.Controls.Add(this.lblTelefono);
+			this.groupBox1.Controls.Add(this.lblRfc);
+			this.groupBox1.Controls.Add(this.pictureBox4);
+			this.groupBox1.Controls.Add(this.cmbProveedor);
+			this.groupBox1.Controls.Add(this.label6);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.Location = new System.Drawing.Point(569, 3);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(540, 148);
+			this.groupBox1.Size = new System.Drawing.Size(540, 113);
 			this.groupBox1.TabIndex = 8;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Datos del proveedor";
 			// 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// pictureBox6
 			// 
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
@@ -804,7 +946,10 @@ namespace PuntoDeVenta
 			this.label6.TabIndex = 4;
 			this.label6.Text = "Nombre del proveedor";
 			// 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// label4
 			// 
 			this.label4.BackColor = System.Drawing.Color.Lavender;
@@ -825,6 +970,7 @@ namespace PuntoDeVenta
 			this.label3.TabIndex = 1;
 			this.label3.Text = "Fecha de compra";
 			// 
+<<<<<<< HEAD
 			// gpbDatosCompra
 			// 
 			this.gpbDatosCompra.Controls.Add(this.dateTimePicker1);
@@ -873,6 +1019,41 @@ namespace PuntoDeVenta
 			this.dgvEntradas.RowHeadersVisible = false;
 			this.dgvEntradas.Size = new System.Drawing.Size(1033, 200);
 			this.dgvEntradas.TabIndex = 4;
+=======
+			// gpbDatosGeneral
+			// 
+			this.gpbDatosGeneral.Controls.Add(this.dtpEntrada);
+			this.gpbDatosGeneral.Controls.Add(this.pictureBox3);
+			this.gpbDatosGeneral.Controls.Add(this.pictureBox2);
+			this.gpbDatosGeneral.Controls.Add(this.txtFolio);
+			this.gpbDatosGeneral.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gpbDatosGeneral.Location = new System.Drawing.Point(5, 3);
+			this.gpbDatosGeneral.Name = "gpbDatosGeneral";
+			this.gpbDatosGeneral.Size = new System.Drawing.Size(540, 113);
+			this.gpbDatosGeneral.TabIndex = 7;
+			this.gpbDatosGeneral.TabStop = false;
+			this.gpbDatosGeneral.Text = "Datos Generales";
+			// 
+			// dtpEntrada
+			// 
+			this.dtpEntrada.CalendarFont = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtpEntrada.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.dtpEntrada.Location = new System.Drawing.Point(45, 46);
+			this.dtpEntrada.Name = "dtpEntrada";
+			this.dtpEntrada.Size = new System.Drawing.Size(155, 22);
+			this.dtpEntrada.TabIndex = 8;
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+			this.pictureBox3.Location = new System.Drawing.Point(14, 43);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox3.TabIndex = 9;
+			this.pictureBox3.TabStop = false;
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// 
 			// lblArticulos
 			// 
@@ -922,6 +1103,7 @@ namespace PuntoDeVenta
 			this.textBox6.TabIndex = 33;
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// label5
 			// 
 			this.label5.BackColor = System.Drawing.Color.Lavender;
@@ -932,6 +1114,8 @@ namespace PuntoDeVenta
 			this.label5.TabIndex = 5;
 			this.label5.Text = "Observaciones";
 			// 
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// txtFolio
 =======
 			// textBox7
@@ -944,6 +1128,7 @@ namespace PuntoDeVenta
 			this.textBox7.TabIndex = 34;
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// textBox1
 			// 
 			this.textBox1.Location = new System.Drawing.Point(206, 89);
@@ -952,6 +1137,8 @@ namespace PuntoDeVenta
 			this.textBox1.Size = new System.Drawing.Size(326, 44);
 			this.textBox1.TabIndex = 6;
 			// 
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			// panel3
 =======
 			// label14
@@ -1005,7 +1192,7 @@ namespace PuntoDeVenta
 			this.tbpHistorial.Location = new System.Drawing.Point(4, 22);
 			this.tbpHistorial.Name = "tbpHistorial";
 			this.tbpHistorial.Padding = new System.Windows.Forms.Padding(3);
-			this.tbpHistorial.Size = new System.Drawing.Size(1353, 545);
+			this.tbpHistorial.Size = new System.Drawing.Size(1353, 566);
 			this.tbpHistorial.TabIndex = 1;
 			this.tbpHistorial.Text = "Historial";
 			this.tbpHistorial.UseVisualStyleBackColor = true;
@@ -1044,31 +1231,12 @@ namespace PuntoDeVenta
 			this.Precio_Venta.HeaderText = "Precio de Venta";
 			this.Precio_Venta.Name = "Precio_Venta";
 			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dateTimePicker1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dateTimePicker1.Location = new System.Drawing.Point(45, 46);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(155, 22);
-			this.dateTimePicker1.TabIndex = 8;
-			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(14, 43);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox3.TabIndex = 9;
-			this.pictureBox3.TabStop = false;
-			// 
 			// frmEntradas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 			this.ClientSize = new System.Drawing.Size(1346, 583);
@@ -1078,6 +1246,9 @@ namespace PuntoDeVenta
 =======
 			this.ClientSize = new System.Drawing.Size(1360, 591);
 >>>>>>> parent of b4abe3f... Funcionalidad entradas
+=======
+			this.ClientSize = new System.Drawing.Size(1346, 583);
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.Controls.Add(this.tbgentradas);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1087,15 +1258,30 @@ namespace PuntoDeVenta
 			this.Load += new System.EventHandler(this.FrmEntradasLoad);
 			this.tbgentradas.ResumeLayout(false);
 			this.tpgIngresar.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvEntradas)).EndInit();
+			this.gpbDetalleCompra.ResumeLayout(false);
+			this.gpbDetalleCompra.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			this.panel1.ResumeLayout(false);
-			this.gpbDatosCompra.ResumeLayout(false);
-			this.gpbDatosCompra.PerformLayout();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			this.gpbDatosGeneral.ResumeLayout(false);
+			this.gpbDatosGeneral.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			this.tbpHistorial.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
 <<<<<<< HEAD
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 =======
@@ -1106,6 +1292,8 @@ namespace PuntoDeVenta
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
 			this.ResumeLayout(false);
 
 		}

@@ -44,6 +44,7 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.TextBox txtExistencia;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label lblBarras;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -96,6 +97,7 @@ namespace PuntoDeVenta
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.lblBarras = new System.Windows.Forms.Label();
 			this.txtExistencia = new System.Windows.Forms.TextBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label5 = new System.Windows.Forms.Label();
@@ -160,7 +162,7 @@ namespace PuntoDeVenta
 			// 
 			this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.Color.Black;
-			this.label8.Location = new System.Drawing.Point(395, 64);
+			this.label8.Location = new System.Drawing.Point(601, 64);
 			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(133, 25);
@@ -211,11 +213,12 @@ namespace PuntoDeVenta
 			// 
 			this.txtBuscar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
 			this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtBuscar.Location = new System.Drawing.Point(467, 61);
+			this.txtBuscar.Location = new System.Drawing.Point(675, 59);
 			this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.txtBuscar.Name = "txtBuscar";
 			this.txtBuscar.Size = new System.Drawing.Size(551, 22);
 			this.txtBuscar.TabIndex = 15;
+			this.txtBuscar.TextChanged += new System.EventHandler(this.TxtBuscarTextChanged);
 			// 
 			// label2
 			// 
@@ -360,6 +363,7 @@ namespace PuntoDeVenta
 			this.btnEditar.Text = "Editar P.";
 			this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnEditar.UseVisualStyleBackColor = false;
+			this.btnEditar.Click += new System.EventHandler(this.BtnEditarClick);
 			// 
 			// btnGuardar
 			// 
@@ -431,6 +435,7 @@ namespace PuntoDeVenta
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.panel1.Controls.Add(this.lblBarras);
 			this.panel1.Controls.Add(this.txtExistencia);
 			this.panel1.Controls.Add(this.pictureBox1);
 			this.panel1.Controls.Add(this.label5);
@@ -454,6 +459,15 @@ namespace PuntoDeVenta
 			this.panel1.Size = new System.Drawing.Size(371, 541);
 			this.panel1.TabIndex = 21;
 			// 
+			// lblBarras
+			// 
+			this.lblBarras.Location = new System.Drawing.Point(33, 512);
+			this.lblBarras.Name = "lblBarras";
+			this.lblBarras.Size = new System.Drawing.Size(100, 23);
+			this.lblBarras.TabIndex = 28;
+			this.lblBarras.Text = "label11";
+			this.lblBarras.Visible = false;
+			// 
 			// txtExistencia
 			// 
 			this.txtExistencia.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -462,6 +476,7 @@ namespace PuntoDeVenta
 			this.txtExistencia.Location = new System.Drawing.Point(66, 427);
 			this.txtExistencia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.txtExistencia.Name = "txtExistencia";
+			this.txtExistencia.ReadOnly = true;
 			this.txtExistencia.Size = new System.Drawing.Size(265, 26);
 			this.txtExistencia.TabIndex = 27;
 			// 

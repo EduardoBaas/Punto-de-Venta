@@ -57,9 +57,13 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Clientes.cs" />
 =======
 >>>>>>> parent of c033f2b... Formulario entradas
+=======
+    <Compile Include="Entradas.cs" />
+>>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
     <Compile Include="FrameBD.cs" />
     <Compile Include="frmClientes.cs" />
     <Compile Include="frmClientes.Designer.cs">
@@ -96,6 +100,7 @@
     <Compile Include="Productos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs" />
     <Compile Include="Validaciones.cs" />
   </ItemGroup>
   <ItemGroup>
