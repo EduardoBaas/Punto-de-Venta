@@ -20,3 +20,17 @@ C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVen
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmUsuarios.resources
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmVentas.resources
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmProductos.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\bin\Debug\PuntoDeVenta.exe.config
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\bin\Debug\PuntoDeVenta.exe
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\bin\Debug\PuntoDeVenta.pdb
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.csprojResolveAssemblyReference.cache
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmClientes.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmEntradas.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmLogin.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmProductos.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmUsuarios.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmVentas.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.MainForm.resources
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.csproj.GenerateResource.Cache
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.exe
+C:\Users\jakepp09\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.pdb
