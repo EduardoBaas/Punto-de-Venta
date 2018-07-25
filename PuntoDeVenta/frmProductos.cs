@@ -124,5 +124,9 @@ namespace PuntoDeVenta
 		{
 			ClassProduct.FiltrarProductos(txtBuscar.Text,dgvProductos);
 		}
+		void DgvProductosCellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+	
+		}
 	}
 }

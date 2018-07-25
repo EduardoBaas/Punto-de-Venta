@@ -38,7 +38,7 @@ namespace AccesoADatos
            servidor = "localhost";
             puerto = 3309;
             usuario = "root";
-            password = "bassbazuca12";
+            password = "dragon4499";
             bd = "PuntoDeVenta";
             
 

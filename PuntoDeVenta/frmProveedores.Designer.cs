@@ -14,7 +14,7 @@ namespace PuntoDeVenta
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgvproveedor;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label2;
@@ -45,13 +45,13 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnagregar;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.TextBox textBox12;
-		private System.Windows.Forms.TextBox textBox13;
+		private System.Windows.Forms.TextBox txttelefono;
+		private System.Windows.Forms.TextBox txtcorreo;
+		private System.Windows.Forms.TextBox txtciudad;
+		private System.Windows.Forms.TextBox txtdireccion;
+		private System.Windows.Forms.TextBox txtduenio;
+		private System.Windows.Forms.TextBox txtrfc;
+		private System.Windows.Forms.TextBox txtnombre;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label label15;
@@ -82,7 +82,7 @@ namespace PuntoDeVenta
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProveedores));
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgvproveedor = new System.Windows.Forms.DataGridView();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -108,18 +108,18 @@ namespace PuntoDeVenta
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label12 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.btnagregar = new System.Windows.Forms.Button();
 			this.btneliminar = new System.Windows.Forms.Button();
 			this.btnmodificar = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnagregar = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.textBox12 = new System.Windows.Forms.TextBox();
-			this.textBox13 = new System.Windows.Forms.TextBox();
+			this.txttelefono = new System.Windows.Forms.TextBox();
+			this.txtcorreo = new System.Windows.Forms.TextBox();
+			this.txtciudad = new System.Windows.Forms.TextBox();
+			this.txtdireccion = new System.Windows.Forms.TextBox();
+			this.txtduenio = new System.Windows.Forms.TextBox();
+			this.txtrfc = new System.Windows.Forms.TextBox();
+			this.txtnombre = new System.Windows.Forms.TextBox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
@@ -127,7 +127,7 @@ namespace PuntoDeVenta
 			this.label17 = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvproveedor)).BeginInit();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -136,13 +136,13 @@ namespace PuntoDeVenta
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// dataGridView1
+			// dgvproveedor
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(310, 56);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(1044, 413);
-			this.dataGridView1.TabIndex = 40;
+			this.dgvproveedor.Location = new System.Drawing.Point(310, 56);
+			this.dgvproveedor.Name = "dgvproveedor";
+			this.dgvproveedor.Size = new System.Drawing.Size(1044, 413);
+			this.dgvproveedor.TabIndex = 40;
+			this.dgvproveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvprovedorCellContentClick);
 			// 
 			// panel2
 			// 
@@ -231,7 +231,7 @@ namespace PuntoDeVenta
 			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.ForeColor = System.Drawing.Color.AliceBlue;
-			this.groupBox1.Location = new System.Drawing.Point(-292, 2);
+			this.groupBox1.Location = new System.Drawing.Point(0, 2);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(292, 530);
 			this.groupBox1.TabIndex = 38;
@@ -424,18 +424,6 @@ namespace PuntoDeVenta
 			this.panel1.Size = new System.Drawing.Size(346, 70);
 			this.panel1.TabIndex = 36;
 			// 
-			// btnagregar
-			// 
-			this.btnagregar.ForeColor = System.Drawing.Color.DodgerBlue;
-			this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
-			this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnagregar.Location = new System.Drawing.Point(90, 444);
-			this.btnagregar.Name = "btnagregar";
-			this.btnagregar.Size = new System.Drawing.Size(98, 41);
-			this.btnagregar.TabIndex = 28;
-			this.btnagregar.Text = "Agregar";
-			this.btnagregar.UseVisualStyleBackColor = true;
-			// 
 			// btneliminar
 			// 
 			this.btneliminar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -470,17 +458,29 @@ namespace PuntoDeVenta
 			this.label1.TabIndex = 25;
 			this.label1.Text = "OPCIONES:";
 			// 
+			// btnagregar
+			// 
+			this.btnagregar.ForeColor = System.Drawing.Color.DodgerBlue;
+			this.btnagregar.Image = ((System.Drawing.Image)(resources.GetObject("btnagregar.Image")));
+			this.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnagregar.Location = new System.Drawing.Point(90, 444);
+			this.btnagregar.Name = "btnagregar";
+			this.btnagregar.Size = new System.Drawing.Size(98, 41);
+			this.btnagregar.TabIndex = 28;
+			this.btnagregar.Text = "Agregar";
+			this.btnagregar.UseVisualStyleBackColor = true;
+			// 
 			// groupBox2
 			// 
 			this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.groupBox2.Controls.Add(this.btnagregar);
-			this.groupBox2.Controls.Add(this.textBox7);
-			this.groupBox2.Controls.Add(this.textBox8);
-			this.groupBox2.Controls.Add(this.textBox9);
-			this.groupBox2.Controls.Add(this.textBox10);
-			this.groupBox2.Controls.Add(this.textBox11);
-			this.groupBox2.Controls.Add(this.textBox12);
-			this.groupBox2.Controls.Add(this.textBox13);
+			this.groupBox2.Controls.Add(this.txttelefono);
+			this.groupBox2.Controls.Add(this.txtcorreo);
+			this.groupBox2.Controls.Add(this.txtciudad);
+			this.groupBox2.Controls.Add(this.txtdireccion);
+			this.groupBox2.Controls.Add(this.txtduenio);
+			this.groupBox2.Controls.Add(this.txtrfc);
+			this.groupBox2.Controls.Add(this.txtnombre);
 			this.groupBox2.Controls.Add(this.label13);
 			this.groupBox2.Controls.Add(this.label14);
 			this.groupBox2.Controls.Add(this.label15);
@@ -496,82 +496,82 @@ namespace PuntoDeVenta
 			this.groupBox2.TabIndex = 41;
 			this.groupBox2.TabStop = false;
 			// 
-			// textBox7
+			// txttelefono
 			// 
-			this.textBox7.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox7.Location = new System.Drawing.Point(7, 277);
-			this.textBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(265, 26);
-			this.textBox7.TabIndex = 36;
+			this.txttelefono.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txttelefono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txttelefono.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txttelefono.Location = new System.Drawing.Point(7, 277);
+			this.txttelefono.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txttelefono.Name = "txttelefono";
+			this.txttelefono.Size = new System.Drawing.Size(265, 26);
+			this.txttelefono.TabIndex = 36;
 			// 
-			// textBox8
+			// txtcorreo
 			// 
-			this.textBox8.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox8.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox8.Location = new System.Drawing.Point(7, 215);
-			this.textBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(265, 26);
-			this.textBox8.TabIndex = 35;
+			this.txtcorreo.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtcorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtcorreo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtcorreo.Location = new System.Drawing.Point(7, 215);
+			this.txtcorreo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtcorreo.Name = "txtcorreo";
+			this.txtcorreo.Size = new System.Drawing.Size(265, 26);
+			this.txtcorreo.TabIndex = 35;
 			// 
-			// textBox9
+			// txtciudad
 			// 
-			this.textBox9.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox9.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox9.Location = new System.Drawing.Point(7, 96);
-			this.textBox9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(265, 26);
-			this.textBox9.TabIndex = 34;
+			this.txtciudad.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtciudad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtciudad.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtciudad.Location = new System.Drawing.Point(7, 96);
+			this.txtciudad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtciudad.Name = "txtciudad";
+			this.txtciudad.Size = new System.Drawing.Size(265, 26);
+			this.txtciudad.TabIndex = 34;
 			// 
-			// textBox10
+			// txtdireccion
 			// 
-			this.textBox10.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox10.Location = new System.Drawing.Point(7, 159);
-			this.textBox10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(265, 26);
-			this.textBox10.TabIndex = 33;
+			this.txtdireccion.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtdireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtdireccion.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtdireccion.Location = new System.Drawing.Point(7, 159);
+			this.txtdireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtdireccion.Name = "txtdireccion";
+			this.txtdireccion.Size = new System.Drawing.Size(265, 26);
+			this.txtdireccion.TabIndex = 33;
 			// 
-			// textBox11
+			// txtduenio
 			// 
-			this.textBox11.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox11.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox11.Location = new System.Drawing.Point(7, 415);
-			this.textBox11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(265, 26);
-			this.textBox11.TabIndex = 32;
+			this.txtduenio.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtduenio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtduenio.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtduenio.Location = new System.Drawing.Point(7, 415);
+			this.txtduenio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtduenio.Name = "txtduenio";
+			this.txtduenio.Size = new System.Drawing.Size(265, 26);
+			this.txtduenio.TabIndex = 32;
 			// 
-			// textBox12
+			// txtrfc
 			// 
-			this.textBox12.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox12.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox12.Location = new System.Drawing.Point(7, 343);
-			this.textBox12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(265, 26);
-			this.textBox12.TabIndex = 31;
+			this.txtrfc.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtrfc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtrfc.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtrfc.Location = new System.Drawing.Point(7, 343);
+			this.txtrfc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtrfc.Name = "txtrfc";
+			this.txtrfc.Size = new System.Drawing.Size(265, 26);
+			this.txtrfc.TabIndex = 31;
 			// 
-			// textBox13
+			// txtnombre
 			// 
-			this.textBox13.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox13.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox13.Location = new System.Drawing.Point(7, 41);
-			this.textBox13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(265, 26);
-			this.textBox13.TabIndex = 30;
+			this.txtnombre.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtnombre.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtnombre.Location = new System.Drawing.Point(7, 41);
+			this.txtnombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtnombre.Name = "txtnombre";
+			this.txtnombre.Size = new System.Drawing.Size(265, 26);
+			this.txtnombre.TabIndex = 30;
 			// 
 			// label13
 			// 
@@ -643,14 +643,16 @@ namespace PuntoDeVenta
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1354, 542);
 			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.dgvproveedor);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmProveedores";
-			this.Text = "frmProveedores";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.Text = "PROVEEDORES:";
+			this.Load += new System.EventHandler(this.FrmProveedoresLoad);
+			((System.ComponentModel.ISupportInitialize)(this.dgvproveedor)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

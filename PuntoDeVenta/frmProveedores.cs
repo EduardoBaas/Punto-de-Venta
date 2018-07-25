@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using AccesoADatos;
 
 namespace PuntoDeVenta
 {
@@ -17,6 +18,7 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmProveedores : Form
 	{
+		proveedor opro = new proveedor();
 		public frmProveedores()
 		{
 			//
@@ -27,6 +29,15 @@ namespace PuntoDeVenta
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+		}
+		
+		void DgvprovedorCellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+	
+		}
+		void FrmProveedoresLoad(object sender, EventArgs e)
+		{
+			opro.filtarproveedor(txtBuscar.Text,dgvproveedor);
 		}
 	}
 }

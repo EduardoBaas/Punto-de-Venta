@@ -208,6 +208,7 @@ namespace PuntoDeVenta
 			this.dgvProductos.RowsDefaultCellStyle = dataGridViewCellStyle3;
 			this.dgvProductos.Size = new System.Drawing.Size(925, 423);
 			this.dgvProductos.TabIndex = 13;
+			this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProductosCellContentClick);
 			// 
 			// txtBuscar
 			// 
