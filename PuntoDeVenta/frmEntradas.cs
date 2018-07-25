@@ -19,7 +19,11 @@ namespace PuntoDeVenta
 	{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//Entradas ClassEntradas = new Entradas();
+=======
+		Entradas ClassEntradas = new Entradas();
+>>>>>>> parent of fa4952e... erroes encontrados
 		Productos ClassProduct = new Productos();
 =======
 >>>>>>> parent of c033f2b... Formulario entradas
@@ -28,7 +32,12 @@ namespace PuntoDeVenta
 		Productos ClassProduct = new Productos();
 		public string id = "";
 		public int cont = 0;
+<<<<<<< HEAD
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 		public frmEntradas()
 		{
 			//
@@ -43,8 +52,11 @@ namespace PuntoDeVenta
 		void FrmEntradasLoad(object sender, EventArgs e)
 		{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			ClassEntradas.GetProveedor(cmbProveedor);
 			id = cmbProveedor.SelectedValue.ToString();
 			cont++;
@@ -81,6 +93,9 @@ namespace PuntoDeVenta
 			ClassProduct.minimo = 10;
 			ClassProduct.maximo = 80;
 			ClassProduct.existencia = int.Parse(txtCantidad.Text);
+=======
+	
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
 		}
 		void CmbProveedorSelectedIndexChanged(object sender, EventArgs e)
 		{

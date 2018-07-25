@@ -130,9 +130,12 @@ namespace PuntoDeVenta
 		private void InitializeComponent()
 		{
 <<<<<<< HEAD
+<<<<<<< HEAD
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 =======
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
@@ -141,6 +144,7 @@ namespace PuntoDeVenta
 <<<<<<< HEAD
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
@@ -153,6 +157,11 @@ namespace PuntoDeVenta
 >>>>>>> parent of c033f2b... Formulario entradas
 =======
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+=======
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.tbgentradas = new System.Windows.Forms.TabControl();
 			this.tpgIngresar = new System.Windows.Forms.TabPage();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -309,10 +318,14 @@ namespace PuntoDeVenta
 			this.tbgentradas.SelectedIndex = 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.tbgentradas.Size = new System.Drawing.Size(1348, 592);
-
+=======
 			this.tbgentradas.Size = new System.Drawing.Size(1361, 571);
+<<<<<<< HEAD
 
 =======
 			this.tbgentradas.Size = new System.Drawing.Size(1361, 592);
@@ -320,6 +333,9 @@ namespace PuntoDeVenta
 =======
 			this.tbgentradas.Size = new System.Drawing.Size(1348, 592);
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.tbgentradas.TabIndex = 0;
 			// 
 			// tpgIngresar
@@ -345,10 +361,14 @@ namespace PuntoDeVenta
 			this.tpgIngresar.Padding = new System.Windows.Forms.Padding(3);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.tpgIngresar.Size = new System.Drawing.Size(1340, 566);
-
+=======
 			this.tpgIngresar.Size = new System.Drawing.Size(1353, 545);
+<<<<<<< HEAD
 
 =======
 			this.tpgIngresar.Size = new System.Drawing.Size(1353, 566);
@@ -356,15 +376,21 @@ namespace PuntoDeVenta
 =======
 			this.tpgIngresar.Size = new System.Drawing.Size(1340, 566);
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.tpgIngresar.TabIndex = 0;
 			this.tpgIngresar.Text = "Ingresar Produtos";
 			this.tpgIngresar.UseVisualStyleBackColor = true;
 			// 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			// dataGridView1
 =======
 			// panel1
@@ -829,9 +855,14 @@ namespace PuntoDeVenta
 			this.lblCodigo.Text = "Código del producto";
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Lavender;
@@ -844,10 +875,14 @@ namespace PuntoDeVenta
 			this.panel1.Name = "panel1";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.panel1.Size = new System.Drawing.Size(1334, 120);
-
+=======
 			this.panel1.Size = new System.Drawing.Size(1347, 154);
+<<<<<<< HEAD
 
 =======
 			this.panel1.Size = new System.Drawing.Size(1347, 120);
@@ -855,6 +890,9 @@ namespace PuntoDeVenta
 =======
 			this.panel1.Size = new System.Drawing.Size(1334, 120);
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.panel1.TabIndex = 0;
 			// 
 			// groupBox1
@@ -875,9 +913,12 @@ namespace PuntoDeVenta
 			this.groupBox1.Text = "Datos del proveedor";
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			// pictureBox6
 			// 
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
@@ -947,9 +988,14 @@ namespace PuntoDeVenta
 			this.label6.Text = "Nombre del proveedor";
 			// 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			// label4
 			// 
 			this.label4.BackColor = System.Drawing.Color.Lavender;
@@ -1238,10 +1284,14 @@ namespace PuntoDeVenta
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.ClientSize = new System.Drawing.Size(1346, 583);
-
+=======
 			this.ClientSize = new System.Drawing.Size(1360, 570);
+<<<<<<< HEAD
 
 =======
 			this.ClientSize = new System.Drawing.Size(1360, 591);
@@ -1249,6 +1299,9 @@ namespace PuntoDeVenta
 =======
 			this.ClientSize = new System.Drawing.Size(1346, 583);
 >>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+=======
+>>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
+>>>>>>> parent of fa4952e... erroes encontrados
 			this.Controls.Add(this.tbgentradas);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
