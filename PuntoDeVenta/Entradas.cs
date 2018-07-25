@@ -53,5 +53,10 @@ namespace PuntoDeVenta
 			string sql = string.Format("INSERT INTO productos_entradas(folio_facturas,codigo_barras,fecha_registro) VALUES('{0}','{1}','{2}')",folioCompra,codigoProducto,fecharegistro);
 			FrameBD.SQLIDU(sql);
 		}
+		
+		public void SelectProv()
+		{
+			
+		}
 	}
 }
