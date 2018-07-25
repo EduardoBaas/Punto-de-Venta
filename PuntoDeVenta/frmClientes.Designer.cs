@@ -23,13 +23,13 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.DataGridView dgvProductos;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox txtExistencia;
+		private System.Windows.Forms.TextBox txtDir;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnEditar;
 		private System.Windows.Forms.Button btnEliminar;
-		private System.Windows.Forms.TextBox txtMinimo;
-		private System.Windows.Forms.TextBox txtMaximo;
-		private System.Windows.Forms.TextBox txtCosto;
+		private System.Windows.Forms.TextBox txtAP;
+		private System.Windows.Forms.TextBox txtAM;
+		private System.Windows.Forms.TextBox txtNomb;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.PictureBox pictureBox3;
 		private System.Windows.Forms.PictureBox pictureBox2;
@@ -69,33 +69,33 @@ namespace PuntoDeVenta
 			this.label9 = new System.Windows.Forms.Label();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.txtExistencia = new System.Windows.Forms.TextBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txtDir = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnEditar = new System.Windows.Forms.Button();
 			this.btnEliminar = new System.Windows.Forms.Button();
-			this.txtMinimo = new System.Windows.Forms.TextBox();
-			this.txtMaximo = new System.Windows.Forms.TextBox();
-			this.txtCosto = new System.Windows.Forms.TextBox();
+			this.txtAP = new System.Windows.Forms.TextBox();
+			this.txtAM = new System.Windows.Forms.TextBox();
+			this.txtNomb = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtBusc = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
 			this.dgvProductos = new System.Windows.Forms.DataGridView();
-			this.label2 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel2
@@ -153,13 +153,13 @@ namespace PuntoDeVenta
 			this.panel1.Controls.Add(this.label3);
 			this.panel1.Controls.Add(this.pictureBox1);
 			this.panel1.Controls.Add(this.label2);
-			this.panel1.Controls.Add(this.txtExistencia);
+			this.panel1.Controls.Add(this.txtDir);
 			this.panel1.Controls.Add(this.btnGuardar);
 			this.panel1.Controls.Add(this.btnEditar);
 			this.panel1.Controls.Add(this.btnEliminar);
-			this.panel1.Controls.Add(this.txtMinimo);
-			this.panel1.Controls.Add(this.txtMaximo);
-			this.panel1.Controls.Add(this.txtCosto);
+			this.panel1.Controls.Add(this.txtAP);
+			this.panel1.Controls.Add(this.txtAM);
+			this.panel1.Controls.Add(this.txtNomb);
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -167,16 +167,101 @@ namespace PuntoDeVenta
 			this.panel1.Size = new System.Drawing.Size(371, 541);
 			this.panel1.TabIndex = 29;
 			// 
-			// txtExistencia
+			// pictureBox4
 			// 
-			this.txtExistencia.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.txtExistencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtExistencia.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtExistencia.Location = new System.Drawing.Point(69, 299);
-			this.txtExistencia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.txtExistencia.Name = "txtExistencia";
-			this.txtExistencia.Size = new System.Drawing.Size(260, 26);
-			this.txtExistencia.TabIndex = 39;
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(24, 286);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(39, 39);
+			this.pictureBox4.TabIndex = 47;
+			this.pictureBox4.TabStop = false;
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+			this.pictureBox3.Location = new System.Drawing.Point(24, 219);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(39, 39);
+			this.pictureBox3.TabIndex = 46;
+			this.pictureBox3.TabStop = false;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(24, 154);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(39, 39);
+			this.pictureBox2.TabIndex = 45;
+			this.pictureBox2.TabStop = false;
+			// 
+			// label5
+			// 
+			this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.White;
+			this.label5.Location = new System.Drawing.Point(69, 271);
+			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(209, 25);
+			this.label5.TabIndex = 44;
+			this.label5.Text = "Dirección:";
+			// 
+			// label4
+			// 
+			this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.White;
+			this.label4.Location = new System.Drawing.Point(69, 204);
+			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(209, 25);
+			this.label4.TabIndex = 43;
+			this.label4.Text = "Apellido Materno:";
+			// 
+			// label3
+			// 
+			this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.White;
+			this.label3.Location = new System.Drawing.Point(69, 139);
+			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(209, 25);
+			this.label3.TabIndex = 42;
+			this.label3.Text = "Apellido Paterno:";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.InitialImage = null;
+			this.pictureBox1.Location = new System.Drawing.Point(24, 87);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(39, 39);
+			this.pictureBox1.TabIndex = 41;
+			this.pictureBox1.TabStop = false;
+			// 
+			// label2
+			// 
+			this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.White;
+			this.label2.Location = new System.Drawing.Point(69, 72);
+			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(209, 25);
+			this.label2.TabIndex = 40;
+			this.label2.Text = "Nombres:";
+			// 
+			// txtDir
+			// 
+			this.txtDir.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtDir.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtDir.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtDir.Location = new System.Drawing.Point(69, 299);
+			this.txtDir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtDir.Name = "txtDir";
+			this.txtDir.Size = new System.Drawing.Size(260, 26);
+			this.txtDir.TabIndex = 39;
 			// 
 			// btnGuardar
 			// 
@@ -220,38 +305,38 @@ namespace PuntoDeVenta
 			this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnEliminar.UseVisualStyleBackColor = false;
 			// 
-			// txtMinimo
+			// txtAP
 			// 
-			this.txtMinimo.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.txtMinimo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtMinimo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMinimo.Location = new System.Drawing.Point(69, 167);
-			this.txtMinimo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.txtMinimo.Name = "txtMinimo";
-			this.txtMinimo.Size = new System.Drawing.Size(260, 26);
-			this.txtMinimo.TabIndex = 30;
+			this.txtAP.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtAP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtAP.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtAP.Location = new System.Drawing.Point(69, 167);
+			this.txtAP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtAP.Name = "txtAP";
+			this.txtAP.Size = new System.Drawing.Size(260, 26);
+			this.txtAP.TabIndex = 30;
 			// 
-			// txtMaximo
+			// txtAM
 			// 
-			this.txtMaximo.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.txtMaximo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtMaximo.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMaximo.Location = new System.Drawing.Point(69, 232);
-			this.txtMaximo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.txtMaximo.Name = "txtMaximo";
-			this.txtMaximo.Size = new System.Drawing.Size(260, 26);
-			this.txtMaximo.TabIndex = 29;
+			this.txtAM.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtAM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtAM.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtAM.Location = new System.Drawing.Point(69, 232);
+			this.txtAM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtAM.Name = "txtAM";
+			this.txtAM.Size = new System.Drawing.Size(260, 26);
+			this.txtAM.TabIndex = 29;
 			// 
-			// txtCosto
+			// txtNomb
 			// 
-			this.txtCosto.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.txtCosto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtCosto.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCosto.Location = new System.Drawing.Point(69, 100);
-			this.txtCosto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-			this.txtCosto.Name = "txtCosto";
-			this.txtCosto.Size = new System.Drawing.Size(260, 26);
-			this.txtCosto.TabIndex = 28;
+			this.txtNomb.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.txtNomb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.txtNomb.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNomb.Location = new System.Drawing.Point(69, 100);
+			this.txtNomb.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			this.txtNomb.Name = "txtNomb";
+			this.txtNomb.Size = new System.Drawing.Size(260, 26);
+			this.txtNomb.TabIndex = 28;
 			// 
 			// label1
 			// 
@@ -326,91 +411,6 @@ namespace PuntoDeVenta
 			this.dgvProductos.Size = new System.Drawing.Size(925, 423);
 			this.dgvProductos.TabIndex = 31;
 			// 
-			// label2
-			// 
-			this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(69, 72);
-			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(209, 25);
-			this.label2.TabIndex = 40;
-			this.label2.Text = "Nombres:";
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.InitialImage = null;
-			this.pictureBox1.Location = new System.Drawing.Point(24, 87);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(39, 39);
-			this.pictureBox1.TabIndex = 41;
-			this.pictureBox1.TabStop = false;
-			// 
-			// label3
-			// 
-			this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(69, 139);
-			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(209, 25);
-			this.label3.TabIndex = 42;
-			this.label3.Text = "Apellido Paterno:";
-			// 
-			// label4
-			// 
-			this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(69, 204);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(209, 25);
-			this.label4.TabIndex = 43;
-			this.label4.Text = "Apellido Materno:";
-			// 
-			// label5
-			// 
-			this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(69, 271);
-			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(209, 25);
-			this.label5.TabIndex = 44;
-			this.label5.Text = "Dirección:";
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(24, 154);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(39, 39);
-			this.pictureBox2.TabIndex = 45;
-			this.pictureBox2.TabStop = false;
-			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(24, 219);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(39, 39);
-			this.pictureBox3.TabIndex = 46;
-			this.pictureBox3.TabStop = false;
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(24, 286);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(39, 39);
-			this.pictureBox4.TabIndex = 47;
-			this.pictureBox4.TabStop = false;
-			// 
 			// frmClientes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,11 +428,11 @@ namespace PuntoDeVenta
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
