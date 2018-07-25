@@ -38,17 +38,10 @@ namespace AccesoADatos
            servidor = "localhost";
             puerto = 3309;
             usuario = "root";
-<<<<<<< HEAD
-<<<<<<< HEAD
-            password = "12345";
-=======
             password = "bassbazuca12";
->>>>>>> parent of c033f2b... Formulario entradas
-            bd = "punto_venta";
-=======
             password = "bassbazuca12";
             bd = "PuntoDeVenta";
->>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
+
             
 
 

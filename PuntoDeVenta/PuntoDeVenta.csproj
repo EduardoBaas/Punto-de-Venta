@@ -56,23 +56,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Compile Include="Clientes.cs" />
-=======
->>>>>>> parent of c033f2b... Formulario entradas
-=======
     <Compile Include="Entradas.cs" />
->>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
     <Compile Include="FrameBD.cs" />
     <Compile Include="frmClientes.cs" />
     <Compile Include="frmClientes.Designer.cs">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEntradas.cs" />
-    <Compile Include="frmEntradas.Designer.cs">
-      <DependentUpon>frmEntradas.cs</DependentUpon>
-    </Compile>
+    <Compile Include="frmEntradas.Designer.cs" />
     <Compile Include="frmLogin.cs" />
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>

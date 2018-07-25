@@ -117,11 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of fa4952e... erroes encontrados
   <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -137,22 +132,6 @@
   <metadata name="dataGridViewTextBoxColumn5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Codigo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Cantidad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Costo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Precio_Venta.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TotalProducto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
->>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnCancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -189,6 +168,23 @@
   <metadata name="Precio_Venta.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="TotalProducto.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAg5JREFUWEft
+        lj9IW0Ecx392002QglA6uDjZRUxa6NDJKGKsWp0CQmnBgIIIglQDz0FyD00ChffOlOLioIg4tV1KoZQu
+        TjWTi4KrCOKfVPzL+Xvxl5inp3l3CRHBD3wIubv3/f1ydyGBB4uwoVpwGKC35UUkoQZNiRkQaIKGy8O1
+        4llzTeyOQvVhRGdnwqFZGOg7AvZJgM1O0HW0jWYz3FI818S+ATX/xyGFinREdWfCoV1UwNig00DWY0iy
+        5850pvgMrF4r6vI0BttO8axqTfSHumH44wrEje9Y+FdeE1/r+Mj7Wd64ucgbRCHnEw1ibvLKCfPNN7Cj
+        PW6nXlDVW4jHK7HwQV4TpdWKNlGlO7DNBenDRWv+pQoFsMx38oAi5dFOqlCApFGFD6RvBBSjxdbAMJ5Q
+        BQ/Y5qI0SFfOwpTskcyNlQTpuZ253Eo4x8DZmSRMxwlKVUQepuoh8KmnlKiIPFBNzr5QmgayQDXP8TLX
+        U5oG8lAVf1CSJtkgi21cfi0VdLb+s/mMkjTJfRIMvBdstkdN/MMf3QoaLSMWW77ahWgKX38qyc0IJWni
+        3GCb7aDUhKqlODrnX5HNltB9d7gXS3h3/IFgwh/o2PI1B383BrpqafgGXtcp4W9tf4mhov3DkHgd7BVY
+        ZJqmXHhdp4yvpfNVfrAv8DZGUy68rtOCtjaN/vFwBAXXPfIIAMAFsGZGrEt5icgAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnEliminar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAZJJREFUWEft
@@ -203,18 +199,18 @@
   </data>
   <data name="btnAgregar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
+        2FEwCtAAAwMAYcbSeDbyUg8AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -230,12 +226,6 @@
         8E0e29W/FyHfuk7mfYP49d8AAAAASUVORK5CYII=
 </value>
   </data>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
->>>>>>> d8f56f83cc8d777de045aa9b1944f723117b7e30
-=======
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAN5JREFUWEdj
@@ -278,9 +268,6 @@
         /WCQ4GAgEO9kapfgYKEAFSIJUKp/FIwEwMAAAEcizXmsEtdAAAAAAElFTkSuQmCC
 </value>
   </data>
->>>>>>> parent of b4abe3f... Funcionalidad entradas
-=======
->>>>>>> parent of 16d107e... Merge branch 'master' of https://github.com/EduardoBaas/Punto-de-Venta
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAWhJREFUWEdj
