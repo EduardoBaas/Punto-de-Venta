@@ -71,12 +71,7 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Precio_Venta;
 		private System.Windows.Forms.DataGridViewTextBoxColumn TotalProducto;
-		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+		private System.Windows.Forms.DataGridView dgvBuscar;
 		private System.Windows.Forms.PictureBox pictureBox9;
 		private System.Windows.Forms.TextBox txtProducto;
 		private System.Windows.Forms.Label label5;
@@ -109,12 +104,7 @@ namespace PuntoDeVenta
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tbgentradas = new System.Windows.Forms.TabControl();
 			this.tpgIngresar = new System.Windows.Forms.TabPage();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dgvBuscar = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
@@ -175,7 +165,7 @@ namespace PuntoDeVenta
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.tbgentradas.SuspendLayout();
 			this.tpgIngresar.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvBuscar)).BeginInit();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvEntradas)).BeginInit();
 			this.gpbDetalleCompra.SuspendLayout();
@@ -208,7 +198,7 @@ namespace PuntoDeVenta
 			// 
 			// tpgIngresar
 			// 
-			this.tpgIngresar.Controls.Add(this.dataGridView1);
+			this.tpgIngresar.Controls.Add(this.dgvBuscar);
 			this.tpgIngresar.Controls.Add(this.groupBox2);
 			this.tpgIngresar.Controls.Add(this.lblArticulos);
 			this.tpgIngresar.Controls.Add(this.dgvEntradas);
@@ -223,13 +213,13 @@ namespace PuntoDeVenta
 			this.tpgIngresar.Text = "Ingresar Produtos";
 			this.tpgIngresar.UseVisualStyleBackColor = true;
 			// 
-			// dataGridView1
+			// dgvBuscar
 			// 
-			this.dataGridView1.AllowUserToAddRows = false;
-			this.dataGridView1.AllowUserToDeleteRows = false;
-			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvBuscar.AllowUserToAddRows = false;
+			this.dgvBuscar.AllowUserToDeleteRows = false;
+			this.dgvBuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvBuscar.BackgroundColor = System.Drawing.Color.White;
+			this.dgvBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,16 +227,10 @@ namespace PuntoDeVenta
 			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
 			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-			this.dataGridViewTextBoxColumn1,
-			this.dataGridViewTextBoxColumn2,
-			this.dataGridViewTextBoxColumn3,
-			this.dataGridViewTextBoxColumn4,
-			this.dataGridViewTextBoxColumn5});
-			this.dataGridView1.Location = new System.Drawing.Point(150, 258);
-			this.dataGridView1.Name = "dataGridView1";
+			this.dgvBuscar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			this.dgvBuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvBuscar.Location = new System.Drawing.Point(136, 258);
+			this.dgvBuscar.Name = "dgvBuscar";
 			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -254,35 +238,12 @@ namespace PuntoDeVenta
 			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
 			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.Size = new System.Drawing.Size(1033, 74);
-			this.dataGridView1.TabIndex = 10;
-			// 
-			// dataGridViewTextBoxColumn1
-			// 
-			this.dataGridViewTextBoxColumn1.HeaderText = "Código";
-			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-			// 
-			// dataGridViewTextBoxColumn2
-			// 
-			this.dataGridViewTextBoxColumn2.HeaderText = "Cantidad";
-			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-			// 
-			// dataGridViewTextBoxColumn3
-			// 
-			this.dataGridViewTextBoxColumn3.HeaderText = "Costo";
-			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-			// 
-			// dataGridViewTextBoxColumn4
-			// 
-			this.dataGridViewTextBoxColumn4.HeaderText = "Precio de Venta";
-			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-			// 
-			// dataGridViewTextBoxColumn5
-			// 
-			this.dataGridViewTextBoxColumn5.HeaderText = "Total del Producto";
-			this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+			this.dgvBuscar.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			this.dgvBuscar.RowHeadersVisible = false;
+			this.dgvBuscar.Size = new System.Drawing.Size(1033, 74);
+			this.dgvBuscar.TabIndex = 10;
+			this.dgvBuscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvBuscarCellContentClick);
+			this.dgvBuscar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DgvBuscarMouseClick);
 			// 
 			// groupBox2
 			// 
@@ -419,7 +380,7 @@ namespace PuntoDeVenta
 			this.Costo,
 			this.Precio_Venta,
 			this.TotalProducto});
-			this.dgvEntradas.Location = new System.Drawing.Point(150, 338);
+			this.dgvEntradas.Location = new System.Drawing.Point(136, 338);
 			this.dgvEntradas.Name = "dgvEntradas";
 			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
@@ -477,7 +438,7 @@ namespace PuntoDeVenta
 			this.gpbDetalleCompra.Controls.Add(this.txtCodigo);
 			this.gpbDetalleCompra.Controls.Add(this.lblCodigo);
 			this.gpbDetalleCompra.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gpbDetalleCompra.Location = new System.Drawing.Point(27, 179);
+			this.gpbDetalleCompra.Location = new System.Drawing.Point(19, 179);
 			this.gpbDetalleCompra.Name = "gpbDetalleCompra";
 			this.gpbDetalleCompra.Size = new System.Drawing.Size(1293, 79);
 			this.gpbDetalleCompra.TabIndex = 3;
@@ -501,6 +462,7 @@ namespace PuntoDeVenta
 			this.txtProducto.Name = "txtProducto";
 			this.txtProducto.Size = new System.Drawing.Size(165, 23);
 			this.txtProducto.TabIndex = 34;
+			this.txtProducto.TextChanged += new System.EventHandler(this.TxtProductoTextChanged);
 			// 
 			// label5
 			// 
@@ -632,6 +594,7 @@ namespace PuntoDeVenta
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.Size = new System.Drawing.Size(165, 23);
 			this.txtCodigo.TabIndex = 7;
+			this.txtCodigo.TextChanged += new System.EventHandler(this.TxtCodigoTextChanged);
 			// 
 			// lblCodigo
 			// 
@@ -730,6 +693,7 @@ namespace PuntoDeVenta
 			this.cmbProveedor.Name = "cmbProveedor";
 			this.cmbProveedor.Size = new System.Drawing.Size(285, 26);
 			this.cmbProveedor.TabIndex = 5;
+			this.cmbProveedor.SelectedIndexChanged += new System.EventHandler(this.CmbProveedorSelectedIndexChanged);
 			// 
 			// label6
 			// 
@@ -808,7 +772,7 @@ namespace PuntoDeVenta
 			// txtFolio
 			// 
 			this.txtFolio.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtFolio.Location = new System.Drawing.Point(295, 48);
+			this.txtFolio.Location = new System.Drawing.Point(298, 48);
 			this.txtFolio.Name = "txtFolio";
 			this.txtFolio.Size = new System.Drawing.Size(165, 23);
 			this.txtFolio.TabIndex = 4;
@@ -916,7 +880,7 @@ namespace PuntoDeVenta
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.ClientSize = new System.Drawing.Size(1360, 591);
+			this.ClientSize = new System.Drawing.Size(1333, 582);
 			this.Controls.Add(this.tbgentradas);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -926,7 +890,7 @@ namespace PuntoDeVenta
 			this.Load += new System.EventHandler(this.FrmEntradasLoad);
 			this.tbgentradas.ResumeLayout(false);
 			this.tpgIngresar.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvBuscar)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvEntradas)).EndInit();

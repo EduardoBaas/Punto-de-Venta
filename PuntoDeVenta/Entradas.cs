@@ -54,9 +54,11 @@ namespace PuntoDeVenta
 			FrameBD.SQLIDU(sql);
 		}
 		
-		public void SelectProv()
+		public void filtrarProEntr(string condicion,DataGridView dgv)
 		{
-			
+			string sql = "SELECT codigo_barras AS Codigo, nombre_producto  AS Producto, costo_producto AS Precio, existencia AS existencia,stock_maximo AS 'Stock Maximo' FROM productos WHERE nombre_producto LIKE'"+condicion+"%'";
+			dgv.DataSource = FrameBD.SQLSEL(sql);
+			dgv.DataMember="Datos";
 		}
 	}
 }
