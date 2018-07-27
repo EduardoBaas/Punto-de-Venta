@@ -35,8 +35,13 @@ namespace PuntoDeVenta
 		}
 		void FrmVentasLoad(object sender, EventArgs e)
 		{
-			objVentas.buscarProducto(txtProducto);
-			objVentas.buscarCliente(txtCliente);
+			objVentas.obtenerCliente(cmbCliente);
+			objVentas.obtenerProducto(cmbProducto);
+		}
+		
+		void CmbClienteSelectedValueChanged(object sender, EventArgs e)
+		{
+			objVentas.dataCliente(cmbCliente,lblNomCliente,lblDireccion);
 		}
 		
 	}

@@ -184,6 +184,31 @@ namespace AccesoADatos
           }
           Array.Resize(ref respaux, respaux.Length - 1);
           return respaux;
-      }
+      	}
+		
+		public static void comboComplete(string sql,ComboBox cmb,string mostrar, string pk)
+      	{
+          conectar();
+          MySqlDataAdapter Adap = new MySqlDataAdapter(sql, conex);
+          DataTable DT = new DataTable();
+          Adap.Fill(DT);
+
+          cmb.DataSource = DT;
+          cmb.DisplayMember = mostrar;
+          cmb.ValueMember = pk;
+
+          AutoCompleteStringCollection stringCol = new AutoCompleteStringCollection();
+
+          foreach (DataRow row in DT.Rows)
+          {
+              stringCol.Add(Convert.ToString(row[mostrar]));
+          }
+
+          cmb.AutoCompleteCustomSource = stringCol;
+          cmb.AutoCompleteMode = AutoCompleteMode.Suggest;
+          cmb.AutoCompleteSource = AutoCompleteSource.CustomSource;
+         
+      	}
+		
     }
 }

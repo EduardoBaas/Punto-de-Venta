@@ -20,12 +20,57 @@ namespace PuntoDeVenta
 	/// </summary>
 	public class Ventas
 	{
-		public static uint puerto = 3309;
-		public string acceso = "Server=localhost;Port="+puerto+";Password=12345;UserID=root;Database=punto_venta;";
+		
 		
 		public Ventas()
 		{
 		}
+		
+		public void obtenerCliente(ComboBox client)
+		{
+			string sql = "SELECT id_cliente,CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente) as Cliente FROM clientes";
+			
+			FrameBD.comboComplete(sql,client,"Cliente","id_cliente");
+		}
+		
+		public void obtenerProducto(ComboBox prod)
+		{
+			string sql = "SELECT codigo_barras,nombre_producto FROM productos";
+			
+			FrameBD.comboComplete(sql,prod,"nombre_producto","codigo_barras");
+		}
+		
+		public void dataCliente(ComboBox cli, Label nom, Label direc)
+		{
+			string tabla = "clientes";
+			string condicion = "id_cliente='"+cli.SelectedValue+"'";
+			string campos = "CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente),direccion";
+			
+			string[] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
+			if (datos.Length>1)
+			{
+				nom.Text=datos[0];
+				direc.Text=datos[1];
+			}	
+		}
+		
+		public void dataProducto(ComboBox prod, )
+		{
+			string tabla = "productos";
+			string condicion = "codigo_barras='"+prod.SelectedValue+"'";
+			string campos = "nombre_producto,costo_producto";
+			
+			string[] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
+			
+			if (datos.Length>1)
+			{
+				nom.Text=datos[0];
+				direc.Text=datos[1];
+			}	
+		}
+		
+		/*public static uint puerto = 3309;
+		public string acceso = "Server=localhost;Port="+puerto+";Password=12345;UserID=root;Database=punto_venta;";
 		
 		public void buscarProducto(TextBox prod)
 		{
@@ -81,6 +126,7 @@ namespace PuntoDeVenta
 				conexion.Close();
 			}
 			
-		}
+		}*/
+		
 	}
 }

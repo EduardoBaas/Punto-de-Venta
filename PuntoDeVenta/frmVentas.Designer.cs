@@ -26,7 +26,6 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label lblDireccion;
 		private System.Windows.Forms.Label lblNomCliente;
-		private System.Windows.Forms.TextBox txtCliente;
 		private System.Windows.Forms.Label lblBuscar;
 		private System.Windows.Forms.Label lblTelefono;
 		private System.Windows.Forms.Label label8;
@@ -39,7 +38,6 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label lblPrecio;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.TextBox txtProducto;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TextBox txtCantidad;
 		private System.Windows.Forms.Button btnAgregar;
@@ -71,10 +69,12 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.Label label40;
 		private System.Windows.Forms.Label label39;
 		private System.Windows.Forms.Label lblUsuarioImg;
-		private System.Windows.Forms.Label lblTelfUsuario;
+		private System.Windows.Forms.Label lblDirecUsuario;
 		private System.Windows.Forms.Label lblUsuario;
 		private System.Windows.Forms.Label label35;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.ComboBox cmbCliente;
+		private System.Windows.Forms.ComboBox cmbProducto;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -107,7 +107,7 @@ namespace PuntoDeVenta
 			this.label40 = new System.Windows.Forms.Label();
 			this.label39 = new System.Windows.Forms.Label();
 			this.lblUsuarioImg = new System.Windows.Forms.Label();
-			this.lblTelfUsuario = new System.Windows.Forms.Label();
+			this.lblDirecUsuario = new System.Windows.Forms.Label();
 			this.lblUsuario = new System.Windows.Forms.Label();
 			this.label35 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -120,11 +120,11 @@ namespace PuntoDeVenta
 			this.label8 = new System.Windows.Forms.Label();
 			this.lblDireccion = new System.Windows.Forms.Label();
 			this.lblNomCliente = new System.Windows.Forms.Label();
-			this.txtCliente = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.lblBuscar = new System.Windows.Forms.Label();
 			this.gpbDetalleVenta = new System.Windows.Forms.GroupBox();
+			this.cmbProducto = new System.Windows.Forms.ComboBox();
 			this.lblProductosTotales = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
 			this.lblProductoImg = new System.Windows.Forms.Label();
@@ -142,7 +142,6 @@ namespace PuntoDeVenta
 			this.lblPrecio = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.txtProducto = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
@@ -159,6 +158,7 @@ namespace PuntoDeVenta
 			this.lblSubtotalT = new System.Windows.Forms.Label();
 			this.label27 = new System.Windows.Forms.Label();
 			this.label26 = new System.Windows.Forms.Label();
+			this.cmbCliente = new System.Windows.Forms.ComboBox();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.gpbDatosGenerales.SuspendLayout();
@@ -218,7 +218,7 @@ namespace PuntoDeVenta
 			this.gpbDatosGenerales.Controls.Add(this.label40);
 			this.gpbDatosGenerales.Controls.Add(this.label39);
 			this.gpbDatosGenerales.Controls.Add(this.lblUsuarioImg);
-			this.gpbDatosGenerales.Controls.Add(this.lblTelfUsuario);
+			this.gpbDatosGenerales.Controls.Add(this.lblDirecUsuario);
 			this.gpbDatosGenerales.Controls.Add(this.lblUsuario);
 			this.gpbDatosGenerales.Controls.Add(this.label35);
 			this.gpbDatosGenerales.Controls.Add(this.label3);
@@ -273,15 +273,14 @@ namespace PuntoDeVenta
 			this.lblUsuarioImg.Size = new System.Drawing.Size(179, 106);
 			this.lblUsuarioImg.TabIndex = 40;
 			// 
-			// lblTelfUsuario
+			// lblDirecUsuario
 			// 
-			this.lblTelfUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lblTelfUsuario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTelfUsuario.Location = new System.Drawing.Point(54, 71);
-			this.lblTelfUsuario.Name = "lblTelfUsuario";
-			this.lblTelfUsuario.Size = new System.Drawing.Size(281, 23);
-			this.lblTelfUsuario.TabIndex = 22;
-			this.lblTelfUsuario.Text = "Teléfono";
+			this.lblDirecUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblDirecUsuario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDirecUsuario.Location = new System.Drawing.Point(54, 71);
+			this.lblDirecUsuario.Name = "lblDirecUsuario";
+			this.lblDirecUsuario.Size = new System.Drawing.Size(281, 23);
+			this.lblDirecUsuario.TabIndex = 22;
 			// 
 			// lblUsuario
 			// 
@@ -291,7 +290,6 @@ namespace PuntoDeVenta
 			this.lblUsuario.Name = "lblUsuario";
 			this.lblUsuario.Size = new System.Drawing.Size(280, 23);
 			this.lblUsuario.TabIndex = 22;
-			this.lblUsuario.Text = "Operador";
 			// 
 			// label35
 			// 
@@ -349,11 +347,11 @@ namespace PuntoDeVenta
 			// 
 			// gpbDatosCliente
 			// 
+			this.gpbDatosCliente.Controls.Add(this.cmbCliente);
 			this.gpbDatosCliente.Controls.Add(this.lblTelefono);
 			this.gpbDatosCliente.Controls.Add(this.label8);
 			this.gpbDatosCliente.Controls.Add(this.lblDireccion);
 			this.gpbDatosCliente.Controls.Add(this.lblNomCliente);
-			this.gpbDatosCliente.Controls.Add(this.txtCliente);
 			this.gpbDatosCliente.Controls.Add(this.label4);
 			this.gpbDatosCliente.Controls.Add(this.label6);
 			this.gpbDatosCliente.Controls.Add(this.lblBuscar);
@@ -373,15 +371,14 @@ namespace PuntoDeVenta
 			this.lblTelefono.Name = "lblTelefono";
 			this.lblTelefono.Size = new System.Drawing.Size(326, 23);
 			this.lblTelefono.TabIndex = 20;
-			this.lblTelefono.Text = "Teléfono";
 			// 
 			// label8
 			// 
 			this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.Image = ((System.Drawing.Image)(resources.GetObject("label8.Image")));
-			this.label8.Location = new System.Drawing.Point(6, 136);
+			this.label8.Location = new System.Drawing.Point(8, 130);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(76, 23);
+			this.label8.Size = new System.Drawing.Size(76, 36);
 			this.label8.TabIndex = 21;
 			// 
 			// lblDireccion
@@ -401,14 +398,6 @@ namespace PuntoDeVenta
 			this.lblNomCliente.Name = "lblNomCliente";
 			this.lblNomCliente.Size = new System.Drawing.Size(326, 23);
 			this.lblNomCliente.TabIndex = 17;
-			// 
-			// txtCliente
-			// 
-			this.txtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCliente.Location = new System.Drawing.Point(62, 34);
-			this.txtCliente.Name = "txtCliente";
-			this.txtCliente.Size = new System.Drawing.Size(265, 20);
-			this.txtCliente.TabIndex = 22;
 			// 
 			// label4
 			// 
@@ -440,6 +429,7 @@ namespace PuntoDeVenta
 			// gpbDetalleVenta
 			// 
 			this.gpbDetalleVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.gpbDetalleVenta.Controls.Add(this.cmbProducto);
 			this.gpbDetalleVenta.Controls.Add(this.lblProductosTotales);
 			this.gpbDetalleVenta.Controls.Add(this.label24);
 			this.gpbDetalleVenta.Controls.Add(this.lblProductoImg);
@@ -453,7 +443,6 @@ namespace PuntoDeVenta
 			this.gpbDetalleVenta.Controls.Add(this.lblPrecio);
 			this.gpbDetalleVenta.Controls.Add(this.label14);
 			this.gpbDetalleVenta.Controls.Add(this.label13);
-			this.gpbDetalleVenta.Controls.Add(this.txtProducto);
 			this.gpbDetalleVenta.Controls.Add(this.label11);
 			this.gpbDetalleVenta.Controls.Add(this.label5);
 			this.gpbDetalleVenta.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -463,6 +452,15 @@ namespace PuntoDeVenta
 			this.gpbDetalleVenta.TabIndex = 2;
 			this.gpbDetalleVenta.TabStop = false;
 			this.gpbDetalleVenta.Text = "Detalle Venta";
+			// 
+			// cmbProducto
+			// 
+			this.cmbProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbProducto.FormattingEnabled = true;
+			this.cmbProducto.Location = new System.Drawing.Point(11, 48);
+			this.cmbProducto.Name = "cmbProducto";
+			this.cmbProducto.Size = new System.Drawing.Size(219, 21);
+			this.cmbProducto.TabIndex = 41;
 			// 
 			// lblProductosTotales
 			// 
@@ -615,14 +613,6 @@ namespace PuntoDeVenta
 			this.label13.Size = new System.Drawing.Size(60, 23);
 			this.label13.TabIndex = 23;
 			this.label13.Text = "Precio";
-			// 
-			// txtProducto
-			// 
-			this.txtProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtProducto.Location = new System.Drawing.Point(9, 49);
-			this.txtProducto.Name = "txtProducto";
-			this.txtProducto.Size = new System.Drawing.Size(221, 20);
-			this.txtProducto.TabIndex = 40;
 			// 
 			// label11
 			// 
@@ -787,6 +777,16 @@ namespace PuntoDeVenta
 			this.label26.TabIndex = 40;
 			this.label26.Text = "Subtotal";
 			// 
+			// cmbCliente
+			// 
+			this.cmbCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmbCliente.FormattingEnabled = true;
+			this.cmbCliente.Location = new System.Drawing.Point(64, 37);
+			this.cmbCliente.Name = "cmbCliente";
+			this.cmbCliente.Size = new System.Drawing.Size(265, 21);
+			this.cmbCliente.TabIndex = 42;
+			this.cmbCliente.SelectedValueChanged += new System.EventHandler(this.CmbClienteSelectedValueChanged);
+			// 
 			// frmVentas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -806,7 +806,6 @@ namespace PuntoDeVenta
 			this.panel2.ResumeLayout(false);
 			this.gpbDatosGenerales.ResumeLayout(false);
 			this.gpbDatosCliente.ResumeLayout(false);
-			this.gpbDatosCliente.PerformLayout();
 			this.gpbDetalleVenta.ResumeLayout(false);
 			this.gpbDetalleVenta.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();
