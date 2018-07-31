@@ -47,6 +47,7 @@ namespace PuntoDeVenta
 			
 		}
 		
+		//Autocompleta la busqueda del cliente
 		public void obtenerCliente(ComboBox client)
 		{
 			string sql = "SELECT id_clientes,CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente) as Cliente FROM clientes";
@@ -54,6 +55,7 @@ namespace PuntoDeVenta
 			FrameBD.comboComplete(sql,client,"Cliente","id_clientes");
 		}
 		
+		//Autocompleta la busqueda del producto
 		public void obtenerProducto(ComboBox prod)
 		{
 			string sql = "SELECT codigo_barras,nombre_producto FROM productos";
@@ -61,6 +63,7 @@ namespace PuntoDeVenta
 			FrameBD.comboComplete(sql,prod,"nombre_producto","codigo_barras");
 		}
 		
+		//Obtienen los datos del clientes a quien se realiza la venta.
 		public void dataCliente(ComboBox cli, Label nom, Label direc, Label telf)
 		{
 			string tabla = "clientes";
@@ -77,6 +80,8 @@ namespace PuntoDeVenta
 			}	
 		}
 		
+		//Obtiene los datos básicos del producto seleccionado
+		//para realizar las operaciones.
 		public void dataProducto(ComboBox prod, Label precio)
 		{
 			string tabla = "productos";
@@ -92,6 +97,7 @@ namespace PuntoDeVenta
 			}	
 		}
 		
+		//Obtiene los datos básicos del operador
 		public void dataUser(Label usuario, Label telf)
 		{
 			string tabla = "usuarios";
@@ -128,6 +134,8 @@ namespace PuntoDeVenta
 			return venta;
 		}
 		
+		//Se crea una id_detalle_ventas genérica, por el momento solo por
+		//de funcionalidad
 		public int nDetalle()
 		{
 			Random generador =  new Random();
@@ -136,6 +144,7 @@ namespace PuntoDeVenta
 			return num;
 		}
 		
+		//Suma los totales de la venta de cada producto junto con el subtotal.
 		public void totales(DataGridView grid, Label total, Label stotal)
 		{
 			double sum=0, sub=0;
@@ -151,6 +160,7 @@ namespace PuntoDeVenta
 			stotal.Text=sub.ToString("");
 		}
 		
+		//Inserta los datos correspondientes en la tabla de detalle ventas
 		public void insertarDetalle(DataGridView data)
 		{
 			for (int i = 0; i < data.RowCount; i++) 
@@ -164,6 +174,7 @@ namespace PuntoDeVenta
 			
 		}
 		
+		//Inserta los datos correspondientes en la tabla ventas.
 		public void insertarVentas()
 		{
 			string sql = string.Format("INSERT INTO ventas VALUES({0},{1},'{2}','{3}','{4}',{5},'{6}')"
