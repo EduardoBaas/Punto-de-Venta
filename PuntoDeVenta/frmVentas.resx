@@ -165,18 +165,11 @@
   </data>
   <data name="label35.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAnVJREFUWEft
-        lstrE1EUh/OPiODWvaVYzKJSCxUD1icKghAVlSpulELFFhclCBUfWEWlulKKokksSBF8FFcFcSGuijax
-        iqZRhN50mhnn9E48vT1n5hwjbs0PPkLu3I/fmTyGm2qllb8JfC2ug/niaZgvTEMpZ+Dz1Qn4ciONl5uG
-        +rjUPFDNr4dK4ZwV31kRHB+HVpnNeVC+9BzmRjOouWg+Xtbj7pRIDDoAZeWTaeJjjR5JYkjlFMkhYI0e
-        SWJIpRTJIWCNHkliSKUUySFgjR5JYgilweRJWOzrAbNtI5hMGhZP7YFfr6+JPtbokSRGrNwfPwILXW2w
-        0LmBs6Ud/GIu4WONnriQgJSHb/vB9LS70lp2v2Wfe2+2dkA4c4/5WKOHbhYhA9RHD7iy+t3bAJXvDepj
-        N1fXx/qZjzV66GYRMoA3sN0VhaVPboBwtuzWvaEs87FGD90sQgZYGt7tioKpV26A4OULt7400sd8rNFD
-        N4uQAYLHx1yR2dHd+Brqd26B6e1268HkCPOxRg/dLEIGgJlBMLvSriyO2dsF8C3PfKzRQzeL0AEs/v3D
-        YnmEnx9O+FijJy4kiA0AHwahdnBzoryWzdjfA7/7CKzRExcSxAewBMXjiQGCZxdFH2v0SBJDGCDCO9vr
-        yr3zh2TXgjV6JIkhlEeE7wfsP2ETmJ2d9pkwLrsWrNEjSQyhfAX/wVHwJ5LPfwrW6JEkhlDMkBwC1uiR
-        pAbVwhv7egbKl5/a41dNLI+Q3Aj0sUYPkUKoFKeseAKqj9bgZRcoX2+DuSsPoXThpzLAH301VpxuSD+e
-        rMWlprGH0Y7fw9iD6T/4rfzPSaWWAX27AosaP5gSAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAN5JREFUWEdj
+        GAXEAGOXUH4Ld38XMw+/UGIwSK25pycfVDtlwNIz0N7c3f8dEP8nEb81c/e3hRpDPjB397sAMjA0q/x/
+        cmUnUTg0swzsCKADzkGNIR8ADfoLMmznnR//d9/7TRTecfsHLBT+QI0hH0ANwmoRPgzTBzWGfDDqgFEH
+        jDpg1AGjDhh1wKgDRh0waBxAZpOMeg4ITiv+H5VfSxQGqaWmA8CNUnTsG5+JgrGpAWJqNEohzXJ0XDFh
+        DgrGpoYqzfIB75iAAKhrBnIIqMtFDDZ187OjWtdsmAMGBgCF68ByjuFhWAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="label3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -300,6 +293,18 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="productoDataGrid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="precioDataGrid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cantidadDataGrid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="totalDataGrid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="productoDataGrid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

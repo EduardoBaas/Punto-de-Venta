@@ -20,17 +20,38 @@ namespace PuntoDeVenta
 	/// </summary>
 	public class Ventas
 	{
+		// Variables para detalle ventas
+
+		public int idDetalleVentas{ get; set;}
+		public double costoUnitario{ get; set;}
+		public int cantidadProducto{ get; set;}
+		public double totalProducto{ get; set;}
+		public string codigoBarras{ get; set;}
+	
+		// Varibles para ventas
+
+		public int idVenta{ get; set;}
+		public double total{ get; set;}
+		public string fechaVenta{ get; set;}
+		public string tipoPago{ get; set;}
+		public string cancelado{ get; set;}
+		public int idCliente{ get; set;}
+		public string CURP{ get; set;}
 		
+		// Otras variables.
+		
+		public int venta;
 		
 		public Ventas()
 		{
+			
 		}
 		
 		public void obtenerCliente(ComboBox client)
 		{
-			string sql = "SELECT id_cliente,CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente) as Cliente FROM clientes";
+			string sql = "SELECT id_clientes,CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente) as Cliente FROM clientes";
 			
-			FrameBD.comboComplete(sql,client,"Cliente","id_cliente");
+			FrameBD.comboComplete(sql,client,"Cliente","id_clientes");
 		}
 		
 		public void obtenerProducto(ComboBox prod)
@@ -40,93 +61,115 @@ namespace PuntoDeVenta
 			FrameBD.comboComplete(sql,prod,"nombre_producto","codigo_barras");
 		}
 		
-		public void dataCliente(ComboBox cli, Label nom, Label direc)
+		public void dataCliente(ComboBox cli, Label nom, Label direc, Label telf)
 		{
 			string tabla = "clientes";
-			string condicion = "id_cliente='"+cli.SelectedValue+"'";
-			string campos = "CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente),direccion";
+			string condicion = "id_clientes='"+cli.SelectedValue+"'";
+			string campos = "id_clientes,CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente),direccion,telefono";
 			
 			string[] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
 			if (datos.Length>1)
 			{
-				nom.Text=datos[0];
-				direc.Text=datos[1];
+				idCliente=Convert.ToInt32(datos[0]);
+				nom.Text=datos[1];
+				direc.Text=datos[2];
+				telf.Text=datos[3];
 			}	
 		}
 		
-		public void dataProducto(ComboBox prod, )
+		public void dataProducto(ComboBox prod, Label precio)
 		{
 			string tabla = "productos";
 			string condicion = "codigo_barras='"+prod.SelectedValue+"'";
-			string campos = "nombre_producto,costo_producto";
+			string campos = "codigo_barras,costo_producto";
 			
 			string[] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
 			
 			if (datos.Length>1)
 			{
-				nom.Text=datos[0];
-				direc.Text=datos[1];
+				codigoBarras=datos[0];
+				precio.Text=datos[1];
 			}	
 		}
 		
-		/*public static uint puerto = 3309;
-		public string acceso = "Server=localhost;Port="+puerto+";Password=12345;UserID=root;Database=punto_venta;";
-		
-		public void buscarProducto(TextBox prod)
+		public void dataUser(Label usuario, Label telf)
 		{
-			prod.AutoCompleteSource = AutoCompleteSource.CustomSource;
-			prod.AutoCompleteMode = AutoCompleteMode.Suggest;
-			AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
-			additems(coleccion);
-			prod.AutoCompleteCustomSource = coleccion;
+			string tabla = "usuarios";
+			string condicion = "usuario='AntonioHau'";
+			string campos = "CONCAT(nombre,' ',apellidoP,' ',ApellidoM),telefono,CURP";
+			
+			string[] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
+			
+			if (datos.Length>1)
+			{
+				usuario.Text=datos[0];
+				telf.Text=datos[1];
+				CURP=datos[2];
+			}	
 		}
 		
-		public void additems(AutoCompleteStringCollection completar)
+		public double calculo(double precio, int cantidad)
 		{
-			string producto="";
+			double total;
+			total=cantidad*precio;
+			return total;
+		}
+		
+		public double pago(double total, double efectivo)
+		{
+			double pagar;
+			pagar=efectivo-total;
+			return pagar;
+		}
+		
+		public int nVenta()
+		{
+			venta=venta+1;
+			return venta;
+		}
+		
+		public int nDetalle()
+		{
+			Random generador =  new Random();
+			int num;
+			num=generador.Next(1,255);
+			return num;
+		}
+		
+		public void totales(DataGridView grid, Label total, Label stotal)
+		{
+			double sum=0, sub=0;
 			
-			using (MySqlConnection conexion = new MySqlConnection(acceso))
+			for (int i = 0; i < grid.RowCount; i++)
 			{
-				conexion.Open();
-				DataTable tabla = new DataTable();
-				MySqlDataAdapter comandos = new MySqlDataAdapter("SELECT nombre_producto FROM productos WHERE nombre_producto LIKE '"+producto+"%';",conexion);
-				comandos.Fill(tabla);
-				foreach (DataRow X in tabla.Rows)
-				{
-					completar.Add(X[0].ToString());
-				}
+				string valor = grid["totalDataGrid",i].Value.ToString();
+				sum=sum+Convert.ToDouble(valor);
+				sub=sub+Convert.ToDouble((Convert.ToDouble(valor)/100)*16);
+			}
+			
+			total.Text=sum.ToString("");
+			stotal.Text=sub.ToString("");
+		}
+		
+		public void insertarDetalle(DataGridView data)
+		{
+			for (int i = 0; i < data.RowCount; i++) 
+			{
+				string sql = string.Format("INSERT INTO detalle_ventas VALUES({0},{1},{2},{3},'{4}',{5})"
+				,idDetalleVentas,Convert.ToDouble(data["precioDataGrid",i].Value),Convert.ToInt32(data["cantidadDataGrid",i].Value),
+				Convert.ToDouble(data["totalDataGrid",i].Value),codigoBarras,idVenta);
 				
-				conexion.Close();
+				FrameBD.SQLIDU(sql);
 			}
+			
 		}
 		
-		public void buscarCliente(TextBox clien)
+		public void insertarVentas()
 		{
-			clien.AutoCompleteSource = AutoCompleteSource.CustomSource;
-			clien.AutoCompleteMode = AutoCompleteMode.Suggest;
-			AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
-			addDatos(coleccion);
-			clien.AutoCompleteCustomSource = coleccion;
+			string sql = string.Format("INSERT INTO ventas VALUES({0},{1},'{2}','{3}','{4}',{5},'{6}')"
+			,idVenta,total,fechaVenta,tipoPago,cancelado,idCliente,CURP);
+			
+			FrameBD.SQLIDU(sql);
 		}
-		
-		public void addDatos(AutoCompleteStringCollection completar) 
-		{	
-			string cliente="";
-			
-			using (MySqlConnection conexion = new MySqlConnection(acceso))
-			{
-				conexion.Open();
-				DataTable tabla = new DataTable();
-				MySqlDataAdapter comandos = new MySqlDataAdapter("SELECT CONCAT(nombre_cliente,' ',apellidoP_cliente,' ',apellidoM_cliente) FROM clientes WHERE nombre_cliente LIKE '"+cliente+"%';",conexion);
-				comandos.Fill(tabla);
-				foreach (DataRow X in tabla.Rows)
-				{
-					completar.Add(X[0].ToString());
-				}
-				conexion.Close();
-			}
-			
-		}*/
-		
 	}
 }
