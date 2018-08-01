@@ -35,6 +35,9 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
 		private System.Windows.Forms.ToolStripButton tsbUsuarios;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+		private System.Windows.Forms.ToolStripButton tsbTipos;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -79,6 +82,9 @@ namespace PuntoDeVenta
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
 			this.tsbUsuarios = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+			this.tsbTipos = new System.Windows.Forms.ToolStripButton();
 			this.mspPuntoDeVenta.SuspendLayout();
 			this.tspPuntoDeVenta.SuspendLayout();
 			this.SuspendLayout();
@@ -197,7 +203,10 @@ namespace PuntoDeVenta
 			this.tsbEntradas,
 			this.toolStripSeparator3,
 			this.toolStripSeparator4,
-			this.tsbUsuarios});
+			this.tsbUsuarios,
+			this.toolStripSeparator5,
+			this.toolStripSeparator6,
+			this.tsbTipos});
 			this.tspPuntoDeVenta.Location = new System.Drawing.Point(0, 24);
 			this.tspPuntoDeVenta.Name = "tspPuntoDeVenta";
 			this.tspPuntoDeVenta.Size = new System.Drawing.Size(891, 25);
@@ -253,6 +262,26 @@ namespace PuntoDeVenta
 			this.tsbUsuarios.Size = new System.Drawing.Size(23, 22);
 			this.tsbUsuarios.Text = "Usuarios";
 			this.tsbUsuarios.Click += new System.EventHandler(this.TsbUsuariosClick);
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+			// 
+			// toolStripSeparator6
+			// 
+			this.toolStripSeparator6.Name = "toolStripSeparator6";
+			this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+			// 
+			// tsbTipos
+			// 
+			this.tsbTipos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.tsbTipos.Image = ((System.Drawing.Image)(resources.GetObject("tsbTipos.Image")));
+			this.tsbTipos.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.tsbTipos.Name = "tsbTipos";
+			this.tsbTipos.Size = new System.Drawing.Size(23, 22);
+			this.tsbTipos.Text = "toolStripButton1";
+			this.tsbTipos.Click += new System.EventHandler(this.TsbTiposClick);
 			// 
 			// MainForm
 			// 

@@ -63,7 +63,6 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.TextBox txtIva;
 		private System.Windows.Forms.TextBox txtSubtotal;
 		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label lblArticulos;
 		private System.Windows.Forms.Button btnSave;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
@@ -75,6 +74,20 @@ namespace PuntoDeVenta
 		private System.Windows.Forms.PictureBox pictureBox9;
 		private System.Windows.Forms.TextBox txtProducto;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NombreProduct;
+		private System.Windows.Forms.DataGridView dgvRegistroE;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.PictureBox pictureBox10;
+		private System.Windows.Forms.PictureBox pictureBox11;
+		private System.Windows.Forms.Label label20;
+		private System.Windows.Forms.DataGridView dgvDetalleE;
+		private System.Windows.Forms.Label label19;
+		private System.Windows.Forms.ComboBox cmbBuscP;
+		private System.Windows.Forms.TextBox txtBuscUsu;
+		private System.Windows.Forms.Label label18;
+		private System.Windows.Forms.DateTimePicker dtpFechaR;
+		private System.Windows.Forms.Button btnLimpiar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -102,6 +115,11 @@ namespace PuntoDeVenta
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradas));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tbgentradas = new System.Windows.Forms.TabControl();
 			this.tpgIngresar = new System.Windows.Forms.TabPage();
 			this.dgvBuscar = new System.Windows.Forms.DataGridView();
@@ -114,9 +132,9 @@ namespace PuntoDeVenta
 			this.txtIva = new System.Windows.Forms.TextBox();
 			this.txtSubtotal = new System.Windows.Forms.TextBox();
 			this.label13 = new System.Windows.Forms.Label();
-			this.lblArticulos = new System.Windows.Forms.Label();
 			this.dgvEntradas = new System.Windows.Forms.DataGridView();
 			this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NombreProduct = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Precio_Venta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -129,15 +147,15 @@ namespace PuntoDeVenta
 			this.btnAgregar = new System.Windows.Forms.Button();
 			this.txtTotProduct = new System.Windows.Forms.TextBox();
 			this.label12 = new System.Windows.Forms.Label();
+			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.txtPrecioV = new System.Windows.Forms.TextBox();
+			this.lblCodigo = new System.Windows.Forms.Label();
+			this.txtCodigo = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
 			this.txtCosto = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
 			this.txtCantidad = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.txtCodigo = new System.Windows.Forms.TextBox();
-			this.lblCodigo = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -159,6 +177,19 @@ namespace PuntoDeVenta
 			this.label9 = new System.Windows.Forms.Label();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.tbpHistorial = new System.Windows.Forms.TabPage();
+			this.btnLimpiar = new System.Windows.Forms.Button();
+			this.pictureBox11 = new System.Windows.Forms.PictureBox();
+			this.label20 = new System.Windows.Forms.Label();
+			this.dgvDetalleE = new System.Windows.Forms.DataGridView();
+			this.label19 = new System.Windows.Forms.Label();
+			this.cmbBuscP = new System.Windows.Forms.ComboBox();
+			this.txtBuscUsu = new System.Windows.Forms.TextBox();
+			this.label18 = new System.Windows.Forms.Label();
+			this.dtpFechaR = new System.Windows.Forms.DateTimePicker();
+			this.label17 = new System.Windows.Forms.Label();
+			this.pictureBox10 = new System.Windows.Forms.PictureBox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.dgvRegistroE = new System.Windows.Forms.DataGridView();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -182,6 +213,10 @@ namespace PuntoDeVenta
 			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.tbpHistorial.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvDetalleE)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvRegistroE)).BeginInit();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -200,7 +235,6 @@ namespace PuntoDeVenta
 			// 
 			this.tpgIngresar.Controls.Add(this.dgvBuscar);
 			this.tpgIngresar.Controls.Add(this.groupBox2);
-			this.tpgIngresar.Controls.Add(this.lblArticulos);
 			this.tpgIngresar.Controls.Add(this.dgvEntradas);
 			this.tpgIngresar.Controls.Add(this.gpbDetalleCompra);
 			this.tpgIngresar.Controls.Add(this.panel1);
@@ -217,6 +251,8 @@ namespace PuntoDeVenta
 			// 
 			this.dgvBuscar.AllowUserToAddRows = false;
 			this.dgvBuscar.AllowUserToDeleteRows = false;
+			this.dgvBuscar.AllowUserToResizeColumns = false;
+			this.dgvBuscar.AllowUserToResizeRows = false;
 			this.dgvBuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvBuscar.BackgroundColor = System.Drawing.Color.White;
 			this.dgvBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -229,8 +265,10 @@ namespace PuntoDeVenta
 			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dgvBuscar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dgvBuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvBuscar.Location = new System.Drawing.Point(136, 258);
+			this.dgvBuscar.Location = new System.Drawing.Point(37, 258);
+			this.dgvBuscar.MultiSelect = false;
 			this.dgvBuscar.Name = "dgvBuscar";
+			this.dgvBuscar.ReadOnly = true;
 			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,7 +278,8 @@ namespace PuntoDeVenta
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dgvBuscar.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.dgvBuscar.RowHeadersVisible = false;
-			this.dgvBuscar.Size = new System.Drawing.Size(1033, 74);
+			this.dgvBuscar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+			this.dgvBuscar.Size = new System.Drawing.Size(1256, 74);
 			this.dgvBuscar.TabIndex = 10;
 			this.dgvBuscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvBuscarCellContentClick);
 			this.dgvBuscar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DgvBuscarMouseClick);
@@ -299,8 +338,10 @@ namespace PuntoDeVenta
 			this.txtTotal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtTotal.Location = new System.Drawing.Point(449, 25);
 			this.txtTotal.Name = "txtTotal";
+			this.txtTotal.ReadOnly = true;
 			this.txtTotal.Size = new System.Drawing.Size(104, 23);
 			this.txtTotal.TabIndex = 37;
+			this.txtTotal.Text = "0";
 			// 
 			// label15
 			// 
@@ -327,16 +368,20 @@ namespace PuntoDeVenta
 			this.txtIva.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtIva.Location = new System.Drawing.Point(262, 26);
 			this.txtIva.Name = "txtIva";
+			this.txtIva.ReadOnly = true;
 			this.txtIva.Size = new System.Drawing.Size(81, 23);
 			this.txtIva.TabIndex = 34;
+			this.txtIva.Text = "0";
 			// 
 			// txtSubtotal
 			// 
 			this.txtSubtotal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtSubtotal.Location = new System.Drawing.Point(83, 26);
 			this.txtSubtotal.Name = "txtSubtotal";
+			this.txtSubtotal.ReadOnly = true;
 			this.txtSubtotal.Size = new System.Drawing.Size(104, 23);
 			this.txtSubtotal.TabIndex = 33;
+			this.txtSubtotal.Text = "0";
 			// 
 			// label13
 			// 
@@ -348,20 +393,11 @@ namespace PuntoDeVenta
 			this.label13.TabIndex = 24;
 			this.label13.Text = "Subtotal";
 			// 
-			// lblArticulos
-			// 
-			this.lblArticulos.BackColor = System.Drawing.Color.White;
-			this.lblArticulos.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblArticulos.Location = new System.Drawing.Point(53, 501);
-			this.lblArticulos.Name = "lblArticulos";
-			this.lblArticulos.Size = new System.Drawing.Size(116, 23);
-			this.lblArticulos.TabIndex = 8;
-			this.lblArticulos.Text = "Articulos";
-			// 
 			// dgvEntradas
 			// 
 			this.dgvEntradas.AllowUserToAddRows = false;
 			this.dgvEntradas.AllowUserToDeleteRows = false;
+			this.dgvEntradas.AllowUserToResizeRows = false;
 			this.dgvEntradas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvEntradas.BackgroundColor = System.Drawing.Color.White;
 			this.dgvEntradas.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -376,11 +412,12 @@ namespace PuntoDeVenta
 			this.dgvEntradas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvEntradas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 			this.Codigo,
+			this.NombreProduct,
 			this.Cantidad,
 			this.Costo,
 			this.Precio_Venta,
 			this.TotalProducto});
-			this.dgvEntradas.Location = new System.Drawing.Point(136, 338);
+			this.dgvEntradas.Location = new System.Drawing.Point(37, 338);
 			this.dgvEntradas.Name = "dgvEntradas";
 			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
@@ -391,13 +428,22 @@ namespace PuntoDeVenta
 			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dgvEntradas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dgvEntradas.RowHeadersVisible = false;
-			this.dgvEntradas.Size = new System.Drawing.Size(1033, 157);
+			this.dgvEntradas.Size = new System.Drawing.Size(1257, 157);
 			this.dgvEntradas.TabIndex = 4;
+			this.dgvEntradas.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvEntradasCellEndEdit);
+			this.dgvEntradas.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.DgvEntradasRowsAdded);
+			this.dgvEntradas.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.DgvEntradasRowsRemoved);
+			this.dgvEntradas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DgvEntradasKeyDown);
 			// 
 			// Codigo
 			// 
 			this.Codigo.HeaderText = "Código";
 			this.Codigo.Name = "Codigo";
+			// 
+			// NombreProduct
+			// 
+			this.NombreProduct.HeaderText = "Producto";
+			this.NombreProduct.Name = "NombreProduct";
 			// 
 			// Cantidad
 			// 
@@ -406,7 +452,7 @@ namespace PuntoDeVenta
 			// 
 			// Costo
 			// 
-			this.Costo.HeaderText = "Costo";
+			this.Costo.HeaderText = "Costo Unitario";
 			this.Costo.Name = "Costo";
 			// 
 			// Precio_Venta
@@ -428,15 +474,15 @@ namespace PuntoDeVenta
 			this.gpbDetalleCompra.Controls.Add(this.btnAgregar);
 			this.gpbDetalleCompra.Controls.Add(this.txtTotProduct);
 			this.gpbDetalleCompra.Controls.Add(this.label12);
+			this.gpbDetalleCompra.Controls.Add(this.pictureBox7);
 			this.gpbDetalleCompra.Controls.Add(this.txtPrecioV);
+			this.gpbDetalleCompra.Controls.Add(this.lblCodigo);
+			this.gpbDetalleCompra.Controls.Add(this.txtCodigo);
 			this.gpbDetalleCompra.Controls.Add(this.label11);
 			this.gpbDetalleCompra.Controls.Add(this.txtCosto);
 			this.gpbDetalleCompra.Controls.Add(this.label8);
 			this.gpbDetalleCompra.Controls.Add(this.txtCantidad);
 			this.gpbDetalleCompra.Controls.Add(this.label7);
-			this.gpbDetalleCompra.Controls.Add(this.pictureBox7);
-			this.gpbDetalleCompra.Controls.Add(this.txtCodigo);
-			this.gpbDetalleCompra.Controls.Add(this.lblCodigo);
 			this.gpbDetalleCompra.Font = new System.Drawing.Font("Verdana", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.gpbDetalleCompra.Location = new System.Drawing.Point(19, 179);
 			this.gpbDetalleCompra.Name = "gpbDetalleCompra";
@@ -448,7 +494,7 @@ namespace PuntoDeVenta
 			// pictureBox9
 			// 
 			this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-			this.pictureBox9.Location = new System.Drawing.Point(275, 41);
+			this.pictureBox9.Location = new System.Drawing.Point(19, 41);
 			this.pictureBox9.Name = "pictureBox9";
 			this.pictureBox9.Size = new System.Drawing.Size(32, 32);
 			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -458,21 +504,22 @@ namespace PuntoDeVenta
 			// txtProducto
 			// 
 			this.txtProducto.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtProducto.Location = new System.Drawing.Point(310, 48);
+			this.txtProducto.Location = new System.Drawing.Point(54, 48);
 			this.txtProducto.Name = "txtProducto";
 			this.txtProducto.Size = new System.Drawing.Size(165, 23);
 			this.txtProducto.TabIndex = 34;
 			this.txtProducto.TextChanged += new System.EventHandler(this.TxtProductoTextChanged);
+			this.txtProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtProductoKeyPress);
 			// 
 			// label5
 			// 
 			this.label5.BackColor = System.Drawing.Color.White;
 			this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(274, 22);
+			this.label5.Location = new System.Drawing.Point(18, 22);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(181, 23);
 			this.label5.TabIndex = 33;
-			this.label5.Text = "Nombre del Producto";
+			this.label5.Text = "Buscar Producto *";
 			// 
 			// btnEliminar
 			// 
@@ -485,9 +532,10 @@ namespace PuntoDeVenta
 			this.btnEliminar.Name = "btnEliminar";
 			this.btnEliminar.Size = new System.Drawing.Size(103, 37);
 			this.btnEliminar.TabIndex = 32;
-			this.btnEliminar.Text = "Eliminar";
+			this.btnEliminar.Text = "Limpiar";
 			this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnEliminar.UseVisualStyleBackColor = false;
+			this.btnEliminar.Click += new System.EventHandler(this.BtnEliminarClick);
 			// 
 			// btnAgregar
 			// 
@@ -510,6 +558,7 @@ namespace PuntoDeVenta
 			this.txtTotProduct.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtTotProduct.Location = new System.Drawing.Point(872, 48);
 			this.txtTotProduct.Name = "txtTotProduct";
+			this.txtTotProduct.ReadOnly = true;
 			this.txtTotProduct.Size = new System.Drawing.Size(156, 23);
 			this.txtTotProduct.TabIndex = 30;
 			// 
@@ -523,13 +572,44 @@ namespace PuntoDeVenta
 			this.label12.TabIndex = 29;
 			this.label12.Text = "Total del producto";
 			// 
+			// pictureBox7
+			// 
+			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+			this.pictureBox7.Location = new System.Drawing.Point(266, 41);
+			this.pictureBox7.Name = "pictureBox7";
+			this.pictureBox7.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox7.TabIndex = 22;
+			this.pictureBox7.TabStop = false;
+			// 
 			// txtPrecioV
 			// 
 			this.txtPrecioV.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtPrecioV.Location = new System.Drawing.Point(705, 48);
 			this.txtPrecioV.Name = "txtPrecioV";
+			this.txtPrecioV.ReadOnly = true;
 			this.txtPrecioV.Size = new System.Drawing.Size(131, 23);
 			this.txtPrecioV.TabIndex = 28;
+			// 
+			// lblCodigo
+			// 
+			this.lblCodigo.BackColor = System.Drawing.Color.White;
+			this.lblCodigo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCodigo.Location = new System.Drawing.Point(265, 22);
+			this.lblCodigo.Name = "lblCodigo";
+			this.lblCodigo.Size = new System.Drawing.Size(181, 23);
+			this.lblCodigo.TabIndex = 6;
+			this.lblCodigo.Text = "Código del producto *";
+			// 
+			// txtCodigo
+			// 
+			this.txtCodigo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCodigo.Location = new System.Drawing.Point(301, 48);
+			this.txtCodigo.Name = "txtCodigo";
+			this.txtCodigo.Size = new System.Drawing.Size(165, 23);
+			this.txtCodigo.TabIndex = 7;
+			this.txtCodigo.TextChanged += new System.EventHandler(this.TxtCodigoTextChanged);
+			this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCodigoKeyPress);
 			// 
 			// label11
 			// 
@@ -548,6 +628,8 @@ namespace PuntoDeVenta
 			this.txtCosto.Name = "txtCosto";
 			this.txtCosto.Size = new System.Drawing.Size(81, 23);
 			this.txtCosto.TabIndex = 26;
+			this.txtCosto.TextChanged += new System.EventHandler(this.TxtCostoTextChanged);
+			this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCostoKeyPress);
 			// 
 			// label8
 			// 
@@ -566,6 +648,8 @@ namespace PuntoDeVenta
 			this.txtCantidad.Name = "txtCantidad";
 			this.txtCantidad.Size = new System.Drawing.Size(81, 23);
 			this.txtCantidad.TabIndex = 24;
+			this.txtCantidad.TextChanged += new System.EventHandler(this.TxtCantidadTextChanged);
+			this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCantidadKeyPress);
 			// 
 			// label7
 			// 
@@ -576,35 +660,6 @@ namespace PuntoDeVenta
 			this.label7.Size = new System.Drawing.Size(81, 23);
 			this.label7.TabIndex = 23;
 			this.label7.Text = "Cantidad";
-			// 
-			// pictureBox7
-			// 
-			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-			this.pictureBox7.Location = new System.Drawing.Point(25, 41);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox7.TabIndex = 22;
-			this.pictureBox7.TabStop = false;
-			// 
-			// txtCodigo
-			// 
-			this.txtCodigo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCodigo.Location = new System.Drawing.Point(60, 48);
-			this.txtCodigo.Name = "txtCodigo";
-			this.txtCodigo.Size = new System.Drawing.Size(165, 23);
-			this.txtCodigo.TabIndex = 7;
-			this.txtCodigo.TextChanged += new System.EventHandler(this.TxtCodigoTextChanged);
-			// 
-			// lblCodigo
-			// 
-			this.lblCodigo.BackColor = System.Drawing.Color.White;
-			this.lblCodigo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCodigo.Location = new System.Drawing.Point(24, 22);
-			this.lblCodigo.Name = "lblCodigo";
-			this.lblCodigo.Size = new System.Drawing.Size(181, 23);
-			this.lblCodigo.TabIndex = 6;
-			this.lblCodigo.Text = "Código del producto";
 			// 
 			// panel1
 			// 
@@ -776,6 +831,7 @@ namespace PuntoDeVenta
 			this.txtFolio.Name = "txtFolio";
 			this.txtFolio.Size = new System.Drawing.Size(165, 23);
 			this.txtFolio.TabIndex = 4;
+			this.txtFolio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtFolioKeyPress);
 			// 
 			// panel3
 			// 
@@ -823,6 +879,19 @@ namespace PuntoDeVenta
 			// 
 			// tbpHistorial
 			// 
+			this.tbpHistorial.Controls.Add(this.btnLimpiar);
+			this.tbpHistorial.Controls.Add(this.pictureBox11);
+			this.tbpHistorial.Controls.Add(this.label20);
+			this.tbpHistorial.Controls.Add(this.dgvDetalleE);
+			this.tbpHistorial.Controls.Add(this.label19);
+			this.tbpHistorial.Controls.Add(this.cmbBuscP);
+			this.tbpHistorial.Controls.Add(this.txtBuscUsu);
+			this.tbpHistorial.Controls.Add(this.label18);
+			this.tbpHistorial.Controls.Add(this.dtpFechaR);
+			this.tbpHistorial.Controls.Add(this.label17);
+			this.tbpHistorial.Controls.Add(this.pictureBox10);
+			this.tbpHistorial.Controls.Add(this.label16);
+			this.tbpHistorial.Controls.Add(this.dgvRegistroE);
 			this.tbpHistorial.Controls.Add(this.panel2);
 			this.tbpHistorial.Location = new System.Drawing.Point(4, 22);
 			this.tbpHistorial.Name = "tbpHistorial";
@@ -831,6 +900,180 @@ namespace PuntoDeVenta
 			this.tbpHistorial.TabIndex = 1;
 			this.tbpHistorial.Text = "Historial";
 			this.tbpHistorial.UseVisualStyleBackColor = true;
+			// 
+			// btnLimpiar
+			// 
+			this.btnLimpiar.Location = new System.Drawing.Point(1291, 58);
+			this.btnLimpiar.Name = "btnLimpiar";
+			this.btnLimpiar.Size = new System.Drawing.Size(31, 23);
+			this.btnLimpiar.TabIndex = 46;
+			this.btnLimpiar.Text = "button1";
+			this.btnLimpiar.UseVisualStyleBackColor = true;
+			this.btnLimpiar.Click += new System.EventHandler(this.BtnLimpiarClick);
+			// 
+			// pictureBox11
+			// 
+			this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+			this.pictureBox11.Location = new System.Drawing.Point(51, 303);
+			this.pictureBox11.Name = "pictureBox11";
+			this.pictureBox11.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox11.TabIndex = 45;
+			this.pictureBox11.TabStop = false;
+			// 
+			// label20
+			// 
+			this.label20.BackColor = System.Drawing.Color.White;
+			this.label20.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label20.Location = new System.Drawing.Point(81, 312);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(85, 23);
+			this.label20.TabIndex = 44;
+			this.label20.Text = "Detalle de entrada";
+			// 
+			// dgvDetalleE
+			// 
+			this.dgvDetalleE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvDetalleE.BackgroundColor = System.Drawing.Color.White;
+			this.dgvDetalleE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvDetalleE.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvDetalleE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			this.dgvDetalleE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvDetalleE.Location = new System.Drawing.Point(51, 338);
+			this.dgvDetalleE.Name = "dgvDetalleE";
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			this.dgvDetalleE.RowsDefaultCellStyle = dataGridViewCellStyle6;
+			this.dgvDetalleE.Size = new System.Drawing.Size(1234, 210);
+			this.dgvDetalleE.TabIndex = 43;
+			// 
+			// label19
+			// 
+			this.label19.BackColor = System.Drawing.Color.White;
+			this.label19.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.Location = new System.Drawing.Point(932, 59);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(182, 23);
+			this.label19.TabIndex = 42;
+			this.label19.Text = "Buscar por usuario";
+			// 
+			// cmbBuscP
+			// 
+			this.cmbBuscP.FormattingEnabled = true;
+			this.cmbBuscP.Location = new System.Drawing.Point(693, 62);
+			this.cmbBuscP.Name = "cmbBuscP";
+			this.cmbBuscP.Size = new System.Drawing.Size(201, 21);
+			this.cmbBuscP.TabIndex = 41;
+			this.cmbBuscP.SelectedIndexChanged += new System.EventHandler(this.CmbBuscPSelectedIndexChanged);
+			// 
+			// txtBuscUsu
+			// 
+			this.txtBuscUsu.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtBuscUsu.Location = new System.Drawing.Point(1120, 59);
+			this.txtBuscUsu.Name = "txtBuscUsu";
+			this.txtBuscUsu.Size = new System.Drawing.Size(165, 23);
+			this.txtBuscUsu.TabIndex = 40;
+			this.txtBuscUsu.TextChanged += new System.EventHandler(this.TxtBuscUsuTextChanged);
+			// 
+			// label18
+			// 
+			this.label18.BackColor = System.Drawing.Color.White;
+			this.label18.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.Location = new System.Drawing.Point(505, 63);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(182, 23);
+			this.label18.TabIndex = 39;
+			this.label18.Text = "Buscar por proveedor";
+			// 
+			// dtpFechaR
+			// 
+			this.dtpFechaR.CalendarFont = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtpFechaR.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dtpFechaR.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.dtpFechaR.Location = new System.Drawing.Point(335, 61);
+			this.dtpFechaR.Name = "dtpFechaR";
+			this.dtpFechaR.Size = new System.Drawing.Size(155, 22);
+			this.dtpFechaR.TabIndex = 38;
+			this.dtpFechaR.ValueChanged += new System.EventHandler(this.DtpFechaRValueChanged);
+			// 
+			// label17
+			// 
+			this.label17.BackColor = System.Drawing.Color.White;
+			this.label17.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(189, 63);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(151, 23);
+			this.label17.TabIndex = 37;
+			this.label17.Text = "Buscar por fecha";
+			// 
+			// pictureBox10
+			// 
+			this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+			this.pictureBox10.Location = new System.Drawing.Point(51, 54);
+			this.pictureBox10.Name = "pictureBox10";
+			this.pictureBox10.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox10.TabIndex = 36;
+			this.pictureBox10.TabStop = false;
+			// 
+			// label16
+			// 
+			this.label16.BackColor = System.Drawing.Color.White;
+			this.label16.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Location = new System.Drawing.Point(81, 63);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(85, 23);
+			this.label16.TabIndex = 34;
+			this.label16.Text = "Entradas";
+			// 
+			// dgvRegistroE
+			// 
+			this.dgvRegistroE.AllowUserToAddRows = false;
+			this.dgvRegistroE.AllowUserToOrderColumns = true;
+			this.dgvRegistroE.AllowUserToResizeColumns = false;
+			this.dgvRegistroE.AllowUserToResizeRows = false;
+			this.dgvRegistroE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvRegistroE.BackgroundColor = System.Drawing.Color.White;
+			this.dgvRegistroE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvRegistroE.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistroE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			this.dgvRegistroE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvRegistroE.Location = new System.Drawing.Point(51, 89);
+			this.dgvRegistroE.Name = "dgvRegistroE";
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistroE.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+			this.dgvRegistroE.RowHeadersVisible = false;
+			dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Desktop;
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+			this.dgvRegistroE.RowsDefaultCellStyle = dataGridViewCellStyle9;
+			this.dgvRegistroE.Size = new System.Drawing.Size(1234, 199);
+			this.dgvRegistroE.TabIndex = 2;
 			// 
 			// panel2
 			// 
@@ -911,6 +1154,11 @@ namespace PuntoDeVenta
 			this.panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			this.tbpHistorial.ResumeLayout(false);
+			this.tbpHistorial.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvDetalleE)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvRegistroE)).EndInit();
 			this.panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);

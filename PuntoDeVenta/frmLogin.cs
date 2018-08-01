@@ -18,7 +18,7 @@ namespace PuntoDeVenta
 	/// </summary>
 	public partial class frmLogin : Form
 	{
-		public string User;
+		Entradas ClassEntradas = new Entradas();
 		public frmLogin()
 		{
 			//
@@ -69,13 +69,14 @@ namespace PuntoDeVenta
 			string tabla = "Usuarios";
 			string condicion = "usuario = '"+txtUsuario.Text+"'";
 			string campos = "usuario,contrasenia,nombre,apellidoP";
-			User = txtUsuario.Text;
+			 
 			
 			string [] datos = FrameBD.ObtieneCampos(tabla,condicion,campos);
 			if (datos.Length > 1)
 			{
 				if (datos[1] == txtContra.Text)
 				{
+					ClassEntradas.user = datos[1];
 					this.Hide();
 					MainForm frmMain =new MainForm();
 					frmMain.ShowDialog();

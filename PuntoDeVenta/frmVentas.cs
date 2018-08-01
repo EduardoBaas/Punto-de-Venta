@@ -33,19 +33,19 @@ namespace PuntoDeVenta
 		}
 		void FrmVentasLoad(object sender, EventArgs e)
 		{
-			autocompletar();
+			//autocompletar();
 		}
 		
 		void autocompletar()
 		{
-			txtProducto.AutoCompleteCustomSource = cargarDatos();
+			//txtProducto.AutoCompleteCustomSource = cargarDatos();
 		}
 		
-		private AutoCompleteStringCollection cargarDatos()
-		{
-			AutoCompleteStringCollection datos = new AutoCompleteStringCollection();
-			datos.Add(obj.buscar_producto(txtProducto.Text));
-			return datos;
-		}
+//		private AutoCompleteStringCollection cargarDatos()
+//		{
+//			AutoCompleteStringCollection datos = new AutoCompleteStringCollection();
+//			datos.Add(obj.buscar_producto(txtProducto.Text));
+//			return datos;
+//		}
 	}
 }

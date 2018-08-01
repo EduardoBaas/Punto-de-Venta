@@ -106,6 +106,12 @@ namespace PuntoDeVenta
 			   }         
 			}
 		}
+		void TsbTiposClick(object sender, EventArgs e)
+		{
+			frmTipoUsuario formTipo = new frmTipoUsuario();
+			formTipo.MdiParent = this;
+			formTipo.Show();
+		}
 	
 	}
 }

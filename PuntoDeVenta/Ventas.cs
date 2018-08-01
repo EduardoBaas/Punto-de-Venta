@@ -28,12 +28,12 @@ namespace PuntoDeVenta
 		{
 		}
 		
-		public string buscar_producto(string txtproducto, DataGridView dgv_ventas)
-		{
-			string sql ="SELECT nombre_producto FROM productos"+
-						" WHERE nombre_producto LIKE'"+ txtproducto +"%'";
-			dgv_ventas.DataSource=FrameBD.SQLSEL(sql)=Convert.ChangeType(txtproducto, DataGridView txtproducto);
-			dgv_ventas.DataMember="datos";
-		}
+//		public string buscar_producto(string txtproducto, DataGridView dgv_ventas)
+//		{
+//			string sql ="SELECT nombre_producto FROM productos"+
+//						" WHERE nombre_producto LIKE'"+ txtproducto +"%'";
+//			dgv_ventas.DataSource=FrameBD.SQLSEL(sql)=Convert.ChangeType(txtproducto, DataGridView txtproducto);
+//			dgv_ventas.DataMember="datos";
+//		}
 	}
 }
