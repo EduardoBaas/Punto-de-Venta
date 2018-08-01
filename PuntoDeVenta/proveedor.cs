@@ -34,7 +34,7 @@ namespace PuntoDeVenta
 			public void filtarproveedor(string prob, DataGridView dgv)
 		{
 				
-				string sql = "SELECT id_proveedor,nombre_proveedor,direccion,correo,telefono,rfc,duenio  FROM proveedores"
+				string sql = "SELECT id_proveedor as ID,nombre_proveedor AS 'NOMBRE',direccion AS DIRECCION,correo AS CORREO,telefono AS TELEFONO,rfc AS RFC,duenio AS PROPIETARIO   FROM proveedores"
 					+
 				" WHERE  nombre_proveedor LIKE '" + prob + "%' and eliminado=0";
 			
