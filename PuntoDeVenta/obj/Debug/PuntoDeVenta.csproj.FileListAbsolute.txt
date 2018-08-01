@@ -35,3 +35,4 @@ C:\Users\Toño\Desktop\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.csproj
 C:\Users\Toño\Desktop\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.exe
 C:\Users\Toño\Desktop\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.pdb
 C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmTipoUsuario.resources
+C:\Users\pumas\Documents\GitHub\Punto-de-Venta\PuntoDeVenta\obj\Debug\PuntoDeVenta.frmProveedores.resources
